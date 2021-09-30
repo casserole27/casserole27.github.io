@@ -1,0 +1,73 @@
+/*------GLOBAL STYLES------*/
+
+body {
+    font-family: 'Mukta', sans-serif;
+    background: #F5F6F4;
+    color: #1A5760;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 1.25rem;
+  }
+  
+  a {
+    color: #1A5760;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #E56B24;
+    border-bottom: solid 1px #E56B24;
+  }
+
+  
+img {
+    border: solid 1px lightgray;
+  }
+
+/*------ HEADER STYLING ------*/
+
+header {
+    background-color: #FEF7EB;
+    box-shadow: 4px 4px 6px 2px lightgray;
+    padding: 25px;
+    /*width: 1000px;*/
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+header h2 {
+    margin-top: 0;
+}
+
+/*------ PROJECTS STYLING ------*/
+
+.projects-list {
+    background-color: #F5F6F4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+    border: solid 1px lightgray;
+    /*margin-left: 10%;
+    margin-right: 10%;*/
+  }
+  
+  .projects {
+    background-color: white;
+    text-align: center;
+    padding: 35px;
+    box-shadow: 4px 4px 6px 2px lightgray;
+  }
+  
+  .projects:hover {
+    background-color: #FEF7EB;
+  }

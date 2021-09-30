@@ -1,0 +1,151 @@
+/*
+Survey Form CSS
+Author: Cassie Lewis
+clewis.dev
+Date: September 2021
+*/
+
+/* CSS HEX 
+https://coolors.co/522414-9c311c-f0aa7f-fed286-c6d2e6
+--seal-brown: #522414ff;
+--chinese-red: #9c311cff;
+--tumbleweed: #f0aa7fff;
+--deep-champagne: #fed286ff;
+--light-periwinkle: #c6d2e6ff;
+*/
+
+
+/*------ GLOBAL STYLES ------*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25rem;
+    text-align: center;
+    background-image: linear-gradient(rgba(238, 158, 111, 0.75), rgba(140, 43, 26, 0.75)),
+    url(/images/oaktree.jpg);
+    background-color: rgba(254, 202, 114, 0.25);
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    background: #FED286;
+    color: #9C311C;
+    /*background: #FECA72;
+    color: #8c2b1aff;*/
+    font-weight: 800;
+    margin: 0;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.description {
+    background: #FED286;
+    color: #9C311C;
+    /*background: #FECA72;
+    color: #8c2b1aff;*/
+    text-align: center;
+    margin: 0;
+    padding-bottom: 2rem;
+}
+
+p {
+    color: #522414;
+    text-align: left;
+    margin: 35px 0 25px 0;
+    padding-left: 2rem;
+    font-weight: bold;    
+}
+
+hr {
+    margin: 2.5rem;
+}
+
+/*------ FORM STYLE ------*/
+
+form {
+    background: #F0AA7F;
+    /*background: #ee9e6fff;*/
+    border-radius: .5rem;
+    padding: 1.5rem 2rem 2rem 2rem;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/*------ INPUT AND LABEL STYLES ------*/
+
+label {
+    color: #522414;
+    font-size: 1.25rem;
+    display: flex;
+    padding-left: 2rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.input-label {
+    font-weight: bold;
+}
+
+.input-box {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: .5rem;
+    padding: 1rem;
+    width: 90%;
+    border-radius: .5rem;
+    border: solid #8c2b1aff 2px;
+    /*box-shadow: 3px 3px 3px #FECA72;*/
+}
+
+/*------ DATALIST STYLE ------*/
+
+
+/*------ CHECKBOX STYLE ------*/
+
+input[type="checkbox"] {
+    margin-right: .5rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+   
+/*------ RADIO BUTTON STYLE ------*/
+   
+input[type="radio"] {
+    margin-right: .5rem;
+    min-height: 1.25rem;
+    min-width: 1.25rem;
+}
+
+/*------ TEXTAREA STYLE ------*/
+
+textarea {
+    background: linear-gradient(rgba(255, 247, 235), rgba(255, 214, 153));
+    border: solid #9C311C 2px;
+    border-radius: .5rem;
+    margin: auto;
+    /*box-shadow: 5px 7px 5px #FECA72;*/
+
+}
+
+.p-textarea {
+    text-align: center;
+    padding: 0;
+}
+
+
+/*------BUTTON STYLE ------*/
+
+button {
+    background-color: #9C311C;
+    color: #FECA72;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    font-weight: bold;
+    margin: 2.5rem auto 2rem auto;
+    padding: 1rem 4rem;
+    border-radius: .5rem;
+    border: 0;
+    
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="tribute">
+    <title>Almond Blossom Tribute</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="css/almondblossomtribute.css" type="text/css" rel="stylesheet" />
+</head>
+
+<!-- 
+    Tribute Website HTML
+    Author: Cassie Lewis
+    Date: September 2021
+ -->
+
+<!--
+    My tribute page should have an element with a corresponding id="main", which contains all other elements.
+-->
+<main id="main">
+<!--
+    I should see an element with a corresponding id="title", which contains a string (i.e. text) 
+    that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
+-->
+<h1 id="title">Vincent Van Gogh's Almond Blossom</h1>
+<h2 id="subtitle" class="subtitle">oil painting on canvas, 73.3 cm x 92.4 cm</h2>
+
+<!--
+    I should see a div element with a corresponding id="img-div".
+    Within the img-div element, I should see an img element with a corresponding id="image".
+    Within the img-div element, I should see an element with a corresponding id="img-caption" 
+    that contains textual content describing the image shown in img-div.
+-->
+
+<div id="img-div">
+    <figure>
+        <a href="https://www.vangoghmuseum.nl/en/collection/s0176v1962">
+        <img src="images/almondblossompainting.jpg" width="650" height="481"
+        alt="oil painting of blossoming almond trees against a blue sky" class="painting"></a>
+        <figcaption id="img-caption">Vincent Van Gogh's "Almond Blossom" oil painting</figcaption>
+    </figure>
+</div>
+
+<hr>
+
+<!--
+    I should see an element with a corresponding id="tribute-info", 
+    which contains textual content describing the subject of the tribute page.
+-->
+<article id="tribute-info" class="tribute-info">
+<h2 id="info-title" class="info-title">Vincent van Gogh (1853 - 1890)</h2>
+<img src="images/almondblossom.png" class="blossom-drawing" width="75" height="33"> 
+<p class="info-subtitle-1"><strong>Saint-Rémy-de-Provence, February 1890</strong></p>
+<p class="info-subtitle-2"><strong>Van Gogh Museum, Amsterdam (Vincent van Gogh Foundation)</strong></p>
+<p><strong>Almond trees flowering early in the spring marks one of this season's many symbols of new life. Van Gogh loved nature, and this was one of 
+    his favorite subjects. He frequently painted the blossom branches against a blue sky.</strong></p> 
+<img src="images/almondblossom.png" class="blossom-drawing" width="75" height="33">  
+<p><strong>The painting was a gift for his brother Theo and sister-in-law Jo, who had just had a baby. Their son, Vincent Willem 
+    went on to found the Van Gogh Museum. The painting is one of the most treasured of the family, and has never been sold. 
+    It stays in the Van Gogh museum to this day.</strong></p>
+<img src="images/almondblossom.png" class="blossom-drawing" width="75" height="33">  
+<p><strong>Painting the branches close-up, and from below, Vincent Van Gogh chose an unusual perspective. It looks as if you are lying
+    on the grass looking at the branches above you. Van Gogh drew this inspiration from Japanese printmaking, as well as
+    the bold outlines and the positioning.</strong></p>    
+<img src="images/almondblossom.png" class="blossom-drawing" width="75" height="33"> 
+</article>
+
+<!--
+    I should see an a element with a corresponding id="tribute-link", 
+    which links to an outside site that contains additional information about the subject of the tribute page. 
+    HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab 
+    (i.e. target="_blank").
+-->
+
+<a href="https://www.vangoghmuseum.nl/en/collection/s0176v1962" id="tribute-link" class="infolink" target="_blank">
+    Additional information about the Almond Blossom painting</a>
+
+<hr>
+
+    <!-- 
+    The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
+    The img element should be centered within its parent element.
+-->
+
+</main>
+</html>

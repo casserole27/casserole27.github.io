@@ -1,0 +1,126 @@
+/*
+Tribute Website CSS
+Author: Cassie Lewis
+clewis.dev
+Date: September 2021
+*/
+
+/* CSS HEX 
+--midnight-green-eagle-green: #1a5760ff;
+--middle-blue-green: #90e0daff;
+--mint-cream: #f7fff7ff;
+--rosy-brown: #bb938bff;
+--ivory: #fffcebff;*/
+
+
+
+
+/*------ GLOBAL STYLES--------------*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(rgba(255, 255, 255), rgba(253, 224, 176, 0.3));
+    background-color: #FFFCEB;
+    margin: 0;
+    padding: 0;
+}  
+
+h1 {
+    text-align: center;
+    color: #1A5760;
+    margin-top: 1em;
+    font-size: 35px;
+}
+
+hr {
+    width: 60%;
+    color: #81544B;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    opacity: .5;
+}
+
+/*------ IMAGE STYLE--------------*/
+
+.painting {
+    box-shadow: 4px 4px 6px 2px lightgray;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+figcaption {
+    text-align: center;
+    color: #1A5760;
+    font-size: 15px;
+}
+       
+
+/*------ INFO STYLE--------------*/
+
+.subtitle {
+    text-align: center;
+    color: #81544B;
+    font-size: 25px;
+    margin-top: 7px;
+    margin-bottom: 2em;
+}
+
+.tribute-info {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+    color: #1A5760;
+    /*display: flex;
+    justify-content: center;*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding-bottom: 10px;
+    line-height: 40px;
+}
+
+.info-title {
+    text-align: center;
+    color: #81544B;
+    font-size: 25px;
+    margin-top: 35px;
+}
+
+.info-subtitle-1 {
+    color:  #81544B;
+    margin-bottom: 0;
+    padding: 0;
+   
+}
+
+.info-subtitle-2 {
+    color:  #81544B;
+    margin-top: 0;
+    padding: 0;
+}
+
+
+/*------ LINK STYLE--------------*/
+
+a:visited {
+    color: #AC7B72;
+}
+
+.infolink {
+    color: #81544B;
+    margin: 25px 25px;
+    /*margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    border-bottom: solid 1px;*/
+}

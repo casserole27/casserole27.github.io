@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="product">
+    <title>Grow Your Own Forest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/acornsproduct.css">
+  </head>
+
+
+<!-- 
+    Product Landing HTML
+    Author: Cassie Lewis
+    clewis.dev
+    Date: September 2021
+ -->
+
+
+  <!--<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+</style> -->
+
+<!--  
+    My product landing page should have a header element with a corresponding id="header".
+    I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
+    Within the #header element I can see a nav element with a corresponding id="nav-bar".
+    I can see at least three clickable elements inside the nav element, each with the class nav-link.
+    When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
+-->
+
+<header id="header">
+    <img src="/images/acornlogo.png" id="header-img" class="header-img" alt="Acorn company logo">
+    <nav id="nav-bar" class="nav-links">
+        <ol>
+            <li class="nav-link"><a href="#oak-facts">Oak Tree Facts</a></li>
+            <li class="nav-link"><a href="#video">From Seed to Tree</a></li>
+            <li class="nav-link"><a href="#white-oak">Oak Types</a></li>
+        </ol> 
+    </nav>
+</header>
+
+<p id="quote" class="quote"><i>"The creation of a thousand forests is in one acorn."</i> - Ralph Waldo Emerson</p>
+
+<section id="oak-facts" class="oak-facts">
+<img src="/images/oakleaf.png">    
+<h2 id="oak-fact-1" class="facts">Oak Symbols</h2>
+<p class="facts-p">The oak is the national tree of many countries due to its symbolism of strength and endurance.</p>
+
+<img src="/images/oakleaf.png">    
+<h2 id="oak-fact-2" class="facts">Oak Provisions</h2>
+<p class="facts-p">Acorns, buds, and twigs feed a variety of wildlife throughout the seasons.</p>
+
+<img src="/images/oakleaf.png">    
+<h2 id="oak-fact-3" class="facts">Oak Uses</h2>
+<p class="facts-p">Viking Longships, dwellings, spirit barrells, and shade are among that many uses of oak wood.</p>
+<img src="/images/whiteoakmed.jpg" alt="illustration of white oak tree leaf and acorn" class="white-oak">
+</section>
+
+<!--  
+     I can watch an embedded product video with id="video".
+-->
+<!--<embed id="video" type="video/mp4" src="https://youtu.be/CS2toXyZAy0">-->
+
+<section id="video-section" class="video">    
+    <iframe id="video" width="760" height="515" src="https://www.youtube.com/embed/CS2toXyZAy0" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>    
+</section>    
+
+<!--  
+    The navbar should always be at the top of the viewport.
+-->
+
+<!--  
+    My product landing page should have at least one media query.
+-->
+
+<!--  
+    My product landing page should utilize CSS flexbox at least once.
+-->
+
+<!--  
+    My landing page has a form element with a corresponding id="form".
+    Within the form, there is an input field with id="email" where I can enter an email address.
+    The #email input field should have placeholder text to let the user know what the field is for.
+    The #email input field uses HTML5 validation to confirm that the entered text is an email address.
+-->
+
+<form id="form">
+
+    <h2>1000 forests can be yours, just plant the seed.</h2>
+    
+    <label for="email">Email</label>
+    <input id="email" type="email" class="email" placeholder="Enter your email address" required>
+    
+    <!--  
+        Within the form, there is a submit input with a corresponding id="submit".
+        When I click the #submit element, 
+        the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
+    -->
+    
+    <!--<button id="submit" type="submit" form="form">Submit</button>-->
+    <input type="submit" id="submit" value="Send Request" formaction="https://www.freecodecamp.com/email-submit">
+    <!-- Does the action/URL go in the form tag or somewhere in the input? formaction overrides action in <form>-->
+
+</form>
+
+<section id="pricing" class="pricing">
+<div id="white-oak" class="oaks">
+    <h3>White oak</h3>
+    <h4>1 acorn = 1000 forests</h4>
+    <p>The white oak was combined with other oaks to build the famous USS Constitution, also known as “Old Ironsides”.</p>
+    <button type="button" class="button">Select</button>
+</div>
+
+<div id="red-oak" class="oaks">
+    <h3>Red oak</h3>
+    <h4>1 acorn = 1000 forests</h4>
+    <p>Since American colonial times, this tree has been used extensively for lumber and landscaping. It is one of the most common oaks in North America.</p>
+    <button type="button" class="button">Select</button>
+</div>
+
+<div id="bur-oak" class="oaks">
+    <h3>Bur oak</h3>
+    <h4>1 acorn = 1000 forests</h4>
+    <p>Lewis and Clark held council with the Native Americans under the already 150-year-old Council Oak, a famous bur oak in Sioux City, Iowa.</p>    
+        <button type="button" class="button">Select</button>
+
+</div>
+</section>
+
+<footer id="footer">
+    <ul>
+        <li><img src="images/acorntransparent.png"></li>
+        <li class="list-text">Acorns : A Forest Near You : Worldwide</li>
+        <li><a href="mailto: 1000forests@acorns.com">Contact</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Oak">About</a></li>
+        <li><a href="https://www.nytimes.com/interactive/2020/12/02/magazine/tree-communication-mycorrhiza.html">Social Media</a></li>
+    </ul>
+</footer>   
+</html>
+
+     
+    
+
