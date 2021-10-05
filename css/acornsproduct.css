@@ -30,17 +30,23 @@ body {
 }
 
 a {
-  color: white;
+  color: #FDE1AF;
+  text-decoration: none;
 }
 
 a:visited {
-  color: lightyellow;
+  color: blanchedalmond;
+}
+
+a:hover {  
+  color: blanchedalmond;
+  border-bottom: 1px solid blanchedalmond;
 }
 
 /*------ NAV BAR STYLE ------*/
 
 header {
-  background:#8ca479ff;
+  background:rgb(77, 100, 58);
   position: sticky;
   top: 0;
   display: flex;
@@ -103,7 +109,7 @@ ol {
 
 
 .video {
-  background: #526444ff;
+  background: rgb(77, 100, 58);
   padding: 2rem;
   margin-left: 20%;
   margin-right: 20%;
@@ -149,7 +155,7 @@ margin-left: .5rem;
 }
 
 [type='submit'] {
-background: #526444ff;
+background: rgb(77, 100, 58);
 color: #FDE1AF;
 font-weight: 800;
 width: 15%;
@@ -160,7 +166,7 @@ border: none;
 } 
 
 .button {
-  background: #526444ff;
+  background: rgb(77, 100, 58);
   color: #FDE1AF;
   font-weight: 800;
   width: 40%;
@@ -173,7 +179,7 @@ border: none;
 /*------ FOOTER STYLE ------*/
 
 footer {
-  background: #8ca479ff;;
+  background: rgb(77, 100, 58);
   color: #FDE1AF; 
   /*display: flex;*/
   /*flex-direction: row;*/

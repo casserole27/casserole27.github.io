@@ -1,6 +1,4 @@
 
-
-
 /*------GLOBAL STYLES------*/
 
 body {
@@ -127,4 +125,23 @@ hr {
 .projects:hover {
   background-color: #FEF7EB;
 }
+
+/*------MEDIA QUERIES------DARK MODE STYLING
+
+@media (prefers-color-scheme: dark) {
+  .dark-header { background: #11373d; color: white; 
+}
+@media (prefers-color-scheme: dark) {
+  h1 {background-color: darkgray; color: #E56B24; box-shadow: 5px 5px #1A5760;}
+}
+@media (prefers-color-scheme: dark) {
+  .projects-list {background: darkgray;}
+}
+@media (prefers-color-scheme: dark) {
+  .projects {background-color: gray;}
+}
+@media (prefers-color-scheme: dark) {
+  .projects:hover {background-color: #11373d;}
+}
+*/
 
