@@ -18,9 +18,11 @@ body {
 
 h1 {
     font-family: 'Raleway', sans-serif;
+    color: #E56B24;
 }
 
 h2 {
+    color: #E56B24;
     font-size: 25px;
     margin-top: 1.5em;
     margin-bottom: 1.5em;
@@ -37,25 +39,20 @@ p {
 }
 
 a {
-    color: darkgreen;
+    color: blanchedalmond;
     text-decoration: none;
-    font-weight: 800;
+    /*font-weight: 200;*/
 }
 
 a:visited {
-    color: slategray;
-}
-
-a:hover {
-    color: #15424b;
-    border-bottom: solid 1px #15424b;
+    color: rgb(84, 210, 252);
 }
 
 
 /*------ MAIN SECTION STYLE ------*/
 
 .quote {
-    color: darkgreen;
+    color: blanchedalmond;
     margin-top: 2em;
     margin-bottom: 2em;
 }

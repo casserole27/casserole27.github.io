@@ -1,0 +1,213 @@
+/*
+Product Landing CSS
+Author: Cassie Lewis
+clewis.dev
+Date: September 2021
+*/
+
+/*COLOR PALETTE
+--russet: #75381aff;
+--raw-umber: #765f41ff;
+--hunter-green: #526444ff;
+--asparagus: #8ca479ff;
+--morning-blue: #819595ff;
+--silver-sand: #b1bebeff;
+--ash-gray: #b1b6a6ff;
+--platinum: #e2e3ddff;
+--peach: #FDE1AF;
+/*
+
+
+/*------ GLOBAL STYLES ------*/
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #75381aff;
+  background: rgb(109, 50, 1);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+a {
+  color: #FDE1AF;
+  text-decoration: none;
+}
+
+a:visited {
+  color: blanchedalmond;
+}
+
+a:hover {  
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+/*------ NAV BAR STYLE ------*/
+
+header {
+  background:rgb(77, 100, 58);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: solid 3px #765f41ff;
+}
+
+.header-img {
+  display: flex;
+}
+
+ol {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 800;
+  display: flex;
+  margin-right: 3rem;
+}
+
+
+/*------ QUOTE STYLE ------*/
+
+.quote {
+  background: #765f41ff;
+  color: #FDE1AF;
+  margin: 0 20% 0 20%;
+  padding: 2rem;
+}
+
+/*------ OAK FACTS STYLE ------*/
+
+.oak-facts {
+  background: rgb(27, 36, 21);
+  margin: 0 20% 0 20%;
+  padding-top: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+.facts-p {
+  margin-bottom: 3rem;
+}
+
+.facts-img {
+  margin-top: 2rem;
+}
+
+.white-oak {
+  box-shadow: 10px 10px 15px 5px lightgray;
+}
+
+/*------ VIDEO STYLE ------*/
+
+
+.video {
+  background: rgb(27, 36, 21);
+  padding: 2rem;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+
+/*------ OAK TYPE STYLE ------*/
+
+.pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.oaks {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  background: #765f41ff;
+  color: #FDE1AF;
+  padding: 2rem 5rem 2rem 5rem;
+  border: solid 10px;
+}
+
+
+/*------ FORM STYLE ------*/
+
+form {
+  background: rgb(109, 50, 1);
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+/*------- INPUT SUBMIT STYLE ------*/
+
+.email {
+background-color: rgb(27, 36, 21);
+width: 30%;
+padding: .5rem;
+font-family: 'Montserrat', sans-serif;
+border-radius: .5rem;
+margin-left: .5rem;
+}
+
+[type='submit'] {
+background: rgb(77, 100, 58);
+color: #FDE1AF;
+font-weight: 800;
+width: 15%;
+margin: .5rem;
+padding: 1rem;
+font-family: 'Montserrat', sans-serif;
+border: none;
+} 
+
+.button {
+  background: rgb(77, 100, 58);
+  color: #FDE1AF;
+  font-weight: 800;
+  width: 40%;
+  margin: .5rem;
+  padding: .5rem;
+  font-family: 'Montserrat', sans-serif;
+  border: solid 2px #FDE1AF;
+}
+
+/*------ FOOTER STYLE ------*/
+
+footer {
+  background: rgb(77, 100, 58);
+  color: #FDE1AF; 
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*justify-content: space-between;*/
+  line-height: 3rem;
+  font-weight: 800;
+  margin-bottom: 0;
+  padding: 2rem 20% 1rem 20%;
+  }
+
+.list-text {
+  font-size: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+   padding: 0;
+}
+  
+  
+  
+
+
+
+
+    
+

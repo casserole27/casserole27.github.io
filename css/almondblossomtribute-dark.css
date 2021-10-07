@@ -17,13 +17,13 @@ Date: September 2021
 
 /*------ GLOBAL STYLES--------------*/
 
-body {
+body{
     font-family: 'Raleway', sans-serif;
-    background: linear-gradient(rgba(255, 255, 255), rgba(253, 224, 176, 0.3));
-    background-color: #FFFCEB;
+    background-image: linear-gradient(rgb(169, 169, 169), rgba(11, 36, 41));
+    background-color: darkgray;
     margin: 0;
     padding: 0;
-} 
+}
 
 html {
     background-color: transparent !important;
@@ -109,7 +109,6 @@ p {
     margin-top: 0;
     padding: 0;
 }
-
 
 /*------ LINK STYLE--------------*/
 
