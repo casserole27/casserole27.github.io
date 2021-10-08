@@ -29,19 +29,15 @@ a:hover {
 
 
 h1 {
-  background-color: darkgray;
-  color:  #E56B24;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 150px;
-  /*border: solid 3px #647953;*/
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 0;
-  padding: 20px 5px 60px 5px;
-  letter-spacing: 7px;
-  box-shadow: 5px 5px rgb(77, 100, 58);  
-}
+    color:  #E56B24;
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 0;
+    padding: 20px 5px 60px 5px;
+    letter-spacing: 7px;
+    box-shadow: 5px 5px #F0AA7F;
+  }
+
 
 h2 {
   text-align: center;
@@ -124,26 +120,5 @@ hr {
     background-color: #0b2429;
 }
 
-/*------MEDIA QUERIES------DARK MODE STYLING------
 
-@media (prefers-color-scheme: dark) {
-  .dark-header { background: #11373d; color: white;
-}
-
-@media (prefers-color-scheme: dark) {
-  h1 {background-color: darkgray; color: #E56B24; box-shadow: 5px 5px #1A5760;}
-}
-
-@media (prefers-color-scheme: dark) {
-  .projects-list {background: darkgray;}
-}
-
-@media (prefers-color-scheme: dark) {
-  .projects {background-color: gray;}
-}
-
-@media (prefers-color-scheme: dark) {
-  .projects:hover {background-color: #11373d}
-}
-*/
 

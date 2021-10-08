@@ -29,20 +29,13 @@ a:hover {
 }
 
 h1 {
-  background-color: white;
-  /*color: #663484;*/
   color:  #647953;
-  font-weight: bold;
-  border-radius: 50%;
-  width: 150px;
-  /*border: solid 3px #647953;*/
   text-align: center;
   font-size: 3rem;
   margin-bottom: 0;
   padding: 20px 5px 60px 5px;
   letter-spacing: 7px;
   box-shadow: 5px 5px #F0AA7F;
-  
 }
 
 h2 {

@@ -137,11 +137,11 @@ legend {
 
 textarea {
     background: linear-gradient(rgba(134, 61, 2, 0.75), rgba(134, 61, 2, 0.75));
+    max-width: 100%;
+    height: auto;    
     border: solid #9C311C 2px;
     border-radius: .5rem;
     margin: auto;
-    /*box-shadow: 5px 7px 5px #FECA72;*/
-
 }
 
 .label-textarea {
