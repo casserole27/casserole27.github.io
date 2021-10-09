@@ -43,6 +43,14 @@ a:hover {
   border-bottom: 1px solid white;
 }
 
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
 /*------ NAV BAR STYLE ------*/
 
 header {
@@ -183,9 +191,6 @@ border: none;
 footer {
   background: rgb(77, 100, 58);
   color: #FDE1AF; 
-  /*display: flex;*/
-  /*flex-direction: row;*/
-  /*justify-content: space-between;*/
   line-height: 3rem;
   font-weight: 800;
   margin-bottom: 0;

@@ -31,7 +31,7 @@ h1 {
     text-align: center;
     color: #1A5760;
     margin-top: 1em;
-    font-size: 35px;
+    font-size: 2rem;
 }
 
 hr {
@@ -58,7 +58,7 @@ a {
 figcaption {
     text-align: center;
     color: #1A5760;
-    font-size: 15px;
+    font-size: 1rem;
 }
        
 
@@ -67,7 +67,7 @@ figcaption {
 .subtitle {
     text-align: center;
     color: #81544B;
-    font-size: 25px;
+    font-size: 1.5rem;
     margin-top: 7px;
     margin-bottom: 2em;
 }
@@ -78,7 +78,7 @@ figcaption {
 
 p {
     text-align: center;
-    font-size: 15px;
+    font-size: 1rem;
     color: #1A5760;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -91,7 +91,7 @@ p {
 .info-title {
     text-align: center;
     color: #81544B;
-    font-size: 25px;
+    font-size: 1.25rem;
     margin-top: 35px;
 }
 
