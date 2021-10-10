@@ -37,6 +37,32 @@ h1 {
     
 }
 
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+
+p {
+    font-size: 1em;
+    text-align: center;
+    color: #1A5760;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: .625rem;
+    line-height: 2.5rem;
+}
+
+
+a {
+    font-size: 1em;
+}
+
 hr {
     width: 60%;
     color: #81544B;
@@ -75,18 +101,6 @@ figcaption {
 
 .tribute-info {
     text-align: center;
-}
-
-p {
-    text-align: center;
-    /*font-size: 1rem;*/
-    color: #1A5760;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding-bottom: .625rem;
-    line-height: 2.5rem;
 }
 
 .info-title {
