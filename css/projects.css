@@ -12,11 +12,17 @@ body {
 
   h1 {
     color: #E56B24;
+    font-size: 2em;
   } 
+
+  h2 {
+    font-size: 1.5em;
+  }
   
   ul {
     list-style-type: none;
-    padding-left: 0px;
+    font-size: 1.25em;
+    padding-left: 0;
     margin: 0;
   }
   
@@ -25,29 +31,29 @@ body {
   }
   
   a {
+    font-size: 1.25em;
     color: #1A5760;
     text-decoration: none;
   }
   
   a:hover {
     color: #E56B24;
-    border-bottom: solid 1px #E56B24;
+    border-bottom: solid .06rem #E56B24;
   }
 
   
 img {
-    border: solid 1px lightgray;
+    border: solid .06rem lightgray;
   }
 
 /*------ HEADER STYLING ------*/
 
 header {
     background-color: #FEF7EB;
-    box-shadow: 4px 4px 6px 2px lightgray;
-    padding: 25px;
-    /*width: 1000px;*/
+    box-shadow: .25rem .25rem .375rem .125rem lightgray;
+    padding: .25rem;
     margin: 0 auto;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
 }
 
 header {
@@ -58,22 +64,18 @@ header {
 
 .projects-list {
     background-color: #F5F6F4;
-    /*display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 50px;*/
-    width: 1000px;
+    width: 70%;
     border: solid 1px lightgray;
     margin: 0 auto;
-    /*margin-left: 10%;
-    margin-right: 10%;*/
   }
   
   .projects {
     background-color: white;
     text-align: center;
-    padding: 35px;
-    margin-bottom: 30px;
-    box-shadow: 4px 4px 6px 2px lightgray;
+    padding: 2.25rem;
+    margin-bottom: 2.25rem;
+    box-shadow: .25rem .25rem .375rem .125rem lightgray;
+
   }
   
   .projects:hover {

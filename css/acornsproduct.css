@@ -24,12 +24,22 @@ body {
   font-family: 'Raleway', sans-serif;
   color: #75381aff;
   background: #FDE1AF;
+  text-align: center;
   margin: 0;
   padding: 0;
-  text-align: center;
+  
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.25em;
 }
 
 a {
+  font-size: 1.25em;
   color: #FDE1AF;
   text-decoration: none;
 }
@@ -40,15 +50,7 @@ a:visited {
 
 a:hover {  
   color: blanchedalmond;
-  border-bottom: 1px solid blanchedalmond;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-p {
-  font-size: 1rem;
+  border-bottom: .0625rem solid blanchedalmond;
 }
 
 /*------ NAV BAR STYLE ------*/
@@ -62,7 +64,7 @@ header {
   align-items: center;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
-  border-bottom: solid 3px #765f41ff;
+  border-bottom: solid .1875rem #765f41ff;
 }
 
 .header-img {
@@ -76,7 +78,7 @@ ol {
 
 .nav-link {
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.25em;
   font-weight: 800;
   display: flex;
   margin-right: 3rem;
@@ -88,7 +90,7 @@ ol {
 .quote {
   background: #765f41ff;
   color: #FDE1AF;
-  margin: 0 20% 0 20%;
+  margin: 0 15% 0 15%;
   padding: 2rem;
 }
 
@@ -96,13 +98,15 @@ ol {
 
 .oak-facts {
   background: white;
-  margin: 0 20% 0 20%;
+  margin: 0 15% 0 15%;
   padding-top: 1.5rem;
   padding-bottom: 3rem;
 }
 
 .facts-p {
   margin-bottom: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 
 .facts-img {
@@ -110,7 +114,7 @@ ol {
 }
 
 .white-oak {
-  box-shadow: 10px 10px 15px 5px lightgray;
+  box-shadow: .625rem .625rem 1rem .3rem lightgray;
 }
 
 /*------ VIDEO STYLE ------*/
@@ -123,8 +127,8 @@ iframe {
 .video {
   background: rgb(77, 100, 58);
   padding: 2rem;
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 
@@ -144,7 +148,7 @@ iframe {
   background: #765f41ff;
   color: #FDE1AF;
   padding: 2rem 5rem 2rem 5rem;
-  border: solid 10px;
+  border: solid .625rem;
 }
 
 
@@ -180,12 +184,13 @@ border: none;
 .button {
   background: rgb(77, 100, 58);
   color: #FDE1AF;
+  font-size: 1.25em;
   font-weight: 800;
   width: 40%;
   margin: .5rem;
   padding: .5rem;
   font-family: 'Montserrat', sans-serif;
-  border: solid 2px #FDE1AF;
+  border: solid .125rem #FDE1AF;
 }
 
 /*------ FOOTER STYLE ------*/

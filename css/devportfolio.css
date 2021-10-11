@@ -8,57 +8,58 @@ body {
   padding: 0;
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0px;
-  margin: 0;
+h1 {
+  color:  #647953;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0;
+  padding: 1.25rem .3rem 3.75rem .3rem;
+  letter-spacing: .4rem;
+  box-shadow: .3rem .3rem #F0AA7F;
 }
 
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: -4.5rem;
+  margin-bottom: 3.75rem;
+  letter-spacing: .18rem;
+}
+
+
 p {
-  font-size: 1.25rem;
+  font-size: 1.25em;
 }
 
 a {
+  font-size: 1.25em;
   color: #1A5760;
   text-decoration: none;
 }
 
 a:hover {
   color: #E56B24;
-  border-bottom: solid 1px #E56B24;
+  border-bottom: solid .016rem #E56B24;
 }
 
-h1 {
-  color:  #647953;
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 0;
-  padding: 20px 5px 60px 5px;
-  letter-spacing: 7px;
-  box-shadow: 5px 5px #F0AA7F;
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
-
-h2 {
-  text-align: center;
-  font-size: 1.5rem;
-  margin-top: -70px;
-  margin-bottom: 60px;
-  letter-spacing: 3px;
-}
-
 
 img {
-  border: solid 1px lightgray;
+  border: solid .016rem lightgray;
 }
 
 li {
-  letter-spacing: 2px;
+  letter-spacing: .125rem;
 }
 
 hr {
   color: #1A5760;
-  margin-top: 30px;
-  width: 200px;
+  margin-top: 1.875rem;
+  width: 20%;
 }
 
 
@@ -69,32 +70,26 @@ hr {
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 15%;
     height: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
-    /*border-right: solid;*/
     text-align: left;
     display: flex;
     flex-direction: column;
-    box-shadow: 4px 4px 6px 2px lightgray;
+    box-shadow: .25rem .25rem .375rem .125rem lightgray;
         
 }
 
 .copyright {
-  font-size: .75rem;
   text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .nav {
   text-align: center;
-  padding-bottom: 30px;
-}
-
-.outline {
-  font-size: 1.25rem;
+  padding-bottom: 1.875rem;
 }
 
 /*------ PROJECTS ------*/
@@ -104,20 +99,20 @@ hr {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-left: 300px;
+  margin-left: 20%;
 }
 
 .projects {
   background-color: white;
   text-align: center;
-  margin: 25px 25px;
-  padding: 25px;
-  box-shadow: 4px 4px 6px 2px lightgray;
+  margin: 1.5rem 1.5rem;
+  padding: 1.5rem;
+  box-shadow: .25rem .25rem .375rem .125rem lightgray;
 }
 
 .projects:hover {
   background-color: #FEF7EB;
-}
+} 
 
 /*------MEDIA QUERIES------DARK MODE STYLING------
 

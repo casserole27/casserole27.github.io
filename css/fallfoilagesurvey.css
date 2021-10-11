@@ -31,7 +31,7 @@ body {
 h1 {
     background: #FED286;
     color: #9C311C;
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 800;
     margin: 0;
     padding-top: 1.5rem;
@@ -41,7 +41,7 @@ h1 {
 .description {
     background: #FED286;
     color: #9C311C;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     text-align: center;
     margin: 0;
     padding-bottom: 2rem;
@@ -49,11 +49,11 @@ h1 {
 
 p {
     color: #522414;
-    font-size: 1.25rem;
-    text-align: left;
-    margin: 35px 0 25px 0;
-    padding-left: 2rem;
+    font-size: 1.25em;
     font-weight: bold;    
+    text-align: left;
+    margin: 2.25rem 0 1.5rem 0;
+    padding-left: 2rem;
 }
 
 hr {
@@ -74,7 +74,7 @@ form {
 
 label {
     color: #522414;
-    font-size: 1.25rem;
+    font-size: 1.25em;
     display: flex;
     padding-left: 2rem;
     margin-top: .5rem;
@@ -121,10 +121,10 @@ fieldset {
 
 legend {
     color: #522414;
-    font-size: 1.25rem;
+    font-size: 1.25em;
     text-align: left;
-    margin-top: 20px;
-    margin-bottom: 5px;
+    margin-top: 1.25rem;
+    margin-bottom: .3rem;
     padding-left: 2rem;
     font-weight: bold;    
 }
@@ -132,11 +132,11 @@ legend {
 /*------ TEXTAREA STYLE ------*/
 
 textarea {
-    font-size: 1rem;
     background: linear-gradient(rgba(255, 247, 235), rgba(255, 214, 153));
     max-width: 100%;
     height: auto;
-    border: solid #9C311C 2px;
+    font-size: 1em;
+    border: solid #9C311C .125rem;
     border-radius: .5rem;
     margin: auto;
 }
@@ -147,7 +147,7 @@ textarea {
     display: flex;
     justify-content: center;
     padding-left: 0;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
 }
 
 /*------BUTTON STYLE ------*/
@@ -156,7 +156,7 @@ button {
     background-color: #9C311C;
     color: #FECA72;
     font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
+    font-size: 1.25em;
     text-transform: uppercase;
     letter-spacing: .25rem;
     font-weight: bold;

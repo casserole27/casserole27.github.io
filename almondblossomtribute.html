@@ -18,41 +18,37 @@
     Date: September 2021
  -->
 
-<!--<style>
-	/* Base (light mode) styles */
-
-	@media screen and (prefers-color-scheme: dark) {
-		/* Dark mode styles */
-	}
-</style>-->
+<!--style>
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+</style>   --> 
 
 <style>
-@media screen and (max-width: 1000px) {
-    p {
-        margin-left: 10%;
-        margin-right: 10%;
+    @media screen and (max-width: 1000px) {
+        h1 {
+            font-size: 2.5em;
+        }
+    
+        h2 {
+            font-size: 2em;
+        }
+    
+        h3 {
+            font-size: 1.75em
+        }
+            
+        p {
+            font-size: 1.5em;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
     }
-}
 </style>
 
-<!--
-    My tribute page should have an element with a corresponding id="main", which contains all other elements.
--->
 <main id="main">
 
-<!--
-    I should see an element with a corresponding id="title", which contains a string (i.e. text) 
-    that describes the subject of the tribute page (e.g. "Dr. Norman Borlaug").
--->
 <h1 id="title">Vincent Van Gogh's Almond Blossom</h1>
-<h2 id="subtitle" class="subtitle">oil painting on canvas, 73.3 cm x 92.4 cm</h2>
 
-<!--
-    I should see a div element with a corresponding id="img-div".
-    Within the img-div element, I should see an img element with a corresponding id="image".
-    Within the img-div element, I should see an element with a corresponding id="img-caption" 
-    that contains textual content describing the image shown in img-div.
--->
+<h2 id="subtitle" class="subtitle">oil painting on canvas, 73.3 cm x 92.4 cm</h2>
 
 <div id="img-div">
     <figure>
@@ -65,43 +61,39 @@
 
 <hr>
 
-<!--
-    I should see an element with a corresponding id="tribute-info", 
-    which contains textual content describing the subject of the tribute page.
--->
 <article id="tribute-info" class="tribute-info">
-<h2 id="info-title" class="info-title">Vincent van Gogh (1853 - 1890)</h2>
-<img src="images/almondblossom.png" class="blossom-drawing" width="75" height="33" alt=""> 
-<p class="info-subtitle-1"><strong>Saint-Rémy-de-Provence, February 1890</strong></p>
-<p class="info-subtitle-2"><strong>Van Gogh Museum, Amsterdam (Vincent van Gogh Foundation)</strong></p>
-<p><strong>Almond trees flowering early in the spring marks one of this season's many symbols of new life. Van Gogh loved nature, and this was one of 
+
+    <h2 id="info-title" class="info-title">Vincent van Gogh (1853 - 1890)</h2>
+
+    <img src="images/almondblossom.png" class="blossom-drawing" width="75" height="33" alt=""> 
+
+    <h3 class="info-subtitle-1"><strong>Saint-Rémy-de-Provence, February 1890</strong></h3>
+
+    <h3 class="info-subtitle-2"><strong>Van Gogh Museum, Amsterdam (Vincent van Gogh Foundation)</strong></h3>
+
+    <p><strong>Almond trees flowering early in the spring marks one of this season's many symbols of new life. Van Gogh loved nature, and this was one of 
     his favorite subjects. He frequently painted the blossom branches against a blue sky.</strong></p> 
-<img src="images/almondblossom.png" class="blossom-drawing" width="75" height="33" alt="">  
-<p><strong>The painting was a gift for his brother Theo and sister-in-law Jo, who had just had a baby. Their son, Vincent Willem 
+
+    <img src="images/almondblossom.png" class="blossom-drawing" width="75" height="33" alt="">  
+
+    <p><strong>The painting was a gift for his brother Theo and sister-in-law Jo, who had just had a baby. Their son, Vincent Willem 
     went on to found the Van Gogh Museum. The painting is one of the most treasured of the family, and has never been sold. 
     It stays in the Van Gogh museum to this day.</strong></p>
-<img src="images/almondblossom.png" class="blossom-drawing" width="75" height="33" alt="">  
-<p><strong>Painting the branches close-up, and from below, Vincent Van Gogh chose an unusual perspective. It looks as if you are lying
+
+    <img src="images/almondblossom.png" class="blossom-drawing" width="75" height="33" alt="">  
+
+    <p><strong>Painting the branches close-up, and from below, Vincent Van Gogh chose an unusual perspective. It looks as if you are lying
     on the grass looking at the branches above you. Van Gogh drew this inspiration from Japanese printmaking, as well as
     the bold outlines and the positioning.</strong></p>    
-<img src="images/almondblossom.png" class="blossom-drawing" width="75" height="33" alt=""> 
-</article>
 
-<!--
-    I should see an a element with a corresponding id="tribute-link", 
-    which links to an outside site that contains additional information about the subject of the tribute page. 
-    HINT: You must give your element an attribute of target and set it to _blank in order for your link to open in a new tab 
-    (i.e. target="_blank").
--->
+    <img src="images/almondblossom.png" class="blossom-drawing" width="75" height="33" alt=""> 
+
+</article>
 
 <a href="https://www.vangoghmuseum.nl/en/collection/s0176v1962" id="tribute-link" class="infolink" target="_blank">
     Additional information about the Almond Blossom painting</a>
 
 <hr>
 
-    <!-- 
-    The img element should responsively resize, relative to the width of its parent element, without exceeding its original size.
-    The img element should be centered within its parent element.
--->
 </main>
 </html>

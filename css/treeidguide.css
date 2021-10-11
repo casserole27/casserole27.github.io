@@ -10,35 +10,38 @@ Date: September 2021
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
-    margin-left: 400px;
+    margin-left: 25%;
     margin-right: 100px;
     padding: 0;
     line-height: 2;
 }
 
 h1 {
+    font-size: 1.5em;
     font-family: 'Raleway', sans-serif;
 }
 
 h2 {
-    font-size: 25px;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    padding-top: 1em;
-    border-top: solid 2px;
+    font-size: 1.5em;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding-top: 1rem;
+    border-top: solid .125rem;
 }
 
 img {
-    box-shadow: 4px 4px 6px 2px lightgray;
+    box-shadow: .25rem .25rem .375rem .125rem lightgray;
 }
 
 p {
-    margin-bottom: 1em;
+    font-size: 1.25em;
+    margin-bottom: 1rem;
 }
 
 a {
     color: darkgreen;
     text-decoration: none;
+    font-size: 1.25em;
     font-weight: 800;
 }
 
@@ -48,7 +51,7 @@ a:visited {
 
 a:hover {
     color: #15424b;
-    border-bottom: solid 1px #15424b;
+    border-bottom: solid .05rem #15424b;
 }
 
 
@@ -56,12 +59,12 @@ a:hover {
 
 .quote {
     color: darkgreen;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .biodiversity-link {
-    font-size: 12px;
+    font-size: .75em;
 }
 
 /*------ NAVBAR STYLE ------*/
@@ -71,10 +74,10 @@ a:hover {
     position: fixed;
     top: 0;
     left: 0;
-    width: 250px;
+    width: 20%;
     height: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
     border-right: solid;
     overflow-y: scroll;
     text-align: left;
@@ -86,13 +89,13 @@ a:hover {
     text-align: center;
     font-weight: bolder;
     border: none;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-top: .25em;
-    margin-bottom: .5em;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    margin-top: .25rem;
+    margin-bottom: 2rem;
 }
 
 .nav-link {
-    margin: 1.5rem;
+    margin: .5rem 1rem 2rem 1rem; 
 }
 

@@ -13,8 +13,6 @@ Date: September 2021
 --ivory: #fffcebff;*/
 
 
-
-
 /*------ GLOBAL STYLES--------------*/
 
 body {
@@ -61,6 +59,11 @@ p {
 
 a {
     font-size: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 hr {
