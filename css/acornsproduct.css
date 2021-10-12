@@ -201,8 +201,8 @@ footer {
   line-height: 3rem;
   font-weight: 800;
   margin-bottom: 0;
-  padding: 2rem 20% 1rem 20%;
-  }
+  padding: 2rem 10% 1rem 10%;
+   }
 
 .list-text {
   font-size: 1.5em;
@@ -211,8 +211,8 @@ footer {
 ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-around;
-   padding: 0;
+  justify-content: space-evenly;
+  padding: 0;
 }
   
   
