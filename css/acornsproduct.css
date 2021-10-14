@@ -136,14 +136,9 @@ iframe {
 
 .pricing {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .oaks {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
   width: calc(100% / 3);
   background: #765f41ff;
   color: #FDE1AF;
@@ -201,17 +196,19 @@ footer {
   line-height: 3rem;
   font-weight: 800;
   margin-bottom: 0;
-  padding: 2rem 10% 1rem 10%;
-   }
+  padding: 2rem 15% 1rem 15%;
+}
 
 .list-text {
   font-size: 1.5em;
+  padding-right: 3rem;
+  margin-left: -3rem;
 }
 
 ul {
   list-style-type: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 0;
 }
   
