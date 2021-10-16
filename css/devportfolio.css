@@ -7,8 +7,8 @@ body {
 
 main {
   display: grid;
-  grid-template-rows: 6.25rem 1rem 1rem 1rem 1rem 3fr; 
-  grid-template-columns: auto 18.75rem 18.75rem 18.75rem 18.75rem 18.75rem 18.75rem;
+  grid-template-rows: 150px 1rem 1rem 1rem 1rem 3fr; 
+  grid-template-columns: 150px 18.75rem 18.75rem 18.75rem 18.75rem 18.75rem 18.75rem auto; 
   /*max-width: 400px;*/
   text-transform: uppercase;
   
@@ -40,14 +40,24 @@ h2 {
   /*padding: 1.5rem;*/
 }
 
+h3 {
+  font-size: 3em;
+  font-weight: 800;
+  color: darkorange;
+  grid-row: 6/9;
+  grid-column: 7;
+  writing-mode: vertical-rl;
+  margin: 0;
+}
+
 nav {
   font-size: 1.5em;
   font-weight: 800;
   grid-row: 1;
-  grid-column: 3/6;
+  grid-column: 3/8;
   align-self: center;
   padding-left: 5rem;
-  /*padding-right: 5rem;*/
+  padding-right: 3rem;
 }
 
 ul {
@@ -122,6 +132,11 @@ a:hover {
   margin-left: -1rem;
   
 }
+
+
+
+
+
 
 /*======ORIGINAL CSS======*/
 /*------GLOBAL STYLES------
