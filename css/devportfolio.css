@@ -72,28 +72,21 @@ ul {
 .tribute {
   grid-row: 2;
   grid-column: 2/4;
-  /*transform: rotate(-15deg);*/
 }
 
 .survey {
   grid-row: 3;
   grid-column: 3/5;
-  /*transform: rotate(-15deg);*/
-
 }
 
 .techdoc {
   grid-row: 4;
   grid-column: 4/6;
-  /*transform: rotate(-15deg);*/
-
 }
 
 .product {
   grid-row: 5;
   grid-column: 5/7;
-  /*transform: rotate(-15deg);*/
-
 }
 
 img {
@@ -104,7 +97,6 @@ img {
   box-shadow: -.5rem .5rem .375rem .125rem darkgray;
   max-width: 100%;
   height: auto;
-  transform: rotate(-15deg);
 }
 
 p {
@@ -116,7 +108,6 @@ p {
   font-weight: 800;
   border: solid .08rem darkslategray;
   box-shadow: -.5rem .5rem .375rem .125rem darkgray;
-  transform: rotate(-15deg);
 }
 
 a {
