@@ -1,3 +1,6 @@
+/*-----DESIGN FOR 1920PX X 1080PX ------*/
+
+
 
 body {
   font-family: 'Mukta', sans-serif;
@@ -8,7 +11,7 @@ body {
 main {
   display: grid;
   grid-template-rows: 150px 1rem 1rem 1rem 1rem 3fr; 
-  grid-template-columns: 150px 20.5rem 20.55rem 20.5rem 20.5rem 20.5rem 20.5rem 100px; 
+  grid-template-columns: 150px 20.5rem 20.55rem 20.5rem 20.5rem 20.5rem 100px; 
   /*max-width: 400px;*/
   text-transform: uppercase;
   
@@ -36,8 +39,7 @@ h2 {
   margin-top: 2rem;
   margin-left: 0;
   margin-right: 0;
-  /*border-left: solid 50px teal;*/
-  /*padding: 1.5rem;*/
+  z-index: 2;
 }
 
 h3 {
@@ -102,6 +104,7 @@ img {
   box-shadow: -.5rem .5rem .375rem .125rem darkgray;
   max-width: 100%;
   height: auto;
+  transform: rotate(-15deg);
 }
 
 p {
@@ -113,7 +116,7 @@ p {
   font-weight: 800;
   border: solid .08rem darkslategray;
   box-shadow: -.5rem .5rem .375rem .125rem darkgray;
-
+  transform: rotate(-15deg);
 }
 
 a {
@@ -131,7 +134,7 @@ a:hover {
   border-top: solid 15px darkorange;
   margin-top: -1.5rem;
   margin-left: -1rem;
-  
+  z-index: 2;
 }
 
 
