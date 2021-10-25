@@ -1,5 +1,160 @@
+/*------TRIAL 3------*/
 /*-----DESIGN FOR 1920PX X 1080PX ------*/
 
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Mukta', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 150px repeat(5, 300px) 250px;
+  /*grid-template-rows: 150px 600px;*/
+  text-transform: uppercase;
+ 
+}
+
+h1 {
+  color: darkorange;
+  font-size: 5em;
+  font-weight: 800;
+  grid-row: 1;
+  grid-column: 2/3;
+  margin: 0;
+  align-self: center;
+}
+
+h2 {
+  color: darkorange;
+  font-size: 5em;
+  font-weight: 800;
+  writing-mode: vertical-lr;
+  grid-row: 1/7;
+  grid-column: 1;
+  justify-self: start;
+  margin-top: 2rem;
+  margin-left: 0;
+  margin-right: 0;
+  z-index: 2;
+}
+
+nav {
+  font-size: 1.5em;
+  font-weight: 800;
+  grid-row: 1;
+  grid-column: 4/ span 4;
+  align-self: center;
+  padding-left: 5rem;
+  padding-right: 3rem;
+  z-index: 3;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ol {
+  background-color: rgba(255, 140, 0, 0.61);
+  list-style-type: none;
+  text-transform: lowercase;
+  font-size: 1.25em;
+  font-weight: 800;
+  color: darkslategray;
+  grid-row: 2;
+  grid-column: 7;
+  margin: 0;
+  padding: 2rem;
+}
+
+.info {
+  margin-bottom: 1rem;
+}
+
+.tribute {
+  grid-row: 2;
+  grid-column: 2/ span 2;
+}
+
+.survey {
+  grid-row: 2;
+  grid-column: 3/ span 2;
+  margin-top: 1.5rem;
+}
+
+.techdoc {
+  grid-row: 2;
+  grid-column: 4/ span 2;
+  margin-top: 3rem;
+}
+
+.product {
+  grid-row: 2;
+  grid-column: 5/ span 2;
+  margin-top: 4.5rem;
+}
+
+/*div {
+  width: 100%;
+}*/
+
+img {
+  display: inline-block;
+  background-color: white;
+  border: solid .06rem darkgray;
+  padding: 2rem;
+  box-shadow: -.5rem .5rem .375rem .125rem darkgray;
+  width: 100%;
+  height: auto;
+}
+
+img:hover {
+  background-color: rgb(255, 242, 224);
+}
+
+p {
+  width: 100%;
+  margin: 0;
+  padding: .5rem;
+  background-color: lightgray;
+  color: darkslategray;
+  font-size: 1.5em;
+  font-weight: 800;
+  border: solid .08rem darkslategray;
+  box-shadow: -.5rem .5rem .375rem .125rem darkgray;
+}
+
+a {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkorange;
+  border-bottom: solid .06rem darkorange;
+}
+
+.decoration {
+  grid-row: 1;
+  grid-column: 3/ span 5;
+  border-bottom: solid 15px darkorange;
+  margin-bottom: 1rem;
+  margin-left: 10rem;
+  /*margin-top: -1.5rem;*/
+  /*margin-left: -1rem;*/
+  z-index: 2;
+}
+
+
+/*------TRIAL #2, GOOD DESIGN BUT NOT RESPONSIVE------
 
 
 body {
@@ -12,7 +167,6 @@ main {
   display: grid;
   grid-template-rows: 150px 1rem 1rem 1rem 1rem 3fr; 
   grid-template-columns: 150px 20.5rem 20.55rem 20.5rem 20.5rem 20.5rem 100px; 
-  /*max-width: 400px;*/
   text-transform: uppercase;
   
 
@@ -22,7 +176,6 @@ h1 {
   color: darkorange;
   font-size: 5em;
   font-weight: 800;
-  /*letter-spacing: 1rem;*/
   grid-column: 2/3;
   margin: 0;
   align-self: center;
@@ -32,7 +185,6 @@ h2 {
   color: darkorange;
   font-size: 5em;
   font-weight: 800;
-  /*letter-spacing: .5rem;*/
   writing-mode: vertical-lr;
   grid-row: 1/9;
   justify-self: start;
@@ -127,6 +279,159 @@ a:hover {
   margin-left: -1rem;
   z-index: 2;
 }
+*/
+
+
+/*======ORIGINAL CSS======*/
+/*------GLOBAL STYLES------
+
+body {
+  font-family: 'Mukta', sans-serif;
+  color: #1A5760;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color:  #647953;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0;
+  padding: 1.25rem .3rem 3.75rem .3rem;
+  letter-spacing: .4rem;
+  box-shadow: .3rem .3rem #F0AA7F;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: -4.5rem;
+  margin-bottom: 3.75rem;
+  letter-spacing: .18rem;
+}
+
+
+p {
+  font-size: 1.25em;
+}
+
+a {
+  font-size: 1em;
+  color: #1A5760;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E56B24;
+  border-bottom: solid .016rem #E56B24;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+img {
+  border: solid .016rem lightgray;
+}
+
+li {
+  letter-spacing: .125rem;
+}
+
+hr {
+  color: #1A5760;
+  margin-top: 1.875rem;
+  width: 20%;
+}
+
+
+/*------ NAVBAR STYLE ------
+
+.navbar {
+  background-color: #FEF7EB;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    box-shadow: .25rem .25rem .375rem .125rem lightgray;
+        
+}
+
+.copyright {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.nav {
+  text-align: center;
+  padding-bottom: 1.875rem;
+}
+
+.outline {
+  font-size: 1.25em;
+}
+
+/*------ PROJECTS ------
+
+.projects-list {
+  background-color: #F5F6F4;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 300px;
+}
+
+.projects {
+  background-color: white;
+  text-align: center;
+  margin: 1.5rem 1.5rem;
+  padding: 1.5rem;
+  box-shadow: .25rem .25rem .375rem .125rem lightgray;
+}
+
+.projects:hover {
+  background-color: #FEF7EB;
+} 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
