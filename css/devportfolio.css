@@ -63,7 +63,7 @@ ul {
 }
 
 ol {
-  background-color: rgba(255, 140, 0, 0.61);
+  background-color: rgb(255, 187, 103);
   list-style-type: none;
   text-transform: lowercase;
   font-size: 1.25em;
