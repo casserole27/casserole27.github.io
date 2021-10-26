@@ -28,8 +28,38 @@
     }
 
     @media screen and (max-width: 1200px) {
-  
-   main {
+        main {
+        transform: rotate(90deg);
+        }
+
+        .tribute, .survey, .techdoc, .product, ol {
+            transform: rotate(-90deg);
+            margin: 0;
+            
+        }
+
+        .nav {
+            transform: rotate(-90deg);
+            
+        }
+
+        nav {
+            padding: 0;
+            grid-column: 3;
+            margin-left: 5rem;
+        }
+
+
+        h2 {
+            transform: rotate(180deg);
+        }
+
+        
+
+       
+     }
+
+   /*main {
         grid-template-columns: 75px repeat(3, 1fr);
     }
 
@@ -86,7 +116,7 @@
         margin-top: 3rem;
         display: grid;
         
-    }
+    }*/
  
   
 }
