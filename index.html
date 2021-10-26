@@ -32,10 +32,15 @@
         transform: rotate(90deg);
         }
 
-        .tribute, .survey, .techdoc, .product, ol {
+        .tribute, .survey, .techdoc, .product {
             transform: rotate(-90deg);
             margin: 0;
-            
+        }
+
+        ol {
+           transform: rotate(-90deg);
+           grid-column: 6;
+            margin: 0;
         }
 
         .nav {
@@ -49,10 +54,14 @@
             margin-left: 5rem;
         }
 
+        .decoration {
+            grid-column: 4 / span 2;
 
-        h2 {
-            transform: rotate(180deg);
         }
+
+        /*h2 {
+            transform: rotate(180deg);
+        }*/
 
         
 
