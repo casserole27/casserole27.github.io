@@ -16,14 +16,14 @@
 <!-- 
     Product Landing HTML
     Author: Cassie Lewis
-    clewis.dev
+    clewisdev.com
     Date: September 2021
  -->
 
 
-  <!--<style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-</style> -->
+<!----> <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+    </style> -->
 
 <style>
 
@@ -74,14 +74,6 @@
 }   
 </style>
 
-<!--  
-    My product landing page should have a header element with a corresponding id="header".
-    I can see an image within the header element with a corresponding id="header-img". A company logo would make a good image here.
-    Within the #header element I can see a nav element with a corresponding id="nav-bar".
-    I can see at least three clickable elements inside the nav element, each with the class nav-link.
-    When I click a .nav-link button in the nav element, I am taken to the corresponding section of the landing page.
--->
-
 <main id="main">
 
 <header id="header">
@@ -112,9 +104,6 @@
 <img src="/images/whiteoakmed.jpg" alt="illustration of white oak tree leaf and acorn" class="white-oak">
 </section>
 
-<!--  
-     I can watch an embedded product video with id="video".
--->
 <!--<embed id="video" type="video/mp4" src="https://youtu.be/CS2toXyZAy0">-->
 
 <section id="video-section" class="video">    
@@ -123,25 +112,6 @@
     allowfullscreen></iframe>    
 </section>    
 
-<!--  
-    The navbar should always be at the top of the viewport.
--->
-
-<!--  
-    My product landing page should have at least one media query.
--->
-
-<!--  
-    My product landing page should utilize CSS flexbox at least once.
--->
-
-<!--  
-    My landing page has a form element with a corresponding id="form".
-    Within the form, there is an input field with id="email" where I can enter an email address.
-    The #email input field should have placeholder text to let the user know what the field is for.
-    The #email input field uses HTML5 validation to confirm that the entered text is an email address.
--->
-
 <form id="form">
 
     <h2>1000 forests can be yours, just plant the seed.</h2>
@@ -149,15 +119,7 @@
     <label for="email">Email</label>
     <input id="email" type="email" class="email" placeholder="Enter your email address" required>
     
-    <!--  
-        Within the form, there is a submit input with a corresponding id="submit".
-        When I click the #submit element, 
-        the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit).
-    -->
-    
-    <!--<button id="submit" type="submit" form="form">Submit</button>-->
     <input type="submit" id="submit" value="Send Request" formaction="https://www.freecodecamp.com/email-submit">
-    <!-- Does the action/URL go in the form tag or somewhere in the input? formaction overrides action in <form>-->
 
 </form>
 

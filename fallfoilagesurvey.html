@@ -45,66 +45,24 @@
     }
 
 }
-
 </style>
-
-<!--
-      I can see a title with id="title" in H1 sized text.
--->
 
 <h1 id="title"><strong>Midwestern United States Fall Foilage Survey</strong></h1>
 
-<!-- 
-    I can see a short explanation with id="description" in P sized text.
--->
-
 <p id="description" class="description">Thank you for helping us weigh in on our region's fall beauty.</p>
 
-<!--
-    I can see a form with id="survey-form".
--->
-
 <form id="survey-form">
-
-<!-- 
-    Inside the form element, I am required to enter my name in a field with id="name".
--->
 
 <div id="text-inputs">
 <label id="name-label" class="input-label" for="name">Name</label>
 <input id="name" class= "input-box" type="text" placeholder="Enter your name">
 
-<!--  
-    Inside the form element, I am required to enter an email in a field with id="email".
-    If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
--->
-
 <label id="email-label" class="input-label" for="email">Email</label>
-<input id="email" class= "input-box" type="email" placeholder="email@email.com" required>
-
-<!--  
-    Inside the form, I can enter a number in a field with id="number".
-    If I enter non-numbers in the number input, I will see an HTML5 validation error.
-    If I enter numbers outside the range of the number input, 
-    which are defined by the min and max attributes, I will see an HTML5 validation error.
--->
+<input id="email" class= "input-box" type="email" placeholder="treebeard@email.com" required>
 
 <label id="number-label" class="input-label" for="number">Age (optional)</label>
-<input id="number" class= "input-box" type="number" min="18" max="2000" placeholder="Enter your age">
+<input id="number" class= "input-box" type="number" min="18" max="120" placeholder="Enter your age">
 </div>
-
-<!-- 
-    For the name, email, and number input fields inside the form I can see corresponding labels 
-    that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
--->
-<!--  
-     For the name, email, and number input fields, 
-     I can see placeholder text that gives me a description or instructions for each field.
--->
-
-<!--  
-    Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
--->
 
 <div id="dropdown-input">
 <label id="dropdown-label" class="input-label" for="dropdown-choice">Please choose the tree that makes the best fall foilage:</label>
@@ -121,10 +79,6 @@
 </datalist>
 </div>
 
-<!--  
-    Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
--->
-
 <hr>
 
 <div id="checkbox-inputs">
@@ -137,11 +91,6 @@
     </div>
 
 
-<!--  
-    Inside the form element, I can select a field from one or more groups of radio buttons. 
-    Each group should be grouped using the name attribute.
--->
-
 <div id="radio-inputs">
 <fieldset>    
 <legend class="p-labels">Would you recommend jumping into leaf piles?</legend>
@@ -151,10 +100,6 @@
 </fieldset>
 </div>
 
-<!-- 
-    Inside the form element, I am presented with a textarea at the end for additional comments.
- -->
-
 <hr>
 
 <div id="textarea-input">
@@ -163,10 +108,6 @@
 "I think that I shall never see a poem lovely as a tree..." - Joyce Kilmer
 </textarea>
 </div>
-
-<!--  
-    Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
--->
 
 <button id="submit">Submit</button>
 
