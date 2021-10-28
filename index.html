@@ -19,115 +19,63 @@
 </style> -->
 
 <style>
-   @media screen and (min-width: 1500px) {
-        div {
-            transform: rotate(-15deg);
-            margin-left: 3rem;
-        }
-
-    }
-
-    @media screen and (max-width: 1200px) {
-        main {
-        transform: rotate(90deg);
-        }
-
-        .tribute, .survey, .techdoc, .product {
-            transform: rotate(-110deg);
-            margin: 0;
-        }
-
-        ol {
-           transform: rotate(-90deg);
-           font-size: 1.5em;
-           grid-column: 4;
-           margin-top: 20rem;
-        }
-
-        .nav {
-            transform: rotate(-90deg);
-        }
-
-        nav {
-            font-size: 2em;
-            padding: 0;
-            grid-column: 3;
-            margin-left: 15rem;
-        }
-
-       .decoration {
-            grid-column: 5;
-            transform: rotate(90deg);
-        }
-
-        h2 {
-           opacity: 0;
-        }
-  
-    }
-
-   /*main {
-        grid-template-columns: 75px repeat(3, 1fr);
-    }
-
-    h1, h2 {
-        font-size: 2.5em;
-    }
-
-   
-    nav {
-        grid-column: 2 / span 3;
-        grid-row: 2;
-        padding: 0;
-    }
-
-    .decoration {
-        grid-row: 3;
-        grid-column: 2 / span 3;
-    }
-
-    .tribute {
-        grid-row: 4 / span 2;
-        grid-column: 2 / span 2;
-    }
-
-    .survey {
-        grid-row: 4 / span 2;
-        grid-column: 3 / span 2;
-        margin-top: 4rem;
-        margin-left: -2rem;
-    }
-
-    .techdoc {
-        grid-row: 5 / span 2;
-        grid-column: 2 / span 2;
-        margin-left: -3rem;
-    }
-
-    .product {
-        grid-row: 5 / span 2;
-        grid-column: 3 / span 2;
-        margin-top: 8rem;
-        margin-left: 2rem;
-    }
-
-    p {
-        font-size: 1.5em;
-    }
-
-    ol {
-        font-size: 1.5em;
-        background-color: darkorange;
-        grid-row: 6 / span 2;
-        grid-column: 1 / span 3;
-        margin-top: 3rem;
+@media screen and (max-width: 1200px) {
+    section {
         display: grid;
-        
-    }*/
- 
-  
-}
+        grid-template-columns: 1fr;
+    }
+       .tribute {
+            grid-row: 1;
+            grid-column: 1;
+        }
+
+        .survey {
+            grid-row: 2;
+            grid-column: 1;
+            margin-top: -20rem;
+        }
+
+        .techdoc {
+            grid-row: 3;
+            grid-column: 1;
+            margin-top: -20rem;
+
+        }
+
+        .product {
+            grid-row: 4;
+            grid-column: 1;
+            margin-top: -20rem;
+
+        }
+
+    nav {
+        margin-right: 0;
+    }    
+}   
 </style>
+
+<!--User Story #1: My portfolio should have a welcome section with an id of welcome-section. X
+
+User Story #2: The welcome section should have an h1 element that contains text. X
+
+User Story #3: My portfolio should have a projects section with an id of projects. X
+
+User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project. X
+
+User Story #5: The projects section should contain at least one link to a project. X
+
+User Story #6: My portfolio should have a navbar with an id of navbar. X
+
+User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page. X
+
+User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab. X
+
+User Story #9: My portfolio should have at least one media query. X
+
+User Story #10: The height of the welcome section should be equal to the height of the viewport. ?
+
+User Story #11: The navbar should always be at the top of the viewport. X -->
 
 
 <main id="main">
@@ -135,42 +83,33 @@
     <h1 id="logo" class="logo">c.lewis</h1>
     <h2 id="subtitle" class="subtitle">web developer</h2>
     
-    <nav id="navigation">
+    <nav id="navbar">
     <ul>        
-        <li class="nav"><a href="#" target="_blank" class="outline">about</a></li>
-        <li class="nav"><a href="/projects.html" target="_blank" class="outline">projects</a></li>
-        <li class="nav"><a href="/resume.html" target="_blank" class="outline">resume</a></li>
-        <li class="nav"><a href="mailto:casserole.lewis@gmail.com" target="_blank" class="outline">contact</a></li>
-        <li class="nav"><a href="https://www.linkedin.com/in/clewisdev" target="_blank"><em class="fab fa-linkedin fa-2x"></em></a>
+        <li class="nav"><a href="#" target="_blank" id="about" class="outline">about</a></li>
+        <li class="nav"><a href="/projects.html" target="_blank" id="projectsnav" class="outline">projects</a></li>
+        <li class="nav"><a href="https://github.com/casserole27" target="_blank" id="profile-link" class="outline"><em class="fab fa-github-alt fa-2x"></em></a></li>
+        <li class="nav"><a href="https://www.linkedin.com/in/clewisdev" target="_blank" id="linkedin-link"><em class="fab fa-linkedin fa-2x"></em></a></li>
     </ul>
     </nav>
 
-    <b class="decoration"></b>
-
-    <div class="tribute">
-    <a href="almondblossomtribute.html" target="_blank"><p><strong>tribute page</strong></p>
+   <section id="projects">
+    <a href="almondblossomtribute.html" target="_blank" class="tribute"><p class="project-title"><strong>tribute page</strong></p>
         <img src="images/devportfolio/tribute.jpg" alt="screenshot of tribute page" width="534" height="534"></a>
-    </div>
-    <div class="survey">    
-    <a href="fallfoilagesurvey.html" target="_blank"><p><strong>survey form page</strong></p>
+    <a href="fallfoilagesurvey.html" target="_blank" class="survey"><p class="project-title"><strong>survey form page</strong></p>
         <img src="images/devportfolio/survey.jpg" alt="screenshot of survey page" width="534" height="534"></a>
-    </div>
-    <div class="techdoc">    
-    <a href="/treeidguide.html" target="_blank"><p strong>technical document</strong></p>
+    <a href="/treeidguide.html" target="_blank" class="techdoc"><p class="project-title"><strong>technical document</strong></p>
         <img src="images/devportfolio/techdoc.jpg" alt="screenshot of technical document page" width="534" height="534"></a>    
-    </div>
-    <div class="product">    
-    <a href="acornsproduct.html" target="_blank"><p><strong>product landing page</strong></p>
+    <a href="acornsproduct.html" target="_blank" class="product"><p class="project-title"><strong>product landing page</strong></p>
         <img src="images/devportfolio/product.jpg" alt="screenshot of product landing page" width="534" height="534"></a>
-    </div>   
+    </section>
 
-    <ol id="info">
-    <li class="info">Aspiring coder.</li>     
+    <ol id="welcome-section">
+    <h1 class="info-title">Welcome to my testing ground.</h1>     
     <li class="info">Artist.</li> 
     <li class="info">Systems Thinker.</li> 
     <li class="info">Effective living nerd.</li> 
-    <li class="info">Welcome to my testing ground.</li>  
-    <li class="info">&copy;c lewis 2021</li>   
+    <li class="info">Aspiring coder.</li>  
+    <li class="info2">&copy;c lewis 2021</li>   
     </ol> 
 
 </main>
