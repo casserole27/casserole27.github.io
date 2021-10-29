@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="/css/projects.css" type="text/css" rel="stylesheet" />
-    <link rel=stylesheet href="/css/projects-dark.css"
-	media="screen and (prefers-color-scheme: dark)">
+    <!--<link rel=stylesheet href="/css/projects-dark.css"
+	media="screen and (prefers-color-scheme: dark)">-->
 </head>
 
 <!--<style>
@@ -22,12 +22,22 @@
 	}
 </style>-->
 
-<header>
+<style>
+    @media screen and (max-width: 1000px) {
+        .projects-list {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+
+</style>
+
+<header id="education">
 <h1>Self-Directed Programming Education</h1>
 
-<h2>freeCodeCamp : March 2021 - present</h2>
+<h2><a href="https://www.freecodecamp.org/casserole27">freeCodeCamp</a> : March 2021 - present</h2>
 <ul>
-<li>Responsive Web Design Certification: November 2021</li>
+<li><a href="https://freecodecamp.org/certification/casserole27/responsive-web-design">Responsive Web Design Certification</a> : October 2021</li>
 <li>Responsive Web Design Bootcamp: August 2021 - November 2021</li>
 </ul>
 
@@ -39,21 +49,27 @@
 </ul>
 </header>
 
-<section class="current-projects">
-<h2>Current projects built from scratch using HTML and CSS:</h2>
+<section id="current-projects" class="current-projects">
+<h2>The projects below, built from scratch using HTML and CSS, were created as part of the Responsive Web Design Certification from freeCodeCamp.</h2>
+<ul class="projects-info">
+<li>All of my projects build upon a coherent theme. I live in the forests of the eastern United States, and my content includes trees and the autumn season.</li>
+<li> This portfolio site, also built for the freeCodeCamp program, features my experiments in web design as I continue to learn and practice programming. 
+    My current experiments involve working with CSS grid to achieve good design principles and interesting, responsive, and accessible layouts.</li>
+</ul>
 
-<ul class="projects-list">
-    <li class="projects"><a href="almondblossomtribute.html" target="_blank"><img src="/images/devportfolio/tribute.jpg">
+
+<ul id="projects-list" class="projects-list">
+    <li class="projects"><a href="almondblossomtribute.html" target="_blank"><img src="/images/devportfolio/tribute.jpg" alt="screenshot of tribute project page">
         <p><strong>tribute page</strong></p></a></li>
-    <li class="projects"><a href="fallfoilagesurvey.html" target="_blank"><img src="/images/devportfolio/survey.jpg">
+    <li class="projects"><a href="fallfoilagesurvey.html" target="_blank"><img src="/images/devportfolio/survey.jpg" alt="screenshot of survey project page">
         <p><strong>survey form page</strong></p></a></li>
-    <li class="projects"><a href="acornsproduct.html" target="_blank"><img src="/images/devportfolio/product.jpg">
+    <li class="projects"><a href="acornsproduct.html" target="_blank"><img src="/images/devportfolio/product.jpg" alt="screenshot of product project page">
         <p><strong>product landing page</strong></p></a></li>
-    <li class="projects"><a href="/treeidguide.html" target="_blank"><img src="/images/devportfolio/techdoc.jpg">
+    <li class="projects"><a href="/treeidguide.html" target="_blank"><img src="/images/devportfolio/techdoc.jpg" alt="screenshot of technical document project page">
         <p><strong>technical document</strong></p></a></li>
 </ul>
 </section>
 
 <footer>
-    <p class="copyright"> &copy; c lewis 2021</p>
+    <p id="copyright" class="copyright"> &copy; c lewis 2021</p>
 </footer>

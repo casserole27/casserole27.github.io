@@ -1,10 +1,13 @@
+*{
+  box-sizing: border-box;
+}
+
 /*------GLOBAL STYLES------*/
 
 body {
     font-family: 'Mukta', sans-serif;
     background: #F5F6F4;
     color: #1A5760;
-    text-align: center;
     margin: 0;
     padding: 0;
   }
@@ -13,21 +16,28 @@ body {
   h1 {
     color: #E56B24;
     font-size: 2em;
+    text-align: center;
   } 
 
   h2 {
     font-size: 1.5em;
+    text-align: center;
   }
-  
-  ul {
-    list-style-type: none;
-    font-size: 1.25em;
-    padding-left: 0;
-    margin: 0;
-  }
-  
+   
   p {
     font-size: 1.25rem;
+    text-align: center;
+  }
+
+  ul{
+    list-style-type: none;
+    font-size: 1.25rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  li {
+    margin-top: 1rem;
   }
   
   a {
@@ -61,23 +71,31 @@ header {
 }
 
 /*------ PROJECTS STYLING ------*/
-
-.projects-list {
-    background-color: #F5F6F4;
-    width: 70%;
-    border: solid 1px lightgray;
-    margin: 0 auto;
+ 
+  .projects-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: 4rem 4rem 4rem 4rem;
+    
+    
   }
-  
+
   .projects {
     background-color: white;
-    text-align: center;
-    padding: 2.25rem;
-    margin-bottom: 2.25rem;
-    box-shadow: .25rem .25rem .375rem .125rem lightgray;
-
+    padding: 4rem 2rem 6rem 2rem;
+    border: solid .06rem darkgray;
+    box-shadow: -.5rem .5rem .375rem .125rem darkgray;
   }
-  
+ 
   .projects:hover {
     background-color: #FEF7EB;
   }
+
+/*------ TEXT INFO STYLING ------*/
+
+.projects-info {
+  width: 80%;
+  margin: 0 auto;
+}
+  
