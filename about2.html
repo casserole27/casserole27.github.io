@@ -9,51 +9,46 @@
     <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="/css/about.css" type="text/css" rel="stylesheet" />
+    <!--<link href="/css/about.css" type="text/css" rel="stylesheet" />-->
     <!--<link rel=stylesheet href="/css/devportfolio-dark.css"
 	media="screen and (prefers-color-scheme: dark)">-->
 </head>
 
 <style>
-    @media screen and (max-width: 1000px) {
-        ul {
-            display: grid;
-            grid-template-columns: 1fr;
-            row-gap: 8rem;;
-        }
-
-        .block1 {
-            grid-column: 1;    
-            grid-row: 1;
-        }
-
-        .block2 {
-            grid-column: 1;    
-            grid-row: 2;
-        }
-
-        .block3 {
-            grid-column: 1;    
-            grid-row: 3;
-        }
-
-        .block4 {
-            grid-column: 1;    
-            grid-row: 4;
-        }
-
-        .block5 {
-            grid-column: 1;    
-            grid-row: 5;
-        }
-
-        .block6 {
-            grid-column: 1;    
-            grid-row: 6;
-        }
+    body {
+    font-family: 'Mukta', sans-serif;
+    font-size: 2em;
+    color: darkslategray;
+    margin: 0;
+    padding: 0;
     }
-</style>
 
+    ul{
+        list-style-type: none;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 600px;
+    }
+
+    li {
+        background-color: darkslategray;
+        color: darkorange;
+        text-align: center;
+        padding: 2rem;
+        transform: rotate(15deg);
+     }
+
+     a {
+        text-decoration: none;
+        color: darkorange;
+    }
+
+    a:hover {
+        color: darkorange;
+        border-bottom: solid .06rem darkorange;
+
+}
+</style>
 
 <ul>
     <li class="block1">i would like to write</li>
@@ -63,4 +58,3 @@
     <li class="block5">one step closer to connection</li>
     <li class="block6"><a href="https://clewisdev.com">one step towards home</a></li>
 </ul>
-
