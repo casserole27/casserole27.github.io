@@ -64,7 +64,7 @@ a:hover {
 /*------C.LEWIS------*/
 
 h1 {
-  color: darkorange;
+  color: darkslategray;
   font-size: 5em;
   font-weight: 800;
   grid-row: 1;
@@ -76,7 +76,7 @@ h1 {
 /*------WEB DEVELOPER------*/
 
 h2 {
-  color: darkorange;
+  color: darkslategray;
   font-size: 5em;
   font-weight: 800;
   writing-mode: vertical-lr;
@@ -156,12 +156,12 @@ section {
 }
 
 .tribute {
-  grid-column: 1;
+  grid-column: 2;
   transform: rotate(-15deg);
 }
 
 .survey {
-  grid-column: 2;
+  grid-column: 1;
   transform: rotate(-15deg);
 }
 
