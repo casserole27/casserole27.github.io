@@ -36,7 +36,7 @@ img {
 }
 
 img:hover {
-  background-color: #723f00;
+  background-color: #b2877e;
 }
 
 p {
@@ -57,8 +57,8 @@ a {
 }
 
 a:hover {
-  color: #723f00;
-  border-bottom: solid .06rem #723f00;
+  color: #b2877e;
+  border-bottom: solid .06rem #b2877e;
 }
 
 
@@ -116,7 +116,8 @@ ul {
 ol {
   display: block;
   height: 100vh;
-  background-color: #8e4f00;
+  background-color: #b2877e;
+  /*background-color: #8e4f00;*/
   list-style-type: none;
   text-transform: lowercase;
   font-size: 1.5em;

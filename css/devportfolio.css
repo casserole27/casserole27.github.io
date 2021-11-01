@@ -115,7 +115,8 @@ ul {
 ol {
   display: block;
   height: 100vh;
-  background-color: rgb(255, 187, 103);
+  background-color: #b2877e;
+  /*background-color: rgb(255, 187, 103);*/
   list-style-type: none;
   text-transform: lowercase;
   font-size: 1.5em;
@@ -125,8 +126,6 @@ ol {
   grid-column: 4;
   margin: -2rem 2rem 0 2rem;
   padding: 2rem;
-  /*padding-top: 0px;
-  margin-top: 0px;*/
   z-index: 1;
 }
 
