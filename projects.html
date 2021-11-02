@@ -10,19 +10,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="/css/projects.css" type="text/css" rel="stylesheet" />
-    <!--<link rel=stylesheet href="/css/projects-dark.css"
-	media="screen and (prefers-color-scheme: dark)">-->
-</head>
-
-<!--<style>
-	/* Base (light mode) styles */
-
-	@media screen and (prefers-color-scheme: dark) {
-	
-	}
-</style>-->
+    </head>
 
 <style>
+    @media screen and (prefers-color-scheme: dark) {
+        body {
+            background: #2a4347ff;
+            color: #a8cbcbff
+        }
+
+        a, h1 {
+            color: #242423ff;
+        }
+
+        a:hover {
+        color: white;
+        border-bottom: solid .06rem #2a4347ff;
+        }
+
+        img {
+        border: solid .06rem #2a4347ff;
+        }
+
+        header, footer {
+            background-color: #8c5e54ff;
+            box-shadow: .25rem .25rem .375rem .125rem #3a3a3a;
+        }
+
+        .projects {
+            background-color: #535353ff;
+            box-shadow: -.5rem .5rem .375rem .125rem #3a3a3a;
+
+        }
+
+        .projects:hover {
+        background-color: #a89996;
+        }
+    }
+
     @media screen and (max-width: 1000px) {
         .projects-list {
             display: grid;
