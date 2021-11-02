@@ -115,8 +115,7 @@ ul {
 ol {
   display: block;
   height: 100vh;
-  background-color: #b2877e;
-  /*background-color: rgb(255, 187, 103);*/
+  background-color: rgb(255, 187, 103);
   list-style-type: none;
   text-transform: lowercase;
   font-size: 1.5em;

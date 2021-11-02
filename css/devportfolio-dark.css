@@ -5,6 +5,14 @@ clewisdev.com
 Date: October 2021
 */
 
+/*------DARK MODE STYLING------*/
+/* CSS HEX 
+--eerie-black: #242423ff;
+--dark-slate-gray: #2a4347ff;
+--burnished-brown: #b2877eff;
+--davys-grey: #535353ff;
+--opal: #a8cbcbff;*/
+
 
 /*------GLOBAL STYLES------*/
 
@@ -27,10 +35,10 @@ main {
 
 img {
   display: inline-block;
-  background-color: darkgray;
-  border: solid .06rem black;
+  background-color: #535353;
+  border: solid .06rem 242423;
   padding: 2rem;
-  box-shadow: -.5rem .5rem .375rem .125rem darkgray;
+  box-shadow: -.5rem .5rem .375rem .125rem #535353;
   width: 100%;
   height: auto;
 }
@@ -43,7 +51,7 @@ p {
   width: 100%;
   margin: 0;
   padding: .5rem;
-  background-color: black;
+  background-color: 242423;
   color: #a8cbcb;
   font-size: 1.5em;
   font-weight: 800;

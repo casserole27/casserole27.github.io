@@ -5,60 +5,90 @@ clewis.dev
 Date: September 2021
 */
 
+/*------DARK MODE STYLING------*/
 /* CSS HEX 
---midnight-green-eagle-green: #1a5760ff;
---middle-blue-green: #90e0daff;
---mint-cream: #f7fff7ff;
---rosy-brown: #bb938bff;
---ivory: #fffcebff;*/
+--eerie-black: #242423ff;
+--dark-slate-gray: #2a4347ff;
+--burnished-brown: #b2877eff;
+--davys-grey: #535353ff;
+--opal: #a8cbcbff;*/
 
 
 /*------ GLOBAL STYLES--------------*/
 
-body{
+body {
     font-family: 'Raleway', sans-serif;
-    background-image: linear-gradient(rgb(169, 169, 169), rgba(11, 36, 41));
-    background-color: darkgray;
+    background: linear-gradient(rgba(83, 83, 83, 0.61), rgba(42, 67, 71, 0.61));
+    background-color: #242423ff;
     margin: 0;
     padding: 0;
-}
+} 
 
 html {
     background-color: transparent !important;
 }
 
 h1 {
+    font-size: 2em;
     text-align: center;
-    color: #1A5760;
-    margin-top: 1em;
-    font-size: 2rem;
+    color: #a8cbcbff;
+    margin-top: 1rem;
+    
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+
+p {
+    font-size: 1.25em;
+    text-align: center;
+    color: #a8cbcbff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: .625rem;
+    line-height: 2.5rem;
+}
+
+
+a {
+    font-size: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 hr {
     width: 60%;
-    color: #81544B;
-    margin-top: 50px;
-    margin-bottom: 25px;
+    color: #b2877eff;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
     opacity: .5;
 }
 
 /*------ IMAGE STYLE--------------*/
 
 .painting {
-    box-shadow: 4px 4px 6px 2px lightgray;
+    box-shadow: .25rem .25rem .375rem .125rem rgb(56, 56, 56);
 }
 
 a {
     display: flex;
     justify-content: center;
-    
-
 }
 
 figcaption {
     text-align: center;
-    color: #1A5760;
-    font-size: 1rem;
+    color: #2a4347ff;
 }
        
 
@@ -66,56 +96,43 @@ figcaption {
 
 .subtitle {
     text-align: center;
-    color: #81544B;
-    font-size: 1.5rem;
-    margin-top: 7px;
-    margin-bottom: 2em;
+    color: #b2877eff;
+    margin-top: .375rem;
+    margin-bottom: 1rem;
 }
 
 .tribute-info {
     text-align: center;
 }
 
-p {
-    text-align: center;
-    font-size: 1rem;
-    color: #1A5760;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 30%;
-    margin-right: 30%;
-    padding-bottom: 10px;
-    line-height: 40px;
-}
-
 .info-title {
     text-align: center;
-    color: #81544B;
-    font-size: 1.25rem;
-    margin-top: 35px;
+    color: #b2877eff;
+    margin-top: 2rem;
 }
 
 .info-subtitle-1 {
-    color:  #81544B;
+    color:  #b2877eff;
     margin-bottom: 0;
     padding: 0;
    
 }
 
 .info-subtitle-2 {
-    color:  #81544B;
+    color:  #b2877eff;
     margin-top: 0;
     padding: 0;
 }
 
+
 /*------ LINK STYLE--------------*/
 
 a:visited {
-    color: #AC7B72;
+    color: #b2877eff;
 }
 
 .infolink {
     color: #81544B;
-    margin: 25px 25px;
+    margin: 1.5rem 1.5rem;
    
 }
