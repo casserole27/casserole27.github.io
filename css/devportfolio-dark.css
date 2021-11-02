@@ -65,8 +65,8 @@ a {
 }
 
 a:hover {
-  color: #b2877e;
-  border-bottom: solid .06rem #b2877e;
+  color: darkorange;
+  border-bottom: solid .06rem darkorange;
 }
 
 
