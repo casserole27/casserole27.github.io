@@ -40,6 +40,10 @@ p {
     margin-bottom: 1em;
 }
 
+li {
+    color: white;
+}
+
 a {
     color: blanchedalmond;
     text-decoration: none;
@@ -64,7 +68,7 @@ a:hover {
 }
 
 .biodiversity-link {
-    font-size: 12px;
+    font-size: 1em;
 }
 
 /*------ NAVBAR STYLE ------*/
