@@ -132,6 +132,7 @@ legend {
 
 textarea {
     background: linear-gradient(rgba(134, 61, 2, 0.75), rgba(134, 61, 2, 0.75));
+    color: #e9cfa9;
     max-width: 100%;
     height: auto;    
     border: solid #9C311C 2px;
