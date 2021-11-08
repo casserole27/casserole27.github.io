@@ -13,55 +13,61 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     align-items: center;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-left: 5%;
+    margin-right: 5%;
     }
 
     li {
         background-color: #ffbb67;
         text-align: center;
-        padding: 2rem;
+        border-radius: 5%;
+        padding: 3rem;
     }
 
     a {
         text-decoration: none;
-        color: darkslategray;
+        color: white;
     }
 
     a:hover {
-        color: darkorange;
-        border-bottom: solid .06rem darkorange;
-      }
+        color: white;
+        border-bottom: solid .06rem white;
+    }
 
     .block1 {
-        grid-row: 2;
+        grid-row: 1;
         grid-column: 1;
+        border: solid .5rem darkslategray;
     }
 
     .block2 {
-        grid-row: 3;
+        grid-row: 1;
         grid-column: 2;
+        border: solid .5rem darkslategray;
     }
 
     .block3 {
-        grid-row: 3;
+        grid-row: 2;
         grid-column: 3;
+        border: solid .5rem darkslategray;
     }
 
     .block4 {
-        grid-row: 4;
+        grid-row: 2;
         grid-column: 2;
+        border: solid .5rem darkslategray;
+
     }
 
     .block5 {
-        grid-row: 5;
+        grid-row: 3;
         grid-column: 2;
         background-color: #ffed47;
-   
+        border: solid .5rem darkslategray;
     }
 
     .block6 {
-        grid-row: 5;
-        grid-column: 4;
+        grid-row: 3;
+        grid-column: 3 / span 2;
         border: solid .5rem darkslategray;
     }
