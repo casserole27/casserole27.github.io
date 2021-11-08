@@ -1,0 +1,73 @@
+    body {
+    font-family: 'Mukta', sans-serif;
+    color: darkslategray;
+    padding: 0;
+    margin: 0;
+    }
+
+    ul{
+        list-style-type: none;
+        display: grid;
+        /*gap: 1rem;*/
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: auto auto repeat(3, min-content) 2fr;
+    }
+
+    li {
+        color: darkslategray;
+    }
+
+     a {
+        text-decoration: none;
+        color: darkorange;
+    }
+
+    a:hover {
+        color: darkorange;
+        border-bottom: solid .06rem darkorange;
+    }
+
+    .block1 {
+        font-size: 5em;
+        grid-row: 1;
+        grid-column: 2 / span 2;
+        margin: 0;
+    }
+
+    .block2 {
+        font-size: 3em;
+        grid-r qow: 2;
+        grid-column: 1 / span 2;
+        text-align: center;
+    }
+
+    .block3 {
+        font-size: 2em;
+        grid-row: 3;
+        grid-column: 1;
+        text-align: right;
+     
+    }
+
+    .block4 {
+        font-size: 2em;
+        grid-row: 4;
+        grid-column: 1;
+        text-align: right;
+    
+    }
+
+    .block5 {
+        font-size: 2em;
+        grid-row: 5;
+        grid-column: 1;
+        text-align: right;
+        background-color: #ffed47;
+    }
+
+    .block6 {
+        font-size: 4em;
+        grid-row: 3 / span 4;
+        grid-column: 2;
+        writing-mode: vertical-lr;    
+    }

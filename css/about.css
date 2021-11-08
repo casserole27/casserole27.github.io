@@ -18,7 +18,7 @@ body {
     }
 
     li {
-        background-color: blanchedalmond;
+        background-color: #ffbb67;
         text-align: center;
         padding: 2rem;
     }
@@ -56,6 +56,7 @@ body {
     .block5 {
         grid-row: 5;
         grid-column: 2;
+        background-color: #ffed47;
    
     }
 

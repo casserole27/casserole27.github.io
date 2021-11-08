@@ -2,81 +2,40 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="tribute">
-    <title>one line of code</title>
+    <meta name="description" content="about">
+    <title>c.lewis | layout experiments</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!--<link href="/css/about.css" type="text/css" rel="stylesheet" />-->
-    <!--<link rel=stylesheet href="/css/devportfolio-dark.css"
-	media="screen and (prefers-color-scheme: dark)">-->
+    <link href="/css/about2.css" type="text/css" rel="stylesheet" />
 </head>
 
 <style>
-    body {
-    font-family: 'Mukta', sans-serif;
-    color: darkslategray;
-    padding: 0;
+@media screen and (prefers-color-scheme: dark) {
+        
+        body {
+            background: #181a1b;
+        }
+     
+        a {
+            color: #ff981a;
+        }
+
+        a:hover {
+        color: white;
+        border-bottom: solid .06rem white;
+        }
+
+        .block1, .block3, .block4 {
+            color: #a8cbcb;
+        }
+
+        .block5{
+         color: #2a4347;
+        }
     }
-
-    ul{
-        list-style-type: none;
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: .5fr 1fr 1fr .5fr;
-    }
-
-    li {
-        color: darkslategray;
-        text-align: center;
-        padding: 2rem;
-     }
-
-     a {
-        text-decoration: none;
-        color: darkorange;
-    }
-
-    a:hover {
-        color: darkorange;
-        border-bottom: solid .06rem darkorange;
-
-}
-
-    .block1 {
-        grid-column: 2;
-        font-size: 2em;
-        transform: rotate(-30deg);
-        justify-self: end;
-    }
-
-    .block2 {
-        grid-column: 2;
-        grid-row: 2;
-        font-size: 2em;
-        transform: rotate(-30deg);
-        justify-self: end;
-    }
-
-    .block3 {
-        grid-column: 3;
-        grid-row: 2;
-        font-size: 2em;
-        transform: rotate(25deg);
-        justify-self: start;
-        margin-left: -10rem;
-    }
-
-    .block4, .block5, .block6 {
-        grid-column: 2;
-        font-size: 1.5em;
-        transform: rotate(-30deg);
-        margin-left: 5rem;
-        justify-self: end;
-    }
-}    
 </style>
 
 <ul>
