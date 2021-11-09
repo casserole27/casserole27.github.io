@@ -1,8 +1,14 @@
+
+html {
+        background-color: transparent !important;
+    }
+
 body {
     font-family: 'Mukta', sans-serif;
+    background-image: url(/images/about.jpg);
+    background-color: rgba(47, 79, 79, 0.5);
     font-size: 2em;
     color: darkslategray;
-    background: darkslategray;
     margin: 0;
     padding: 0;
     }
@@ -12,6 +18,7 @@ body {
     padding-left: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill 150px, 1fr);
+    gap: 1rem;
     margin-left: 10%;
     margin-right: 10%;
     }
@@ -20,7 +27,7 @@ body {
         background-color: #ffbb67;
         text-align: center;
         padding: 2rem;
-        border: solid .5rem darkslategray;
+        /*border: solid .5rem darkslategray;*/
     }
 
     a {
