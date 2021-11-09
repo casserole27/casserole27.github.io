@@ -19,8 +19,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill 150px, 1fr);
     gap: 1rem;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
     }
 
     li {

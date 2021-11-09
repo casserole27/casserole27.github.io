@@ -9,8 +9,7 @@
     ul{
         list-style-type: none;
         display: grid;
-        /*gap: 1rem;*/
-        grid-template-columns: 2fr 1fr 1fr;
+         grid-template-columns: 2fr 1fr 1fr;
         grid-template-rows: auto auto repeat(3, min-content) 2fr;
     }
 
