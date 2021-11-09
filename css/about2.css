@@ -9,18 +9,12 @@
     ul{
         list-style-type: none;
         display: grid;
-         grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
         grid-template-rows: auto auto repeat(3, min-content) 2fr;
     }
 
     a {
-        text-decoration: none;
         color: darkorange;
-    }
-
-    a:hover {
-        color: darkorange;
-        border-bottom: solid .06rem darkorange;
     }
 
     .block1 {

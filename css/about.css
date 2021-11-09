@@ -31,13 +31,7 @@ body {
     }
 
     a {
-        text-decoration: none;
-        color: white;
-    }
-
-    a:hover {
-        color: white;
-        border-bottom: solid .06rem white;
+        color: darkslategray;
     }
 
     .block2, .block6 {
