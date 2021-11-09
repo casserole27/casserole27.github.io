@@ -1,6 +1,7 @@
     body {
     font-family: 'Mukta', sans-serif;
-    color: darkslategray;
+    color: #a8cbcb;
+    background-color: darkslategray;
     padding: 0;
     margin: 0;
     }
@@ -13,11 +14,7 @@
         grid-template-rows: auto auto repeat(3, min-content) 2fr;
     }
 
-    li {
-        color: darkslategray;
-    }
-
-     a {
+    a {
         text-decoration: none;
         color: darkorange;
     }
@@ -64,6 +61,7 @@
         grid-column: 1;
         text-align: right;
         background-color: #ffed47;
+        color: darkslategray;
     }
 
     .block6 {

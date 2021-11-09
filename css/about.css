@@ -2,6 +2,7 @@ body {
     font-family: 'Mukta', sans-serif;
     font-size: 2em;
     color: darkslategray;
+    background: darkslategray;
     margin: 0;
     padding: 0;
     }
@@ -10,18 +11,16 @@ body {
     list-style-type: none;
     padding-left: 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    grid-template-columns: repeat(auto-fill 150px, 1fr);
+    margin-left: 10%;
+    margin-right: 10%;
     }
 
     li {
         background-color: #ffbb67;
         text-align: center;
-        border-radius: 5%;
-        padding: 3rem;
+        padding: 2rem;
+        border: solid .5rem darkslategray;
     }
 
     a {
@@ -34,40 +33,10 @@ body {
         border-bottom: solid .06rem white;
     }
 
-    .block1 {
-        grid-row: 1;
-        grid-column: 1;
-        border: solid .5rem darkslategray;
-    }
-
-    .block2 {
-        grid-row: 1;
-        grid-column: 2;
-        border: solid .5rem darkslategray;
-    }
-
-    .block3 {
-        grid-row: 2;
-        grid-column: 3;
-        border: solid .5rem darkslategray;
-    }
-
-    .block4 {
-        grid-row: 2;
-        grid-column: 2;
-        border: solid .5rem darkslategray;
-
+    .block2, .block6 {
+        background-color: #ff9e29;
     }
 
     .block5 {
-        grid-row: 3;
-        grid-column: 2;
         background-color: #ffed47;
-        border: solid .5rem darkslategray;
-    }
-
-    .block6 {
-        grid-row: 3;
-        grid-column: 3 / span 2;
-        border: solid .5rem darkslategray;
-    }
+     }
