@@ -8,6 +8,12 @@ Date: October 2021
 
 /*------GLOBAL STYLES------*/
 
+:root {
+  --main-text-color: #2f4f4f;
+  --second-text-color: #ff8c00; 
+  --main-border-color: #a9a9a9;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -26,45 +32,45 @@ main {
 
 img {
   display: inline-block;
-  background-color: white;
-  border: solid .06rem darkgray;
+  background-color: #ffffff;
+  border: solid .06rem var(--main-border-color);
   padding: 2rem;
-  box-shadow: -.5rem .5rem .375rem .125rem darkgray;
+  box-shadow: -.5rem .5rem .375rem .125rem var(--main-border-color);
   width: 100%;
   height: auto;
 }
 
 img:hover {
-  background-color: rgb(255, 242, 224);
+  background-color: #fff2e0;
 }
 
 p {
   width: 100%;
   margin: 0;
   padding: .5rem;
-  background-color: lightgray;
-  color: darkslategray;
+  background-color: #d3d3d3;
+  color: var(--main-text-color);
   font-size: 1.5em;
   font-weight: 800;
-  border: solid .08rem darkslategray;
-  box-shadow: -.5rem .5rem .375rem .125rem darkgray;
+  border: solid .08rem #2f4f4f;
+  box-shadow: -.5rem .5rem .375rem .125rem var(--main-border-color);
 }
 
 a {
-  color: darkslategray;
+  color: var(--main-text-color);
   text-decoration: none;
 }
 
 a:hover {
-  color: darkorange;
-  border-bottom: solid .06rem darkorange;
+  color: var(--second-text-color);
+  border-bottom: solid .06rem var(--second-text-color);
 }
 
 
 /*------C.LEWIS------*/
 
 h1 {
-  color: darkslategray;
+  color: var(--main-text-color);
   font-size: 5em;
   font-weight: 800;
   grid-row: 1;
@@ -76,7 +82,7 @@ h1 {
 /*------WEB DEVELOPER------*/
 
 h2 {
-  color: darkslategray;
+  color: var(--main-text-color);
   font-size: 5em;
   font-weight: 800;
   writing-mode: vertical-lr;
@@ -94,7 +100,7 @@ h2 {
 nav {
   font-size: 1.5em;
   font-weight: 800;
-  border-bottom: solid 1rem darkorange;
+  border-bottom: solid 1rem var(--second-text-color);
   margin-right: 5rem;
   margin-top: 1rem;
   grid-row: 1;
@@ -115,17 +121,18 @@ ul {
 ol {
   display: block;
   height: 100vh;
-  background-color: rgb(255, 187, 103);
+  background-color: #ffbb67;
   list-style-type: none;
   text-transform: lowercase;
   font-size: 1.5em;
   font-weight: 800;
-  color: darkslategray;
+  color: var(--main-text-color);
   grid-row: 2;
   grid-column: 4;
   margin: -2rem 2rem 0 2rem;
   padding: 2rem;
   z-index: 1;
+  box-shadow: -.5rem .5rem .375rem .125rem var(--main-border-color);
 }
 
 .info {
@@ -139,7 +146,7 @@ ol {
 
 .info-title {
   font-size: 1.5em;
-  color: darkslategray;
+  color: var(--main-text-color);
   margin-bottom: 3rem;
 }
 
@@ -173,6 +180,7 @@ section {
   grid-column: 2;
   transform: rotate(-15deg);
   margin-top: -25rem;
+  z-index: 2;
 }
 
 
