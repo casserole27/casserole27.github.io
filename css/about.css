@@ -1,3 +1,10 @@
+:root {
+    --main-bg-color: #ffbb67;
+    --second-bg-color: #ff9e29;
+    --main-text-color: #2f4f4f;
+    /*--main-accent-color: #ff8c00;
+    --second-accent-color: #ffffff;*/ 
+}
 
 html {
         background-color: transparent !important;
@@ -8,7 +15,7 @@ body {
     background-image: url(/images/about.jpg);
     background-color: rgba(47, 79, 79, 0.5);
     font-size: 2em;
-    color: darkslategray;
+    color: var(--main-text-color);
     margin: 0;
     padding: 0;
     }
@@ -24,18 +31,18 @@ body {
     }
 
     li {
-        background-color: #ffbb67;
+        background-color: var(--main-bg-color);
         text-align: center;
         padding: 2rem;
         /*border: solid .5rem darkslategray;*/
     }
 
     a {
-        color: darkslategray;
+        color: var(--main-text-color);
     }
 
     .block2, .block6 {
-        background-color: #ff9e29;
+        background-color: var(--second-bg-color);
     }
 
     .block5 {

@@ -1,7 +1,14 @@
+:root {
+    --main-bg-color: #2f4f4f;
+    --main-text-color: #a8cbcb;
+    --main-accent-color: #ff8c00;
+    --second-accent-color: #ffffff; 
+}   
+    
     body {
     font-family: 'Mukta', sans-serif;
-    color: #a8cbcb;
-    background-color: darkslategray;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
     padding: 0;
     margin: 0;
     }
@@ -16,7 +23,7 @@
     }
 
     a {
-        color: darkorange;
+        color: var(--main-accent-color);
     }
 
     .block1 {
@@ -56,7 +63,7 @@
         grid-column: 1;
         text-align: right;
         background-color: #ffed47;
-        color: darkslategray;
+        color: var(--main-bg-color);
     }
 
     .block6 {

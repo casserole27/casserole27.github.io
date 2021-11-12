@@ -1,0 +1,94 @@
+    :root {
+        --main-bg-color: #2f4f4f;
+        --main-text-color: #a8cbcb;
+        --main-accent-color: #ff8c00;
+        --second-accent-color: #ffffff; 
+    }
+    
+    body {
+    font-family: 'Mukta', sans-serif;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    padding: 0;
+    margin: 0;
+    }
+
+    ul{
+        list-style-type: none;
+        display: grid;
+        /*grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: auto auto repeat(3, min-content) 2fr;*/
+        gap: 1rem;
+        padding: 0;
+        margin: 5rem 5% auto 5%;
+    }
+
+    li {
+        padding: 2rem;
+    }
+
+    a {
+        color: var(--second-accent-color);
+    }
+
+    .block1 {
+        font-size: 5em;
+        grid-row: 1;
+        grid-column: 1;
+        text-align: right;
+        margin: 0;
+        border: solid 1rem var(--main-accent-color);
+    }
+
+    .block2 {
+        background-color: var(--main-accent-color);
+        font-size: 3em;
+        font-weight: 800;
+        grid-row: 2;
+        grid-column: 1;
+        text-align: right;
+        border: solid 1rem var(--main-accent-color);
+    }
+
+  
+    .block3 {
+        font-size: 2em;
+        grid-row: 3;
+        grid-column: 1;
+        text-align: right;
+        border: solid 1rem var(--main-accent-color);
+     
+    }
+
+    .block4 {
+        font-size: 2em;
+        grid-row: 4;
+        grid-column: 1;
+        text-align: right;
+        border: solid 1rem var(--main-accent-color);
+    }
+
+    .block5 {
+        font-family: 'Kaushan Script', cursive;
+        font-size: 3em;
+        font-weight: 800;
+        grid-row: 1;
+        grid-column: 2;
+        background-color: #ffed47;
+        color: var(--main-bg-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+    .block6 {
+        background-image: url(/images/about.jpg);
+        font-size: 3.5em;
+        font-weight: 800;
+        grid-row: 2 / span 3;
+        grid-column: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: solid 1rem var(--main-accent-color);
+    }    
