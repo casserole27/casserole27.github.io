@@ -16,13 +16,22 @@ Date: October 2021
 
 /*------GLOBAL STYLES------*/
 
+:root {
+  --main-bg-color: #2a4347;
+  --main-text-color: #a8cbcb;
+  --main-hover-color: #ff8c00;
+  --main-border-color: #242423ff;
+  --main-accent-color: #8c5e54;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  color: var(--main-text-color);
+  background: var(--main-bg-color);
   font-family: 'Mukta', sans-serif;
-  background: #2a4347;
   margin: 0;
   padding: 0;
 }
@@ -38,7 +47,7 @@ img {
   background-color: #535353;
   border: solid .06rem 242423;
   padding: 2rem;
-  box-shadow: -.5rem .5rem .375rem .125rem rgb(49, 49, 49);
+  box-shadow: -.5rem .5rem .375rem .125rem var(--main-border-color);
   width: 100%;
   height: auto;
 }
@@ -51,29 +60,32 @@ p {
   width: 100%;
   margin: 0;
   padding: .5rem;
-  background-color: #242423ff;
+  color: var(--main-text-color);
+  background-color: var(--main-border-color);
   color: #a8cbcb;
   font-size: 1.5em;
   font-weight: 800;
   border: solid .08rem #242423ff;
-  box-shadow: -.5rem .5rem .375rem .125rem rgb(49, 49, 49);
+  box-shadow: -.5rem .5rem .375rem .125rem var(--main-border-color);;
 }
 
 a {
-  color: #a8cbcb;
   text-decoration: none;
 }
 
+a:visited {
+  color: var(--main-text-color);
+}
+
 a:hover {
-  color: darkorange;
-  border-bottom: solid .06rem darkorange;
+  color: var(--main-hover-color);
+  border-bottom: solid .06rem var(--main-hover-color);
 }
 
 
 /*------C.LEWIS------*/
 
 h1 {
-  color: #a8cbcb;
   font-size: 5em;
   font-weight: 800;
   grid-row: 1;
@@ -85,7 +97,6 @@ h1 {
 /*------WEB DEVELOPER------*/
 
 h2 {
-  color: #a8cbcb;
   font-size: 5em;
   font-weight: 800;
   writing-mode: vertical-lr;
@@ -103,7 +114,7 @@ h2 {
 nav {
   font-size: 1.5em;
   font-weight: 800;
-  border-bottom: solid 1rem darkorange;
+  border-bottom: solid 1rem var(--main-hover-color);
   margin-right: 5rem;
   margin-top: 1rem;
   grid-row: 1;
@@ -124,20 +135,18 @@ ul {
 ol {
   display: block;
   height: 100vh;
-  background-color: #8C5E54;
-  /*background-color: #8e4f00;*/
+  background-color: var(--main-accent-color);
   list-style-type: none;
   text-transform: lowercase;
   font-size: 1.5em;
   font-weight: 800;
-  color: #a8cbcb;
   grid-row: 2;
   grid-column: 4;
   margin: -2rem 2rem 0 2rem;
   padding: 2rem;
-  /*padding-top: 0px;
-  margin-top: 0px;*/
   z-index: 1;
+  box-shadow: -.5rem .5rem .375rem .125rem var(--main-border-color);
+
 }
 
 .info {
@@ -151,7 +160,6 @@ ol {
 
 .info-title {
   font-size: 1.5em;
-  color: #a8cbcb;
   margin-bottom: 3rem;
 }
 
