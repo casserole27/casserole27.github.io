@@ -1,0 +1,109 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #d6e1ff92;
+}
+
+#illustration-hero {
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+h1 {
+    font-weight: bolder;
+    margin-top: 2rem;
+}
+
+#card {
+    background-color: white;
+    width: 450px;
+    border-radius: 1rem;
+        /*padding: 1em;*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+}
+
+#description {
+    color: gray;
+    font-size: 1em;
+    margin: 1rem 3rem 2rem 3rem;
+}
+
+#plan {
+    background-color: #f8f9fe;
+    margin: 1rem 3rem 1rem 3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+h2, #plan-cost {
+    font-size: 1em;
+    margin: 0;
+}
+
+#plan-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    text-align: left;
+}
+
+#change {
+    margin-left: auto;
+}
+
+#change:hover {
+    color: #766cf1;
+}
+
+#plan-cost {
+    color: gray;
+}
+
+#payment {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    background-color: #3929e0;
+    color: white;
+    font-weight: 800;
+    width: 80%;
+    padding: 1.25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 1rem 1rem .5rem #e9e6fd;
+
+}
+
+#payment:hover {
+    background-color: #766cf1;
+}
+
+#cancel {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 800;
+    color: gray;
+   background-color: transparent;
+    width: 80%;
+    padding: 1.25rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+    border: none;
+}    
+
+#cancel:hover {
+   color: black;
+   background-color: transparent;
+}    

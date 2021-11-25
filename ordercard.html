@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ordercard.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
+</head>
+
+<style>
+  /*.attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }*/
+
+  @media screen and (max-width: 1000px) {
+    h1 {
+      margin-top: 1rem;
+    }
+
+    #description {
+      line-height: 2rem;
+      margin: .5rem 1.5rem 2rem 1.5rem;
+    }
+    
+    #card {
+      width: 350px;
+    }
+
+    #plan {
+      margin: .5rem 1.5rem .5rem 1.5rem;
+    }
+
+    #payment {
+      margin-bottom: .5rem;
+    }
+
+    #cancel {
+      margin-bottom: 1rem;
+    }
+
+  }
+</style>
+
+<body>
+
+<main id="card"> 
+<div id="card-contents">  
+  
+<img src="/images/illustration-hero.svg" id="illustration-hero">  
+
+<h1 id="title">Order Summary</h1>
+
+<p id="description">You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!</p>
+
+<section id="plan">
+
+<img src="images/icon-music.svg" id="icon-music">  
+
+
+<div id="plan-info">
+<h2 id="plan-title">Annual Plan</h2>
+<p id="plan-cost">$59.99/year</p>
+</div>
+
+<a href="#" id="change">Change</a>
+</section>  
+
+<div id="buttons">
+<button id="payment">Proceed to Payment</button>
+<button id="cancel">Cancel Order</button>
+</div>
+
+</div>
+</main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.clewisdev.com">C Lewis</a>.
+  </div>
+</body>
+</html>
