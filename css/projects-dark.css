@@ -38,6 +38,13 @@ img {
     border: solid 1px lightgray;
   }
 
+hr {
+    width: 70%;
+    color: #E56B24;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }    
+
 /*------ HEADER STYLING ------*/
 
 header {
