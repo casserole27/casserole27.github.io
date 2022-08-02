@@ -24,6 +24,7 @@ let revealCatImage = document.getElementById('cat-image');
 function revealInfo() {
     revealCatImage.style.display = 'block';
     let userInput = document.getElementById('input-box').value;
+    userInput = Number(userInput);
     let ageInCatYears = catAge(userInput);
     let ageString = `Your cat is ${ageInCatYears} years old.`;
     placeholder.innerHTML = ageString;
