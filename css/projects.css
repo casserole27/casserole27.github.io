@@ -82,6 +82,11 @@ header {
 
 /*------ PROJECTS STYLING ------*/
  
+  .javascript-projects {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
   .projects-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -94,6 +99,7 @@ header {
   .projects {
     background-color: white;
     padding: 4rem 2rem 6rem 2rem;
+    margin: 3rem;
     border: solid .06rem darkgray;
     box-shadow: -.5rem .5rem .375rem .125rem darkgray;
   }
