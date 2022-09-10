@@ -18,8 +18,8 @@ function catAge(humanYears) {
     return catYears;
 };
 
-let reveal = document.getElementById('submit-info');
-let revealCatImage = document.getElementById('cat-image');
+let reveal = document.getElementById('submit-info'); //this id is the submit button
+let revealCatImage = document.getElementById('cat-image'); //this is the hidden image
 
 function revealInfo() {
     revealCatImage.style.display = 'block';
@@ -31,7 +31,8 @@ function revealInfo() {
      
 }
 
-reveal.addEventListener('click', revealInfo);
+reveal.addEventListener('click', revealInfo); 
+//reveal = submit button, once clicked initiate function
 
 let reset = document.getElementById('reset-info');
 
