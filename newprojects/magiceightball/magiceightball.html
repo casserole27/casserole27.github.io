@@ -2,8 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="m a g i c | e i g h t | b a l l">
+    <meta name="description" content="magic eightball">
     <title>"m a g i c | e i g h t | b a l l"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;800&display=swap" rel="stylesheet">
     <link href="/newprojects/magiceightball/magiceightball.css" type="text/css" rel="stylesheet" />
     </head>
 
@@ -12,25 +15,29 @@
     <main>
         <h1>welcome to the magic eightball</h1>
 
-        <form id="eightball-form" class="eightball-form">
+        <!--<form id="eightball-form" class="eightball-form">-->
+        
+        <!--<div id="username-wrapper" class="username-wrapper">-->   
+        <label id="username-label" class="username-label" for="name">username</label>
+        <input id="username-input" class= "username-input" type="text" placeholder="enter your username">
+        <input type="button" id="submit-username" class="submit-username" value="submit">
+        <!--</div>-->
 
-            <label id="username-label" class="username-label" for="name">username</label>
-            <input id="username" class= "username" type="text" placeholder="enter your username">
-            <input type="button" id="submit-username" class="submit-username" value="submit">
-            
-            <p id="greeting" class="greeting">greeting goes here</p>
+        <p id="greeting" class="greeting">greeting goes here</p>
+        
+        <!--<div id="question-wrapper" class="question-wrapper">-->
+        <label id="question-label" class="question-label" for="name">question</label>
+        <input id="question-input" class="question-input" type="text" placeholder="what is your question?">
+        <input type="button" id="submit-question" class="submit-question" value="submit">
+        <!--</div>-->
 
-            <label id="question-label" class="question-label" for="name">query</label>
-            <input id="question" class="question" type="text" placeholder="what is your question?">
-            <input type="button" id="submit-question" class="submit-question" value="submit">
-
-        </form>
+        <!--</form>-->
 
         <p id="question" class="question">username asks question goes here</p>
 
         <p id="answer" class="answer">answer goes here</p>
 
-        <input type="button" id="reset" class="reset" value="reset">
+        <input type="button" id="reset-info" class="reset-info" value="reset">
 
     </main>
 
