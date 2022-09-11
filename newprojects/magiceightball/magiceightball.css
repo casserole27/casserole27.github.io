@@ -122,7 +122,6 @@ label, input, .submit-username, .submit-question, .reset-info {
         grid-template-columns: 1fr;
     }
 
-    h1, .username-label, .username-input, .submit-username,
-    .greeting, .question-label, .question-input, .submit-question {
+    h1, .username-label, .username-input, .submit-username, .greeting, .question-label, .question-input, .submit-question {
      grid-column: 1;       
-}
+}}

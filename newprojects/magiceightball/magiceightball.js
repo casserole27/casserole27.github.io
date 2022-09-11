@@ -79,3 +79,4 @@ function resetInfo() {
 reset.addEventListener('click', resetInfo);
 
 
+ 
