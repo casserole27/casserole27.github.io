@@ -125,6 +125,16 @@ label, input, .submit-username, .submit-question, .reset-info {
         grid-row: 4;
         grid-column: 2;
     }
+
+    .question {
+        grid-row: 5;
+        grid-column: 2;
+    }
+
+    .answer {
+        grid-row: 6;
+        grid-column: 2;
+    }
     
     .reset-info {
         grid-column: -1 / 1;
