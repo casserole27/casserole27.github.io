@@ -36,11 +36,11 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-
+    
 }
 
-h1, .username-label, .username-input, .submit-username, .greeting, .question-label, .question-input, .submit-question {
- grid-column: 1;
+h1, label, input, p {
+    grid-column: 1;
 }    
 
 /****** COLORS ******/
@@ -86,7 +86,8 @@ label, input, .submit-username, .submit-question, .reset-info {
     display: none;
 }
 
-/****** MEDIA QUERY - MOBILE ******/
+/****** MEDIA QUERY - DESKTOP ******/
+
 
 @media screen and (min-width: 650px) {
     main {
@@ -95,7 +96,6 @@ label, input, .submit-username, .submit-question, .reset-info {
         display: grid;
         gap: 1rem;
         grid-template-columns: 1fr 1fr;
-        justify-content: center;
     }
        
     h1 {
