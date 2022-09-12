@@ -20,7 +20,17 @@ let userQuestion = document.getElementById('submit-question');
 let question = document.getElementById('question');
 let answer = document.getElementById('answer');
 
-let randomNumber = Math.floor(Math.random() * 8);
+
+
+function showQuestion () {
+  question.style.display = 'block';
+  answer.style.display = 'block';
+  let questionInput = document.getElementById('question-input').value;
+  let userInput = document.getElementById('username-input').value;
+  let questionString = `${userInput} asks, "${questionInput}"`;
+  question.innerHTML = questionString;
+
+  let randomNumber = Math.floor(Math.random() * 8);
 
 let eightBall = '';
 switch (randomNumber) {
@@ -52,13 +62,6 @@ switch (randomNumber) {
   eightBall = ('Eightball unavailable.')
 };
 
-function showQuestion () {
-  question.style.display = 'block';
-  answer.style.display = 'block';
-  let questionInput = document.getElementById('question-input').value;
-  let userInput = document.getElementById('username-input').value;
-  let questionString = `${userInput} asks, "${questionInput}"`;
-  question.innerHTML = questionString;
   answer.innerHTML = `The eightball answers, "${eightBall}"`;
 };
 
