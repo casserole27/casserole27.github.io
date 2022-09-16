@@ -88,6 +88,13 @@ label, input, .submit-username, .submit-question, .reset-info {
 
 /****** MEDIA QUERY - DESKTOP ******/
 
+/* ! ALert!
+/* ? Question
+/* * Important info is highlighted
+/* TODO
+/* @param my Param  
+*/
+
 
 @media screen and (min-width: 650px) {
     main {
