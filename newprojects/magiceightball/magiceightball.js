@@ -1,4 +1,5 @@
 //PART 1
+// TODO display username greeting
 
 let usernameInput = document.getElementById('submit-username');
 
@@ -14,6 +15,7 @@ function showGreeting () {
 usernameInput.addEventListener('click', showGreeting);
 
 //PART 2
+// TODO display question and answer
 
 let userQuestion = document.getElementById('submit-question');
 
@@ -68,6 +70,7 @@ switch (randomNumber) {
 userQuestion.addEventListener('click', showQuestion);
 
 //PART 3
+// TODO reset form
 
 let reset = document.getElementById('reset-info');
 
