@@ -86,11 +86,18 @@ label {
 
 .input-box {
     font-family: 'Raleway', sans-serif;
+    accent-color: #9C311C;
     margin-bottom: .5rem;
     padding: 1rem;
     width: 90%;
     border-radius: .5rem;
     border: solid #8c2b1aff 2px;
+}
+
+::placeholder {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.25em;
+    color: #9c311cff;
 }
 
 /*------ DATALIST STYLE ------*/
@@ -99,14 +106,7 @@ label {
 /*------ CHECKBOX STYLE ------*/
 
 input[type="checkbox"] {
-    margin-right: .5rem;
-    min-height: 1.25rem;
-    min-width: 1.25rem;
-}
-   
-/*------ RADIO BUTTON STYLE ------*/
-   
-input[type="radio"] {
+    accent-color: #9C311C;
     margin-right: .5rem;
     min-height: 1.25rem;
     min-width: 1.25rem;
