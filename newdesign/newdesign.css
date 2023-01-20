@@ -1,0 +1,84 @@
+/*
+Devsite design #2
+Author: Cassie Lewis
+https://clewisdev.com
+Date: January 2023
+*/
+
+/*
+COOLORS color palette link
+https://coolors.co
+*/
+
+/****** VARIABLES ******/
+
+:root {
+    
+    /*COLORS*/
+    --indigo-dye: hsla(199, 84%, 20%, 1);
+    --madder-lake: hsla(355, 67%, 48%, 1);
+    --mango-tango: hsla(23, 97%, 63%, 1);
+    --maize-crayola: hsla(41, 100%, 69%, 1);
+    --cosmic-latte: hsla(49, 100%, 96%, 1);
+      
+    /*BORDER RADIUS*/
+    --br-soft: 1rem;
+    --br-round: 50%;
+    
+    /*FONT SIZES*/
+    --fs-xs: 1rem;
+    --fs-s: 1.25rem;
+    --fs-m: 1.5rem;
+    --fs-l: 2.5rem;
+    --fs-title: 3rem;
+}
+
+/****** MARGIN AND PADDING RESET ******/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/******* GLOBAL STYLES *******/
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background: var(--indigo-dye);
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+    margin: 1rem;
+    display: grid;
+    place-content: center;
+}
+
+h1 {
+    font-size: var(--fs-title);
+    
+}
+
+h1, h2 {
+    color: var(--cosmic-latte);
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    width: 200px;
+    height: 160px;
+    color: var(--indigo-dye);
+    background-color: var(--mango-tango);
+    font-size: var(--fs-m);
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 5px solid yellow;
+}
