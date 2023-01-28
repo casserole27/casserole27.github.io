@@ -7,12 +7,22 @@ Date: January 2023
 
 /*
 COOLORS color palette link
+70s stripe
 https://coolors.co
+purple/pink/orange
+https://coolors.co/a13879-df5a2f-e34a5f-e792bb-ecdbe5
 */
 
 /****** VARIABLES ******/
 
 :root {
+    
+    --candy-pink: #db7277ff;
+    --english-violet: #6b4e71ff;
+    --charcoal: #3a4454ff;
+    --steel-teal: #527d7cff;
+    --misty-rose: #f5ddddff;
+    
     
     /*COLORS*/
     --indigo-dye: hsla(199, 84%, 20%, 1);
@@ -20,6 +30,14 @@ https://coolors.co
     --mango-tango: hsla(23, 97%, 63%, 1);
     --maize-crayola: hsla(41, 100%, 69%, 1);
     --cosmic-latte: hsla(49, 100%, 96%, 1);
+
+    /*COLORS 2*/
+    --maximum-red-purple: #a13879ff;
+    --burnt-sienna: #E3744F;
+    /* --flame: #df5a2fff; */
+    --paradise-pink: #e34a5fff;
+    --kobi: #e792bbff;
+    --pale-purple-pantone: #ecdbe5ff;
       
     /*BORDER RADIUS*/
     --br-soft: 1rem;
@@ -45,40 +63,106 @@ https://coolors.co
 
 body {
     font-family: 'Kanit', sans-serif;
-    background: var(--indigo-dye);
-    text-align: center;
+    background-color: var(--charcoal);
+    /* background-color: var(--maximum-red-purple); */
+    /* background: var(--indigo-dye); */
+    /* text-align: center; */
 }
 
 main {
-    padding: 1rem;
+    /* padding: 1rem; */
     margin: 1rem;
     display: grid;
     place-content: center;
+    grid-template-columns: .5fr 1fr .5fr;
 }
 
 h1 {
-    font-size: var(--fs-title);
-    
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
+    /* padding: 1rem; */
+    margin-top: 2rem;
 }
 
 h1, h2 {
-    color: var(--cosmic-latte);
+    color: var(--misty-rose);
+    /* color: var(--pale-purple-pantone); */
+    /* color: var(--cosmic-latte); */
     text-transform: uppercase;
 }
 
+h2 {
+    font-size: var(--fs-l);
+    text-align: center;
+    writing-mode: vertical-lr;
+    grid-column: 3;
+    grid-row: 1;
+    padding: 1rem;
+    margin-top: -20rem;
+}
+
+
+/****** LIST STYLING ******/
+
 ul {
+    font-family: 'Kanit', sans-serif;
     list-style-type: none;
+    grid-column: 2;
+    grid-row: 1;
 }
 
 li {
-    width: 200px;
-    height: 160px;
-    color: var(--indigo-dye);
-    background-color: var(--mango-tango);
+    min-width: 150px;
+    min-height: 150px;
+    color: var(--misty-rose);
+    /* color: var(--pale-purple-pantone); */
+    /* color: var(--indigo-dye); */
+    background-color: var(--english-violet);
+    /* background-color: var(--mango-tango); */
     font-size: var(--fs-m);
     text-transform: uppercase;
     text-align: center;
     padding: 1rem;
     margin-bottom: 2rem;
-    border: 5px solid yellow;
+    box-shadow: 1rem 1rem var(--steel-teal);
+    /* border: 5px solid var(--burnt-sienna); */
+    /* border: 5px solid var(--maize-crayola); */
+   
+
+
+}
+
+/****** CIRCLES ******/
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: var(--madder-lake);
+    /* background-color: var(--candy-pink); */
+    border-radius: var(--br-round);
+    /* grid-column: 3; */
+    /* grid-row: 1; */
+    position: absolute;
+    top: -4rem;
+    right: -4rem;
+    z-index: -1;
+}
+
+.circle2 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--madder-lake);
+    /* background-color: var(--candy-pink); */
+    border-radius: var(--br-round);
+    /* grid-column: 3; */
+    /* grid-row: 1; */
+    position: absolute;
+    bottom: -4rem;
+    left: -4rem;
+    z-index: -1;
 }
