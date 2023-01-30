@@ -112,6 +112,7 @@ h2 {
 ul {
     font-family: 'Kanit', sans-serif;
     list-style-type: none;
+    margin-top: 2rem;
     grid-column: 2;
     grid-row: 1;
 }
@@ -140,29 +141,29 @@ li {
 /****** CIRCLES ******/
 
 .circle {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     background-color: var(--madder-lake);
     /* background-color: var(--candy-pink); */
     border-radius: var(--br-round);
     /* grid-column: 3; */
     /* grid-row: 1; */
     position: absolute;
-    top: -4rem;
-    right: -4rem;
+    top: -5rem;
+    left: -5rem;
     z-index: -1;
 }
 
 .circle2 {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     background-color: var(--madder-lake);
     /* background-color: var(--candy-pink); */
     border-radius: var(--br-round);
     /* grid-column: 3; */
     /* grid-row: 1; */
     position: absolute;
-    bottom: -4rem;
-    left: -4rem;
+    bottom: -5rem;
+    right: -5rem;
     z-index: -1;
 }
