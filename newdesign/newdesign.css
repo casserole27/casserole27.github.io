@@ -13,34 +13,21 @@ purple/pink/orange
 https://coolors.co/a13879-df5a2f-e34a5f-e792bb-ecdbe5
 */
 
+/*https://www.youtube.com/watch?v=rg7Fvvl3taU*/
+
 /****** VARIABLES ******/
 
 :root {
-    
-    --candy-pink: #db7277ff;
-    --english-violet: #6b4e71ff;
-    --charcoal: #3a4454ff;
-    --steel-teal: #527d7cff;
-    --misty-rose: #f5ddddff;
-    
-    
-    /*COLORS*/
-    --indigo-dye: hsla(199, 84%, 20%, 1);
-    --madder-lake: hsla(355, 67%, 48%, 1);
-    --mango-tango: hsla(23, 97%, 63%, 1);
-    --maize-crayola: hsla(41, 100%, 69%, 1);
-    --cosmic-latte: hsla(49, 100%, 96%, 1);
 
-    /*COLORS 2*/
-    --maximum-red-purple: #a13879ff;
-    --burnt-sienna: #E3744F;
-    /* --flame: #df5a2fff; */
-    --paradise-pink: #e34a5fff;
-    --kobi: #e792bbff;
-    --pale-purple-pantone: #ecdbe5ff;
-      
-    /*BORDER RADIUS*/
-    --br-soft: 1rem;
+     /*COLORS*/
+     --charcoal: #3a4454ff;
+     --english-violet: #6b4e71ff;
+     --steel-teal: #527d7cff;
+     --misty-rose: #f5ddddff;
+     --madder-lake: #cc2836ff;
+    
+     /*BORDER RADIUS*/
+    --br-soft: .5rem;
     --br-round: 50%;
     
     /*FONT SIZES*/
@@ -64,34 +51,53 @@ https://coolors.co/a13879-df5a2f-e34a5f-e792bb-ecdbe5
 body {
     font-family: 'Kanit', sans-serif;
     background-color: var(--charcoal);
+    text-align: center;
    
 }
 
 main {
-  margin: 1rem;
-  display: grid;
+    margin: 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: .5fr repeat(2, 1fr) .5fr;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+  /* margin: 1rem; */
+  /* display: grid;
   place-content: center;
   grid-template-columns: 4rem minmax(160px, 300px) 4rem;
   grid-template-rows: repeat(6, 160px);
   gap: 2rem;
   justify-content: center;
-  align-items: start;
+  align-items: start; */
 }
 
-@media (min-width: 600px) {
+.grid-col-span-2 {
+    grid-column: span 2;
+}
+
+/* @media (min-width: 600px) {
     main {
         grid-template-columns: 1fr repeat(2, 300px) 1fr;
     }
-}
+} */
 
 h1 {
-    font-size: 4rem;
-    letter-spacing: .5rem;
+    font-size: var(--fs-title);
+    letter-spacing: 1rem;
+    background-color: var(--steel-teal);
+    padding: .5rem;
+
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    grid-column: 1;
-    grid-row: 1 / 5;
-    margin-top: 10rem;
+    padding-top: 4rem;
+
+    grid-row: 1 / 4;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1, h2 {
@@ -101,12 +107,19 @@ h1, h2 {
 
 h2 {
     font-size: var(--fs-l);
+    background-color: var(--steel-teal);
+    padding: .5rem;
+    grid-column: 4;
+
     text-align: center;
     writing-mode: vertical-lr;
-    padding: .5rem;
-    margin-top: 10rem;
-    grid-column: 3;
-    grid-row: 1 / 5;
+    
+    grid-row: 2 / 6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
 }
 
@@ -114,26 +127,57 @@ h2 {
 /****** LIST STYLING ******/
 
 p {
-    width: 100%;
-    height: 100%;
     color: var(--misty-rose);
     background-color: var(--english-violet);
     font-size: var(--fs-m);
     text-transform: uppercase;
-    text-align: center;
-    /* padding: 2rem; */
+    padding: 1rem;
+    border-radius: var(--br-soft);
+
+    /* text-align: center;
+    padding: 2rem;
     margin-bottom: 2rem;
     box-shadow: 1rem 1rem var(--steel-teal);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* grid-row: 1 / 7; */
-    grid-column: 2;
+    grid-row: 1 / 7;
+    grid-column: 2; */
+}
+.card{
+    min-width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: -10px 10px var(--steel-teal);
 }
 
-.card-one {
-    grid-row: 1;
+.stripes {
+    background: repeating-linear-gradient(
+  45deg,
+  var(--steel-teal),
+  var(--steel-teal) 10px,
+  var(--english-violet) 10px,
+  var(--english-violet) 20px
+);
+    box-shadow: 10px 10px var(--candy-pink);
 }
+
+
+/* .card-two {
+    background-color: #ccc;
+    background-image: radial-gradient(#000 10%, transparent 11%),
+      radial-gradient(#e53935 10%, transparent 11%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
+    background-repeat: repeat;
+} */
+
+/* .card-one {
+    grid-row: 1;
+} */
 
 
 /****** CIRCLES ******/
