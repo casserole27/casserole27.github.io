@@ -49,50 +49,56 @@ https://coolors.co/a13879-df5a2f-e34a5f-e792bb-ecdbe5
 /******* GLOBAL STYLES *******/
 
 body {
+    min-height: 100vh;
     font-family: 'Kanit', sans-serif;
     background-color: var(--charcoal);
     text-align: center;
-   
 }
 
-main {
-    margin: 1rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: .5fr repeat(2, 1fr) .5fr;
-    /* align-items: center; */
-    /* justify-content: center; */
+@media (min-width: 1200px) {
+    body {
+        display: grid;
+        place-content: center;
+        grid-template-columns: .25fr 1000px .25fr;
+    }
 
-  /* margin: 1rem; */
-  /* display: grid;
-  place-content: center;
-  grid-template-columns: 4rem minmax(160px, 300px) 4rem;
-  grid-template-rows: repeat(6, 160px);
-  gap: 2rem;
-  justify-content: center;
-  align-items: start; */
 }
+
+/****** UTILITY CLASSES ******/
+
+.index-1 {
+    z-index: -1;
+}
+
+.index-2 {
+    z-index: -2;
+}
+
 
 .grid-col-span-3 {
     grid-column: span 3;
 }
 
-/* @media (min-width: 600px) {
-    main {
-        grid-template-columns: 1fr repeat(2, 300px) 1fr;
-    }
-} */
+/****** GRID CONTAINER ******/
+
+main {
+    margin: 1rem;
+    grid-column: 2;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: .5fr repeat(2, 1fr) .5fr;
+}
 
 h1 {
     font-size: var(--fs-title);
     color: var(--misty-rose);
     text-transform: uppercase;
-    letter-spacing: 1rem;
+    letter-spacing: .25rem;
+    
     background-color: var(--steel-teal);
     padding: .5rem;
     writing-mode: vertical-lr;
     transform: rotate(180deg);
-    padding-top: 4rem;
     border-radius: var(--br-soft);
 
     grid-row: 1 / 4;
@@ -136,9 +142,7 @@ p {
 
 .card-top{
     min-width: 150px;
-    min-height: 100px;
-
-    grid-column: 2 / 5;
+    height: 150px;
 
     display: flex;
     justify-content: center;
@@ -147,9 +151,11 @@ p {
 }
 
 .card-middle {
-    min-width: 150px;
-    min-height: 100px;
+    min-width: 200px;
+    min-height: 200px;
     background-color: var(--madder-lake);
+    border: 5px solid var(--misty-rose);
+    
     grid-column: 2 / 4;
 
     display: flex;
@@ -159,14 +165,27 @@ p {
 
 .card-bottom{
     min-width: 150px;
-    min-height: 100px;
-
-    grid-column: 1 / 4;
+    min-height: 150px;
 
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: -5px 5px var(--steel-teal);
+}
+
+@media (min-width: 1200px) {
+
+    main {
+        gap: 2rem;
+    }
+
+    h1, h2 {
+        transform: rotate(270deg);
+        z-index: 1;
+    }
+    .card-top, .card-bottom {
+        transform: rotate(-30deg);
+    }
 }
 
 
@@ -182,20 +201,6 @@ p {
 }
 
 
-/* .card-two {
-    background-color: #ccc;
-    background-image: radial-gradient(#000 10%, transparent 11%),
-      radial-gradient(#e53935 10%, transparent 11%);
-    background-size: 60px 60px;
-    background-position: 0 0, 30px 30px;
-    background-repeat: repeat;
-} */
-
-/* .card-one {
-    grid-row: 1;
-} */
-
-
 /****** CIRCLES ******/
 
 
@@ -206,19 +211,31 @@ p {
     background-color: var(--madder-lake);
     border-radius: var(--br-round);
     position: absolute;
-    top: -5rem;
-    left: -5rem;
-    z-index: -1;
+    top: -4rem;
+    left: -4rem;
 }
 
 .circle2 {
     min-width: 300px;
-    height: 300px;
+    min-height: 300px;
     background-color: var(--madder-lake);
     border-radius: var(--br-round);
     position: absolute;
-    bottom: -5rem;
-    right: -5rem;
-    z-index: -1;
+    bottom: -4rem;
+    right: -4rem;
 
+}
+
+@media (min-width: 1200px) {
+    .circle {
+        width: 400px;
+        height: 400px;
+        left: -4rem;
+    }
+
+    .circle2 {
+        width: 400px;
+        height: 400px; 
+        right: -4rem;    
+    }
 }
