@@ -59,7 +59,7 @@ body {
     body {
         display: grid;
         place-content: center;
-        grid-template-columns: .25fr 1000px .25fr;
+        grid-template-columns: .25fr 1200px .25fr;
     }
 
 }
@@ -132,12 +132,13 @@ h2 {
 /****** LIST STYLING ******/
 
 p {
-    color: var(--misty-rose);
+    color: var(--charcoal);
     background-color: var(--english-violet);
-    font-size: var(--fs-m);
+    font-size: var(--fs-l);
     text-transform: uppercase;
     padding: 1rem;
     border-radius: var(--br-soft);
+    border: 2px solid var(--charcoal);
 }
 
 .card-top{
@@ -147,14 +148,16 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 5px 5px var(--steel-teal);
+    box-shadow: 7px 7px var(--steel-teal);
 }
 
 .card-middle {
+    color: var(--misty-rose);
     min-width: 200px;
     min-height: 200px;
     background-color: var(--madder-lake);
     border: 5px solid var(--misty-rose);
+    box-shadow: 7px 7px var(--misty-rose);
     
     grid-column: 2 / 4;
 
@@ -170,7 +173,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: -5px 5px var(--steel-teal);
+    box-shadow: -7px 7px var(--steel-teal);
 }
 
 @media (min-width: 1200px) {
@@ -180,12 +183,26 @@ p {
     }
 
     h1, h2 {
-        transform: rotate(270deg);
+        /* font-size: 3rem; */
+        /* width: 300px; */
+        /* height: 300px; */
+        /* border-radius: 50%; */
+        /* transform: rotate(270deg); */
         z-index: 1;
+        padding: 4rem;
+        /* border-radius: 40% 2rem 40% 2rem; */
     }
+
+    .card-middle {
+        font-size: var(--fs-l);
+        z-index: 2;
+    }
+
     .card-top, .card-bottom {
-        transform: rotate(-30deg);
+        font-size: var(--fs-m);
+        transform: rotate(-25deg);
     }
+
 }
 
 
@@ -226,6 +243,11 @@ p {
 
 }
 
+
+.accent1, .accent2 {
+    display: none;
+}
+
 @media (min-width: 1200px) {
     .circle {
         width: 400px;
@@ -238,4 +260,28 @@ p {
         height: 400px; 
         right: -4rem;    
     }
+    
+.accent1 {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 10rem;
+    background-color: var(--misty-rose);
+    width: 1000px;
+    height: 30px;
+    border-radius: var(--br-soft);
+    z-index: -1;
+}
+
+.accent2 {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 10rem;
+    background-color: var(--misty-rose);
+    width: 1000px;
+    height: 30px;
+    border-radius: var(--br-soft);
+}
+
 }
