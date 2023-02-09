@@ -103,7 +103,7 @@ a:hover, a:focus {
 /****** GRID CONTAINER ******/
 
 main {
-    margin: 1.5rem;
+    margin: 0 1.5rem;
     grid-column: 2;
     display: grid;
     gap: 1rem;
