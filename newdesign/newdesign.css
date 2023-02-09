@@ -35,7 +35,7 @@ https://coolors.co/a13879-df5a2f-e34a5f-e792bb-ecdbe5
     --fs-s: 1.25rem;
     --fs-m: 1.5rem;
     --fs-l: 2.5rem;
-    --fs-title: 3rem;
+    --fs-title: 3.5rem;
 }
 
 /****** MARGIN AND PADDING RESET ******/
@@ -49,17 +49,20 @@ https://coolors.co/a13879-df5a2f-e34a5f-e792bb-ecdbe5
 /******* GLOBAL STYLES *******/
 
 body {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     font-family: 'Kanit', sans-serif;
     background-color: var(--charcoal);
     text-align: center;
+    display: grid;
+    place-content: center;
 }
 
 @media (min-width: 1200px) {
     body {
         display: grid;
         place-content: center;
-        grid-template-columns: .25fr 1200px .25fr;
+        grid-template-columns: .25fr 1000px .25fr;
+        transform: rotate(-30deg);
     }
 
 }
@@ -82,7 +85,7 @@ body {
 /****** GRID CONTAINER ******/
 
 main {
-    margin: 1rem;
+    margin: 1.5rem;
     grid-column: 2;
     display: grid;
     gap: 1rem;
@@ -90,7 +93,7 @@ main {
 }
 
 h1 {
-    font-size: var(--fs-title);
+    font-size: var(--fs-s);
     color: var(--misty-rose);
     text-transform: uppercase;
     letter-spacing: .25rem;
@@ -109,7 +112,7 @@ h1 {
 }
 
 h2 {
-    font-size: var(--fs-l);
+    font-size: var(--fs-s);
     color: var(--misty-rose);
     background-color: var(--steel-teal);
     text-transform: uppercase;
@@ -128,13 +131,12 @@ h2 {
 
 }
 
-
 /****** LIST STYLING ******/
 
 p {
     color: var(--charcoal);
     background-color: var(--english-violet);
-    font-size: var(--fs-l);
+    font-size: var(--fs-s);
     text-transform: uppercase;
     padding: 1rem;
     border-radius: var(--br-soft);
@@ -142,8 +144,8 @@ p {
 }
 
 .card-top{
-    min-width: 150px;
-    height: 150px;
+    min-width: 100px;
+    min-height: 100px;
 
     display: flex;
     justify-content: center;
@@ -153,8 +155,8 @@ p {
 
 .card-middle {
     color: var(--misty-rose);
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 100px;
+    min-height: 100px;
     background-color: var(--madder-lake);
     border: 5px solid var(--misty-rose);
     box-shadow: 7px 7px var(--misty-rose);
@@ -167,8 +169,8 @@ p {
 }
 
 .card-bottom{
-    min-width: 150px;
-    min-height: 150px;
+    min-width: 100px;
+    min-height: 100px;
 
     display: flex;
     justify-content: center;
@@ -176,34 +178,39 @@ p {
     box-shadow: -7px 7px var(--steel-teal);
 }
 
-@media (min-width: 1200px) {
-
-    main {
-        gap: 2rem;
-    }
-
-    h1, h2 {
-        /* font-size: 3rem; */
-        /* width: 300px; */
-        /* height: 300px; */
-        /* border-radius: 50%; */
-        /* transform: rotate(270deg); */
-        z-index: 1;
+@media (min-width: 800px) {
+    h1 {
+        font-size: var(--fs-title);
         padding: 4rem;
-        /* border-radius: 40% 2rem 40% 2rem; */
-    }
-
-    .card-middle {
+    } 
+    
+    h2{
         font-size: var(--fs-l);
-        z-index: 2;
+        padding: 4rem;
     }
 
-    .card-top, .card-bottom {
-        font-size: var(--fs-m);
-        transform: rotate(-25deg);
-    }
-
+   
+   p {
+    font-size: var(--fs-l);
+   }
 }
+
+@media (min-width: 1200px) {
+    
+    h1 {
+        font-size: var(--fs-title);
+        transform: rotate(360deg);
+    }
+   
+     .card-middle {
+        transform: rotate(30deg);
+    }
+
+   
+}
+
+
+
 
 
 .stripes {
@@ -223,30 +230,31 @@ p {
 
 /*? HEIGHTS AND WIDTHS?*/
 .circle {
-    min-width: 300px;
-    height: 300px;
+    min-width: 200px;
+    height: 200px;
     background-color: var(--madder-lake);
     border-radius: var(--br-round);
     position: absolute;
-    top: -4rem;
-    left: -4rem;
+    top: -2rem;
+    left: -2rem;
 }
 
 .circle2 {
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 200px;
+    min-height: 200px;
     background-color: var(--madder-lake);
     border-radius: var(--br-round);
     position: absolute;
-    bottom: -4rem;
-    right: -4rem;
+    bottom: -2rem;
+    right: -2rem;
 
 }
 
-
-.accent1, .accent2 {
+.accent1, .accent2, .accent3, .accent4, .accent5, .accent6 {
     display: none;
 }
+
+
 
 @media (min-width: 1200px) {
     .circle {
@@ -261,27 +269,56 @@ p {
         right: -4rem;    
     }
     
-.accent1 {
+
+.accent1, .accent2, .accent3, .accent4, .accent5, .accent6 {
     display: block;
     position: absolute;
-    right: 0;
-    top: 10rem;
     background-color: var(--misty-rose);
-    width: 1000px;
-    height: 30px;
     border-radius: var(--br-soft);
-    z-index: -1;
+}
+
+.accent1 {
+    left: 2rem;
+    top: 2rem;
+    width: 400px;
+    height: 25px;
 }
 
 .accent2 {
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: 10rem;
-    background-color: var(--misty-rose);
-    width: 1000px;
-    height: 30px;
-    border-radius: var(--br-soft);
+    right: 2rem;
+    bottom: 2rem;
+    width: 400px;
+    height: 25px;
 }
+
+.accent3 {
+    left: 2rem;
+    top: 6rem;
+    width: 300px;
+    height: 25px;
+}
+
+.accent4 {
+    right: 2rem;
+    bottom: 6rem;
+    width: 300px;
+    height: 25px;
+}
+
+.accent5 {
+    left: 2rem;
+    top: 10rem;
+    width: 200px;
+    height: 25px;
+}
+
+.accent6 {
+    /* background-color: gold; */
+    right: 2rem;
+    bottom: 10rem;
+    width: 200px;
+    height: 25px;
+}
+
 
 }
