@@ -7,10 +7,9 @@ Date: January 2023
 
 /*
 COOLORS color palette link
-70s stripe
 https://coolors.co
-purple/pink/orange
-https://coolors.co/a13879-df5a2f-e34a5f-e792bb-ecdbe5
+
+
 */
 
 /*https://www.youtube.com/watch?v=rg7Fvvl3taU*/
@@ -21,8 +20,8 @@ https://coolors.co/a13879-df5a2f-e34a5f-e792bb-ecdbe5
 
      /*COLORS*/
      --charcoal: rgb(18, 39, 73);
-     --english-violet: #6b4e71ff;
-     --steel-teal: #527d7cff;
+     --english-violet: rgb(122, 75, 131);
+     --steel-teal: #027272;
      --misty-rose: #f5ddddff;
      --madder-lake: #cc2836ff;
     
@@ -49,20 +48,39 @@ https://coolors.co/a13879-df5a2f-e34a5f-e792bb-ecdbe5
 /******* GLOBAL STYLES *******/
 
 body {
-    /* min-height: 100vh; */
+    min-height: 100vh;
     font-family: 'Kanit', sans-serif;
-    background-color: var(--charcoal);
+    font-weight: 700;
+    color: var(--misty-rose);
+    background: linear-gradient(rgb(255, 215, 0), rgb(255, 69, 0), rgb(101, 62, 109),rgb(18, 39, 73));
     text-align: center;
+    letter-spacing: .1rem;
     display: grid;
     place-content: center;
 }
 
+
+a {
+    color: var(--misty-rose);
+    text-decoration: none;
+    transition: color 1s .5s;
+}
+
+a:visited {
+    color: var(--misty-rose);
+}
+
+a:hover, a:focus {
+    color: gold;
+}
+
+/******* MEDIA QUERY DESKTOP GRID ******/
+
 @media (min-width: 1200px) {
     body {
         display: grid;
-        place-content: center;
         grid-template-columns: .25fr 1000px .25fr;
-        transform: rotate(-30deg);
+        transform: rotate(-45deg);
     }
 
 }
@@ -92,8 +110,11 @@ main {
     grid-template-columns: .5fr repeat(2, 1fr) .5fr;
 }
 
+
+/****** CASSIE LEWIS******/
+
 h1 {
-    font-size: var(--fs-s);
+    font-size: var(--fs-m);
     color: var(--misty-rose);
     text-transform: uppercase;
     letter-spacing: .25rem;
@@ -110,6 +131,9 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
+
+/******* FRONTEND DEVELOPER ******/
 
 h2 {
     font-size: var(--fs-s);
@@ -131,16 +155,19 @@ h2 {
 
 }
 
-/****** LIST STYLING ******/
+/****** CARD STYLING ******/
 
 p {
-    color: var(--charcoal);
     background-color: var(--english-violet);
     font-size: var(--fs-s);
     text-transform: uppercase;
+    transition: transform 1s .5s;
     padding: 1rem;
     border-radius: var(--br-soft);
-    border: 2px solid var(--charcoal);
+}
+
+p:hover {
+    transform: rotate(45deg);
 }
 
 .card-top{
@@ -158,14 +185,17 @@ p {
     min-width: 100px;
     min-height: 100px;
     background-color: var(--madder-lake);
-    border: 5px solid var(--misty-rose);
-    box-shadow: 7px 7px var(--misty-rose);
+    transition: box-shadow 1s .5s;
     
     grid-column: 2 / 4;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card-middle:hover{
+    box-shadow: 0px 0px 1rem 1rem var(--misty-rose);
 }
 
 .card-bottom{
@@ -178,73 +208,58 @@ p {
     box-shadow: -7px 7px var(--steel-teal);
 }
 
+
+/****** MEDIA QUERY TABLET ******/
+
 @media (min-width: 800px) {
     h1 {
         font-size: var(--fs-title);
         padding: 4rem;
     } 
     
-    h2{
+    h2 {
         font-size: var(--fs-l);
         padding: 4rem;
     }
-
    
    p {
     font-size: var(--fs-l);
    }
-}
+} 
+
+/****** MEDIA QUERY DESKTOP ******/
 
 @media (min-width: 1200px) {
     
     h1 {
-        font-size: var(--fs-title);
         transform: rotate(360deg);
     }
    
      .card-middle {
-        transform: rotate(30deg);
+        padding: 2rem;
+        transform: rotate(45deg);
     }
-
-   
 }
 
 
 
+/****** CIRCLES AND ACCENTS ******/
 
 
-.stripes {
-    background: repeating-linear-gradient(
-  45deg,
-  var(--steel-teal),
-  var(--steel-teal) 10px,
-  var(--english-violet) 10px,
-  var(--english-violet) 20px
-);
-    box-shadow: 10px 10px var(--candy-pink);
-}
-
-
-/****** CIRCLES ******/
-
-
-/*? HEIGHTS AND WIDTHS?*/
-.circle {
-    min-width: 200px;
-    height: 200px;
-    background-color: var(--madder-lake);
-    border-radius: var(--br-round);
-    position: absolute;
-    top: -2rem;
-    left: -2rem;
-}
-
-.circle2 {
+.circle, .circle2 {
     min-width: 200px;
     min-height: 200px;
     background-color: var(--madder-lake);
     border-radius: var(--br-round);
     position: absolute;
+}
+
+.circle {
+    top: -2rem;
+    left: -2rem;
+}
+
+.circle2 {
     bottom: -2rem;
     right: -2rem;
 
@@ -255,23 +270,26 @@ p {
 }
 
 
+/****** MEDIA QUERY DESKTOP ******/
 
 @media (min-width: 1200px) {
-    .circle {
+    .circle, .circle2 {
         width: 400px;
         height: 400px;
-        left: -4rem;
+        position: absolute;
     }
 
+    .circle {
+        left: -4rem;
+    }
     .circle2 {
-        width: 400px;
-        height: 400px; 
-        right: -4rem;    
+        right: -4rem;
     }
     
 
 .accent1, .accent2, .accent3, .accent4, .accent5, .accent6 {
     display: block;
+    height: 20px;
     position: absolute;
     background-color: var(--misty-rose);
     border-radius: var(--br-soft);
@@ -281,43 +299,36 @@ p {
     left: 2rem;
     top: 2rem;
     width: 400px;
-    height: 25px;
 }
 
 .accent2 {
     right: 2rem;
     bottom: 2rem;
     width: 400px;
-    height: 25px;
 }
 
 .accent3 {
     left: 2rem;
     top: 6rem;
     width: 300px;
-    height: 25px;
 }
 
 .accent4 {
     right: 2rem;
     bottom: 6rem;
     width: 300px;
-    height: 25px;
 }
 
 .accent5 {
     left: 2rem;
     top: 10rem;
     width: 200px;
-    height: 25px;
 }
 
 .accent6 {
-    /* background-color: gold; */
     right: 2rem;
     bottom: 10rem;
     width: 200px;
-    height: 25px;
 }
 
 
