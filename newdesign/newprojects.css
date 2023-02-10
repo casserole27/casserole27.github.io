@@ -1,0 +1,192 @@
+/*
+Devsite design #2
+Author: Cassie Lewis
+https://clewisdev.com
+Date: January 2023
+*/
+
+/*
+COOLORS color palette link
+https://coolors.co
+*/
+
+/****** VARIABLES ******/
+
+:root {
+
+    /*COLORS*/
+    --charcoal: rgb(18, 39, 73);
+    --english-violet: rgb(122, 75, 131);
+    --steel-teal: #027272;
+    --misty-rose: #f5ddddff;
+    --madder-lake: #cc2836ff;
+   
+    /*BORDER RADIUS*/
+   --br-soft: .5rem;
+   --br-round: 50%;
+   
+   /*FONT SIZES*/
+   --fs-xs: 1rem;
+   --fs-s: 1.25rem;
+   --fs-m: 1.5rem;
+   --fs-l: 2rem;
+   --fs-title: 2.5rem;
+}
+
+/****** MARGIN AND PADDING RESET ******/
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/******* GLOBAL STYLES *******/
+
+body {
+    /* min-height: 100vh; */
+    font-family: 'Kanit', sans-serif;
+    /* font-weight: 700; */
+    font-size: var(--fs-s);
+    color: black;
+    /* background-color: var(--english-violet); */
+    text-align: center;
+    letter-spacing: .1rem;
+    display: grid;
+    place-content: center;
+}
+
+
+a {
+    color: var(--madder-lake);
+    /* color: gold; */
+    text-decoration: none;
+    transition: color 1s .5s;
+}
+
+a:visited {
+    color: var(--madder-lake);
+    /* color: gold; */
+}
+
+a:hover, a:focus {
+    /* color: gold; */
+}
+
+h1 {
+    max-width: 800px;
+    font-size: var(--fs-m);
+    color: var(--misty-rose);
+    background-color: var(--steel-teal);
+    padding: 1rem;
+    margin: .5rem auto;
+    border-radius: var(--br-soft);
+} 
+
+h2, h3 {
+    font-size: var(--fs-s);
+  
+}
+
+hr {
+    background-color: var(--english-violet);
+    padding: .25rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: var(--br-soft);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: .5rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: .5rem;
+}
+
+.badge {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+    
+    body {
+        font-size: var(--fs-m);
+    }
+    
+    h1 {
+        font-size: var(--fs-title);
+        padding: 2rem;
+        margin: 2rem auto;
+    }
+
+    h2, h3 {
+        font-size: var(--fs-m);
+    }
+
+
+}
+
+/****** UTILITY CLASSES ******/
+
+.card {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border-radius: var(--br-soft);
+}
+
+/****** MAIN CONTAINER ******/
+
+main {
+    min-width: 320px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+@media (min-width: 1000px) {
+    main {
+        max-width: 1500px;
+    }    
+}
+
+/****** PROJECTS ******/
+
+.projects {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border-radius: var(--br-soft);
+
+}
+
+.projects-list {
+    background-color: var(--charcoal);
+}
+
+
+
+@media (min-width: 1000px) {
+    .projects-list {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* .projects-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; */
+}
+
+
+
