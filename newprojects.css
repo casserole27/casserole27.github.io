@@ -44,12 +44,10 @@ https://coolors.co
 /******* GLOBAL STYLES *******/
 
 body {
-    /* min-height: 100vh; */
     font-family: 'Kanit', sans-serif;
-    /* font-weight: 700; */
+    font-weight: 400;
     font-size: var(--fs-s);
     color: black;
-    /* background-color: var(--english-violet); */
     text-align: center;
     letter-spacing: .1rem;
     display: grid;
@@ -59,34 +57,36 @@ body {
 
 a {
     color: var(--madder-lake);
-    /* color: gold; */
+    font-weight: 600;
     text-decoration: none;
     transition: color 1s .5s;
 }
 
 a:visited {
     color: var(--madder-lake);
-    /* color: gold; */
 }
 
 a:hover, a:focus {
-    /* color: gold; */
+    color: var(--steel-teal);
 }
 
 h1 {
     max-width: 800px;
     font-size: var(--fs-m);
+    font-weight: 600;
     color: var(--misty-rose);
     background-color: var(--steel-teal);
     padding: 1rem;
-    margin: .5rem auto;
+    margin: 0 auto;
     border-radius: var(--br-soft);
 } 
 
 h2, h3 {
     font-size: var(--fs-s);
-  
+    font-weight: 600;
+    padding: 1rem;
 }
+
 
 hr {
     background-color: var(--english-violet);
@@ -107,8 +107,8 @@ li {
 img {
     display: block;
     width: 100%;
-    height: 100%;
     padding: .5rem;
+    margin-bottom: 1rem;
 }
 
 .badge {
@@ -125,7 +125,7 @@ img {
     h1 {
         font-size: var(--fs-title);
         padding: 2rem;
-        margin: 2rem auto;
+        margin: 1rem auto;
     }
 
     h2, h3 {
@@ -159,33 +159,90 @@ main {
 
 /****** PROJECTS ******/
 
-.projects {
-    padding: .5rem;
-    margin-bottom: 1rem;
-    border-radius: var(--br-soft);
-
-}
-
 .projects-list {
-    background-color: var(--charcoal);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 0 2rem 1rem 2rem;
+ }
+
+  .projects {
+    background-color: white;
+    padding: 2rem 1rem 4rem 1rem;
+    margin: .5rem 0;
+    border: solid .06rem darkgray;
+    box-shadow: -.5rem .5rem .375rem .125rem darkgray;
+  }
+
+
+/******* ABOUT PAGE ******/
+
+p {
+    margin-bottom: 1rem;
 }
 
+#about-image {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto 1rem auto;
+}
 
+.about-subtitle {
+    max-width: 1000px;
+    color: white;
+    background-color: var(--english-violet);
+    margin: 1rem auto;
+    border-radius: var(--br-soft);
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.about-points {
+    max-width: 800px;
+    font-size: var(--fs-s);
+    padding: .25rem;
+}
+
+.adventure {
+    color: white;
+    font-size: var(--fs-s);
+    background-color: var(--madder-lake);
+    padding: .5rem;
+    margin-bottom: 2rem;
+    border-radius: var(--br-soft);
+}
+
+.about-footer {
+    display: flex;
+    flex-direction: column;
+}
 
 @media (min-width: 1000px) {
-    .projects-list {
-        padding: 2rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+    .about-section {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 4rem;
     }
 
-    /* .projects-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem; */
+    p {
+        text-align: left;
+    }
+
+    .about-points {
+        margin-top: 1rem;
+    }
+
+    .about-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 4rem;
+    }
 }
 
 
