@@ -16,7 +16,7 @@ https://coolors.co
 
     /*COLORS*/
     --charcoal: rgb(18, 39, 73);
-    --english-violet: rgb(122, 75, 131);
+    --english-violet: #7a4b83;
     --steel-teal: #027272;
     --misty-rose: #f5ddddff;
     --madder-lake: #cc2836ff;
@@ -216,9 +216,20 @@ p {
     border-radius: var(--br-soft);
 }
 
+.btn {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: var(--fs-s);
+    background-color: gold;
+    padding: 1rem 2rem;
+    border: none;   
+    border-radius: var(--br-soft);
+}
+
 .about-footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 @media (min-width: 1000px) {
@@ -241,7 +252,7 @@ p {
         display: flex;
         flex-direction: row;
         justify-content: start;
-        gap: 4rem;
+        gap: 2rem;
     }
 }
 
