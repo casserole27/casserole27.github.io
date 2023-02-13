@@ -172,6 +172,11 @@ main {
     margin: .5rem 0;
     border: solid .06rem darkgray;
     box-shadow: -.5rem .5rem .375rem .125rem darkgray;
+    transition: background-color 1s .5s;
+  }
+
+  .projects:hover {
+    background-color: lightyellow;
   }
 
 
