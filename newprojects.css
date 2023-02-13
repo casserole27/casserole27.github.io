@@ -106,9 +106,9 @@ li {
 
 img {
     display: block;
-    width: 100%;
+    max-width: 600px;
     padding: .5rem;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem auto;
 }
 
 .badge {
@@ -135,6 +135,12 @@ img {
 
 }
 
+@media (max-width: 450px) {
+    img {
+        width: 250px;
+    }
+}
+
 /****** UTILITY CLASSES ******/
 
 .card {
@@ -159,17 +165,9 @@ main {
 
 /****** PROJECTS ******/
 
-.projects-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin: 0 2rem 1rem 2rem;
- }
-
   .projects {
     background-color: white;
-    padding: 2rem 1rem 4rem 1rem;
-    margin: .5rem 0;
+    padding: .5rem .25rem 1rem .25rem;  
     border: solid .06rem darkgray;
     box-shadow: -.5rem .5rem .375rem .125rem darkgray;
     transition: background-color 1s .5s;
@@ -177,6 +175,20 @@ main {
 
   .projects:hover {
     background-color: lightyellow;
+  }
+
+  @media (min-width: 1000px) {
+    .projects{
+        padding: 2rem 1rem 4rem 1rem;
+        margin: .5rem 0;
+    }
+
+    .projects-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin: 0 2rem 1rem 2rem;
+     }
   }
 
 
@@ -203,6 +215,7 @@ p {
 .about-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
  
 }
 
@@ -222,22 +235,26 @@ p {
 }
 
 .btn {
+    width: 150px;
     font-family: 'Kanit', sans-serif;
     font-weight: 400;
     font-size: var(--fs-s);
+    text-align: center;
     background-color: gold;
     padding: 1rem 2rem;
+    margin: 0 auto;
     border: none;   
     border-radius: var(--br-soft);
 }
 
 .about-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    place-content: center;
+    grid-template-columns: .25fr .25fr;
+    gap: 1rem;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .about-section {
         flex-direction: row;
         justify-content: space-around;
