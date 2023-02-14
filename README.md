@@ -1,7 +1,5 @@
-# hometown-homepage
-Scrimba M2 final project - hometown homepage
 
-## Table of contents
+ ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
@@ -15,51 +13,70 @@ Scrimba M2 final project - hometown homepage
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
+
+### Overview
+
+- Design #2 for portfolio website
+
+### Screenshots
+![Screenshot-desktop](/images/devportfolio/devsite.png)
+![Screenshot-mobile](/images/devportfolio/devsite-mobile.png)
+
 ### Links
 
-- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/four-card-feature-section-using-responsive-css-grid-vZGriGOpU1)
-- Live Site URL: [live site](https://www.clewisdev.com/FMfourcardfeaturesection/)
+- Figma: [Wireframe](https://www.figma.com/file/jsriJK2YxlBOjw12G4jEbU/Devsite-Wireframe?node-id=0%3A1&t=SYrAX6aFIrIGGCUj-1)
+
+- Live Site: [Live Site](https://www.clewisdev.com/counter-app/)
+- Github: [Github](https://github.com/casserole27/casserole27.github.io)
 
 ## My process
 
-Create Github reposiotry
+Create Github repository
 - initialize README
+
 Setup basic HTML file 
 - insert my personal comment credit
-- <head> tag includes stylesheet/link and fonts, double check for meta viewport tag
+- head tag includes stylesheet/link and fonts, double check for meta viewport tag
 - initial semantic, accessible markup: placing main, heading and paragraph tags
  - commit and push
+
 Setup basic CSS file
 - insert my personal comment credit
-- copy style guide into file as comments
 - decide on mobile or desktop-first design based on design file examples
-- create *, root, and body selectors: margin/padding to 0, setup for variables, add font-family
-- decide on which variables to use
+- set up root selector with variables: colors, border radius, and font size
+- margin, padding, box-size reset, root
+- decide on global styles
 - commit and push
+
 Consult Figma design files
+ - use rems or ems
  - adjust text properties: size, line height, color
  - insert images and color properties
  - decide on layout tools and markup accordingly
  - add effects: borders, box shadows, etc
  - commit and push after each major change
+
+Publish live URL
+
 Check markup and accessibility
 (https://validator.w3.org/)
 (https://wave.webaim.org/)
  - make adjustments as necessary
  - commit and push
- - live URL
+ - finish README
 
 
 ### Built with
 
-- Semantic HTML5 markup
+- Figma wireframing
+- mobile-first design
+- semantic HTML5 markup
 - CSS custom properties
-- Flexbox
+- Responsive Web Design
 - CSS Grid
-- Mobile-first workflow
+- CSS Flexbox
 
 ### What I learned
-
 
 ### Continued development
 
@@ -70,13 +87,12 @@ Check markup and accessibility
 ## Author
 
 - Website - [C Lewis](https://www.clewisdev.com)
-- Frontend Mentor - [@casserole27](https://www.frontendmentor.io/profile/casserole27)
 - LinkedIn - [LinkedIn](https://www.linkedin.com/in/clewisdev/)
 
 
 ## Acknowledgments
 
-[Kevin Powell's YouTube channel](https://www.youtube.com/kepowob)
+
 
 
 
