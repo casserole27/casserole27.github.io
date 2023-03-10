@@ -46,7 +46,7 @@ https://coolors.co
 /******* GLOBAL STYLES *******/
 
 body {
-    min-height: 100vh;
+    height: 100vh;
     font-family: 'Kanit', sans-serif;
     font-weight: 700;
     color: var(--misty-rose);
