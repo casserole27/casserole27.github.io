@@ -59,6 +59,7 @@ a {
     color: var(--madder-lake);
     font-weight: 600;
     text-decoration: none;
+
     transition: color 1s .5s;
 }
 
@@ -167,7 +168,7 @@ main {
 
   .projects {
     background-color: white;
-    padding: .5rem .25rem 1rem .25rem;  
+    padding: .5rem .25rem 3rem .25rem;  
     border: solid .06rem darkgray;
     box-shadow: -.5rem .5rem .375rem .125rem darkgray;
     transition: background-color 1s .5s;
