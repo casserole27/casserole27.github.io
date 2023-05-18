@@ -195,6 +195,10 @@ main {
 
 /******* ABOUT PAGE ******/
 
+.main-container {
+    max-width: 1000px;
+}
+
 p {
     margin-bottom: 1rem;
 }
@@ -206,11 +210,14 @@ p {
 }
 
 .about-subtitle {
-    max-width: 1000px;
-    color: white;
-    background-color: var(--english-violet);
+    background-color: white;
+    padding: .5rem .25rem 3rem .25rem;  
+    border: solid .06rem darkgray;
+    box-shadow: -.5rem .5rem .375rem .125rem darkgray;
+    font-size: var(--fs-s);
+    font-weight: 400;
     margin: 1rem auto;
-    border-radius: var(--br-soft);
+    /* border-radius: var(--br-soft); */
 }
 
 .about-section {
@@ -224,6 +231,7 @@ p {
     max-width: 800px;
     font-size: var(--fs-s);
     padding: .25rem;
+    
 }
 
 .adventure {
