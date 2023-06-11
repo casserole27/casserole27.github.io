@@ -355,7 +355,7 @@ header {
 .nav-list {
     /* max-width: 320px; */
     background-color: var(--dark-gray);
-    text-align: center;
+    text-align: right;
     text-transform: uppercase;
     font-weight: 700;
     padding: .5em;
@@ -365,9 +365,19 @@ header {
  
 }
 
-.nav-li {
+.nav-li a {
+    color: var(--white);
     font-size: var(--fs-m);
     margin: .5em 1em;
+}
+
+.nav-li a:hover {
+    color: var(--gold);
+}
+
+.nav-li a:focus {
+    outline: 2px solid gold;        
+    padding: .25em;
 }
 
 /* ======= MEDIA QUERIES FOR NAV MENU ======= */
