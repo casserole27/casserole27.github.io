@@ -394,6 +394,7 @@ header {
 
     .nav-menu {
         display: block;
+        text-align: center;
     }
 
     .nav-list {
