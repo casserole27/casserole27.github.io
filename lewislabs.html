@@ -7,48 +7,98 @@
     
     <title>C Lewis Frontend Web Developer</title>
 
+    <!-- FONT AWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700;800&display=swap" rel="stylesheet">
-        
+    
+    <!-- CSS SHEETS -->
     <link rel="stylesheet" href="newprojects.css">
 </head>
 
-    <header>
+<body>
     
-        <h1>Welcome to LewisLabs</h1>
+    <header class="utl-padding">
+
+        <div class="header-container">
+
+            <h1 class="title">⭐ casseroleCodes</h1>
+            <button 
+                class="fa-solid fa-bars nav-btn" 
+                id="nav-btn"
+                aria-label="navigation menu">
+            </button>
+             
+            </div>
+
+                <nav 
+                    class="nav-menu hidden"
+                    id="nav-menu">
+                                    
+                    <ul class="nav-list">
+                        <li class="nav-li"><a href="index.html">home</a></li>
+                        <li class="nav-li"><a href="newprojects.html">projects</a></li>
+                        <li class="nav-li"><a href="https://www.clewisdev.com/learning-journal/index.html">blog</a></li>
+                        <li class="nav-li"><a href="lewislabs.html">lewislabs</a></li>    
+                        <li class="nav-li"><a href="index.html">github</a></li>
+                        <li class="nav-li"><a href="https://www.linkedin.com/in/clewisdev/" target="_blank">LinkedIn</a></li>    
+                        <li class="nav-li"><a href="images/01-CASSIE-LEWIS-DEV-RESUME-1.pdf" id="resume" target="_blank">resume</a></li>    
+
+                    </ul>
+                
+                </nav>
+                  
+            </div>
+    
+        <h2 class="page-title">Welcome to LewisLabs</h1>
         
-        <h2>Experiments in design, layout, and CSS art.</h2>
+        <h3>Experiments in design, layout, CSS art, and other unique projects.</h2>
         
         <hr>
 
     </header>
     
 
-    <section>
-    
+   <main> 
            
         <ul id="projects-list" class="projects-list">
 
-            <li class="projects"><a href="about2.html" target="_blank">
-                <img src="images/devportfolio/grid-experiments.png">
-                Grid Experiments</a>
 
             <li class="projects"><a href="https://www.clewisdev.com/darth-vader-quote-generator/" target="_blank">
                 <img src="images/devportfolio/darth-quote.png">
                 Darth Vader Quote Generator CSS art</a> | <a href="https://github.com/casserole27/darth-vader-quote-generator" target="_blank">Github</a></li>
-
+            
             <li class="projects"><a href="https://www.clewisdev.com/scoreboard-app/" target="_blank">
                 <img src="images/devportfolio/catan-scorekeeper.png">
-                Settlers of Catan Scorekeeper</a> | <a href="https://github.com/casserole27/scoreboard-app" target="_blank">Github</a></li>
-          
+                Settlers of Catan Scorekeeper</a> | <a href="https://github.com/casserole27/scoreboard-app" target="_blank">Github</a></li>    
+            
+            <li class="projects"><a href="https://www.clewisdev.com/send-to-pager/" target="_blank">
+                <img src="images/devportfolio/sendtopager.png">
+                Send to Pager : CSS 3D UI</a> | <a href="https://github.com/casserole27/send-to-pager" target="_blank">Github</a></li>
+            
+            <li class="projects"><a href="https://www.clewisdev.com/tinchicken/" target="_blank">
+                <img src="images/devportfolio/tinchicken.png">
+                Tinchicken</a> | <a href="https://github.com/casserole27/tinchicken" target="_blank">Github</a></li>
+                    
+            <li class="projects"><a href="about2.html" target="_blank">
+                <img src="images/devportfolio/grid-experiments.png">
+                Grid Experiments</a></li> 
+            
             <li class="projects"><a href="/design-one/design-one.html" target="_blank">
                 <img src="images/devportfolio/devsite-01.png">
                 First Portfolio Page</a></li>
-    
-    </section>
+                  
 
-    <footer>
-        <p class="btn"><a href="https://www.clewisdev.com/">
-            Home</a></p> 
-    </footer>
+    </main>
+
+   
+</body>
+
+<script src="index.js" type="module"></script>
+
+</html>    
