@@ -1,0 +1,333 @@
+/*
+Devsite design #2
+Author: Cassie Lewis
+https://clewisdev.com
+Date: January 2023
+*/
+
+/*
+COOLORS color palette link
+https://coolors.co
+*/
+
+/*https://www.youtube.com/watch?v=rg7Fvvl3taU*/
+
+/****** VARIABLES ******/
+
+:root {
+
+     /*COLORS*/
+     --charcoal: rgb(18, 39, 73);
+     --english-violet: rgb(122, 75, 131);
+     --steel-teal: #027272;
+     --misty-rose: #f5ddddff;
+     --madder-lake: #cc2836ff;
+    
+     /*BORDER RADIUS*/
+    --br-soft: .5rem;
+    --br-round: 50%;
+    
+    /*FONT SIZES*/
+    --fs-xs: 1rem;
+    --fs-s: 1.25rem;
+    --fs-m: 1.5rem;
+    --fs-l: 2.5rem;
+    --fs-title: 3.5rem;
+}
+
+/****** MARGIN AND PADDING RESET ******/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/******* GLOBAL STYLES *******/
+
+body {
+    height: 100vh;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    color: var(--misty-rose);
+    background: linear-gradient(rgb(255, 215, 0), rgb(255, 69, 0), rgb(101, 62, 109),rgb(18, 39, 73));
+    text-align: center;
+    letter-spacing: .1rem;
+    display: grid;
+    place-content: center;
+}
+
+
+a {
+    color: var(--misty-rose);
+    text-decoration: none;
+    transition: color 1s .5s;
+}
+
+a:visited {
+    color: var(--misty-rose);
+}
+
+a:hover, a:focus {
+    color: gold;
+}
+
+/******* MEDIA QUERY DESKTOP GRID ******/
+
+@media (min-width: 1200px) {
+    body {
+        display: grid;
+        grid-template-columns: .25fr 1000px .25fr;
+        transform: rotate(-45deg);
+    }
+
+}
+
+/****** UTILITY CLASSES ******/
+
+.index-1 {
+    z-index: -1;
+}
+
+.index-2 {
+    z-index: -2;
+}
+
+
+.grid-col-span-3 {
+    grid-column: span 3;
+}
+
+/****** GRID CONTAINER ******/
+
+main {
+    margin: 0 1.5rem;
+    grid-column: 2;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: .5fr repeat(2, 1fr) .5fr;
+}
+
+
+/****** CASSIE LEWIS******/
+
+h1 {
+    font-size: var(--fs-m);
+    color: var(--misty-rose);
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+    
+    background-color: var(--steel-teal);
+    padding: .5rem;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    border-radius: var(--br-soft);
+
+    grid-row: 1 / 4;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/******* FRONTEND DEVELOPER ******/
+
+h2 {
+    font-size: var(--fs-s);
+    color: var(--misty-rose);
+    background-color: var(--steel-teal);
+    text-transform: uppercase;
+    text-align: center;
+    writing-mode: vertical-lr;
+    padding: .5rem;
+    border-radius: var(--br-soft);
+
+    grid-column: 4;
+    grid-row: 3 / 6;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+/****** CARD STYLING ******/
+
+p {
+    background-color: var(--english-violet);
+    font-size: var(--fs-s);
+    text-transform: uppercase;
+    transition: transform 1s .5s;
+    padding: 1rem;
+    border-radius: var(--br-soft);
+}
+
+p:hover {
+    transform: rotate(45deg);
+}
+
+.card-top{
+    min-width: 100px;
+    min-height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 7px var(--steel-teal);
+}
+
+.card-middle {
+    color: var(--misty-rose);
+    min-width: 100px;
+    min-height: 100px;
+    background-color: var(--madder-lake);
+    transition: box-shadow 1s .5s;
+    
+    grid-column: 2 / 4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-middle:hover{
+    box-shadow: 0px 0px 1rem 1rem var(--misty-rose);
+}
+
+.card-bottom{
+    min-width: 100px;
+    min-height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -7px 7px var(--steel-teal);
+}
+
+
+/****** MEDIA QUERY TABLET ******/
+
+@media (min-width: 800px) {
+    h1 {
+        font-size: var(--fs-title);
+        padding: 4rem;
+    } 
+    
+    h2 {
+        font-size: var(--fs-l);
+        padding: 4rem;
+    }
+   
+   p {
+    font-size: var(--fs-l);
+   }
+} 
+
+/****** MEDIA QUERY DESKTOP ******/
+
+@media (min-width: 1200px) {
+    
+    h1 {
+        transform: rotate(360deg);
+    }
+   
+     .card-middle {
+        padding: 2rem;
+        transform: rotate(45deg);
+    }
+}
+
+
+
+/****** CIRCLES AND ACCENTS ******/
+
+
+.circle, .circle2 {
+    min-width: 200px;
+    min-height: 200px;
+    background-color: var(--madder-lake);
+    border-radius: var(--br-round);
+    position: absolute;
+}
+
+.circle {
+    top: -2rem;
+    left: -2rem;
+}
+
+.circle2 {
+    bottom: -2rem;
+    right: -2rem;
+
+}
+
+.accent1, .accent2, .accent3, .accent4, .accent5, .accent6 {
+    display: none;
+}
+
+
+/****** MEDIA QUERY DESKTOP ******/
+
+@media (min-width: 1200px) {
+    .circle, .circle2 {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+    }
+
+    .circle {
+        left: -4rem;
+    }
+    .circle2 {
+        right: -4rem;
+    }
+    
+
+.accent1, .accent2, .accent3, .accent4, .accent5, .accent6 {
+    display: block;
+    height: 20px;
+    position: absolute;
+    background-color: var(--misty-rose);
+    border-radius: var(--br-soft);
+}
+
+.accent1 {
+    left: 2rem;
+    top: 2rem;
+    width: 400px;
+}
+
+.accent2 {
+    right: 2rem;
+    bottom: 2rem;
+    width: 400px;
+}
+
+.accent3 {
+    left: 2rem;
+    top: 6rem;
+    width: 300px;
+}
+
+.accent4 {
+    right: 2rem;
+    bottom: 6rem;
+    width: 300px;
+}
+
+.accent5 {
+    left: 2rem;
+    top: 10rem;
+    width: 200px;
+}
+
+.accent6 {
+    right: 2rem;
+    bottom: 10rem;
+    width: 200px;
+}
+
+
+}

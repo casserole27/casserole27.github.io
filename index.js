@@ -7,6 +7,7 @@ const navBtn = document.getElementById('nav-btn');
 
 
 function showNavMenu() {
+    console.log('button clicked')
     navMenu.classList.toggle('hidden');
     navBtn.classList.toggle('active-btn');
 };
