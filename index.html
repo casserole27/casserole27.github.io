@@ -13,58 +13,50 @@
      crossorigin="anonymous" referrerpolicy="no-referrer" />
 
      <!--GOOGLE FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700;800&display=swap" rel="stylesheet">
-    
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+     
     <!--CSS STYLE SHEET-->
-    <link rel="stylesheet" href="newdesign.css">
+    <link rel="stylesheet" href="design-three.css">
 </head>
 
-<!-- 
-    Devsite design #2
-    Author: Cassie Lewis
-    https://clewisdev.com
-    Date: January 2023 - February 2023
- -->
-
 <body>
-
-    <main class="wrapper">
-    
-        <div class="circle index-1"></div> 
-   
-        <h1>cassie lewis</h1>
-
-        <h2><a href="images/01-CASSIE-LEWIS-DEV-RESUME-1.pdf" target="_blank">frontend developer</a></h2>
-
-        <div class="circle2 index-1"></div> 
-
-        <p class="card-top card-one grid-col-span-3">
-            <a href="https://www.clewisdev.com/learning-journal/index.html" target="_blank">blog</a></p> 
-            
-        <p class="card-top grid-col-span-3">
-            <a href="lewislabs.html">lewislabs</a></p>
-
-        <div class="accent1 index-1"></div>
-        <div class="accent3 index-1"></div>
-        <div class="accent5 index-1"></div>
-
-        <p class="card-middle">
-            <a href="newprojects.html">education & projects</a></p>
-
-        <div class="accent2 index-1"></div>
-        <div class="accent4 index-1"></div>
-        <div class="accent6 index-1"></div>
-        
-        <p class="card-bottom card-five grid-col-span-3">
-            <a href="https://github.com/casserole27" target="_blank">github</a></p>
-               
-        <p class="card-bottom grid-col-span-3">
-            <a href="https://www.linkedin.com/in/clewisdev/" target="_blank">LinkedIn</a></p>
-    
-   
+    <header> 
+        <div class="nav-header">
+            <h1 class="title">⭐ casseroleCodes</h1>
+            <button 
+                class="fa-solid fa-bars nav-btn" 
+                id="nav-btn"
+                aria-label="navigation menu">
+            </button>
+        </div>
+    <nav class="nav-container hidden" id="nav-menu">
+        <img src="https://photos.smugmug.com/Other/HOSTING/i-mD8DW7L/0/12fa8723/M/headshot-M.png" class="headshot" alt="">
+        <ul class="nav-ul">
+            <li class="projects-nav"><a href="projects-three.html" class="projects-link" id="projects-btn">projects</a></li>
+            <li class="lewislabs"><a href="lewislabs-two.html" class="lewislabs-link">lewislabs</a></li>
+            <li class="about"><a href="about-three.html" class="about-link">about me</a></li>
+            <li class="resume"><a href="#" class="resume-link">resume</a></li>
+            <li class="links">
+                <a href="https://github.com/casserole27" target="_blank">github</a>
+                <a href="https://www.linkedin.com/in/clewisdev/" target="_blank">linkedin</a>
+            </li>
+        </ul>    
+    </nav>    
+    </header>
+    <main class="main-container" id="main-continaer">    
+        <section class="post-container">
+            <img src="images/star.svg" class="star-title" alt="">
+            <h2 class="casserolecodes-title">casseroleCodes</h2>
+            <h3 class="intro-title">Hello World!</h3> 
+            <h3 class="intro-subtitle">I'm Cassie, a frontend developer.</h3>
+            <p class="intro-description"> I'm driven by curiosity 
+                and creativity, always exploring new ideas and improving my skills. 
+                I seek meaningful work and projects where I can make a positive impact.
+                Challenges fuel my growth, and I strive for excellence in all that I do.</p>
+            <img src="https://photos.smugmug.com/Other/HOSTING/i-mD8DW7L/0/12fa8723/M/headshot-M.png" class="headshot-mobile" alt="">
+        </section> 
     </main>
-
+    <script src="index.js"></script>
 </body>
-</html>

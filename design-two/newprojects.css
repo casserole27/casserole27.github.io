@@ -1,0 +1,418 @@
+/*
+Devsite design #2
+Author: Cassie Lewis
+https://clewisdev.com
+Date: January 2023
+*/
+
+/*
+COOLORS color palette link
+https://coolors.co
+*/
+
+/****** VARIABLES ******/
+
+:root {
+
+    /*COLORS*/
+    --charcoal: rgb(18, 39, 73);
+    --english-violet: #7a4b83;
+    --steel-teal: #027272;
+    --misty-rose: #f5ddddff;
+    --madder-lake: #cc2836ff;
+    --dark-gray: #202020;
+    --gold: gold;
+    --white: #fff;
+   
+    /*BORDER RADIUS*/
+   --br-soft: .5rem;
+   --br-round: 50%;
+   
+   /*FONT SIZES*/
+   --fs-xs: 1rem;
+   --fs-s: 1.25rem;
+   --fs-m: 1.5rem;
+   --fs-l: 2rem;
+   --fs-title: 2.5rem;
+}
+
+/*======= MARGIN AND PADDING RESET ======*/
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/*====== GLOBAL STYLES ======*/
+
+body {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: var(--fs-s);
+    color: black;
+    text-align: center;
+    letter-spacing: .1rem;
+    display: grid;
+    place-content: center;
+}
+
+
+a {
+    color: var(--madder-lake);
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: color 1s .5s;
+}
+
+a:visited {
+    color: var(--madder-lake);
+}
+
+a:hover {
+    color: var(--steel-teal);
+} 
+
+a:focus {
+    outline: 3px solid var(--english-violet);
+    padding: .5em;
+    border-radius: 5px;
+}
+
+.page-title {
+    max-width: 800px;
+    font-size: var(--fs-m);
+    font-weight: 600;
+    color: var(--misty-rose);
+    background-color: var(--steel-teal);
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: var(--br-soft);
+} 
+
+h2, h3 {
+    font-size: var(--fs-s);
+    font-weight: 600;
+    padding: 1rem;
+}
+
+
+hr {
+    background-color: var(--english-violet);
+    padding: .25rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: var(--br-soft);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: .5rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    margin: 0 auto 1rem auto;
+}
+
+.badge {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+    
+    body {
+        font-size: var(--fs-m);
+    }
+    
+    .page-title {
+        font-size: var(--fs-title);
+        padding: 2rem;
+        margin: 1rem auto;
+    }
+
+    h2, h3 {
+        font-size: var(--fs-m);
+    }
+
+
+}
+
+@media (max-width: 450px) {
+    img {
+        width: 250px;
+    }
+}
+
+
+/*====== MAIN CONTAINER ======*/
+
+main {
+    min-width: 320px;
+    padding: 1rem;
+}
+
+@media (min-width: 1000px) {
+    main {
+        max-width: 1500px;
+    }    
+}
+
+/*====== PROJECTS ======*/
+
+  .projects {
+    background-color: white;
+    padding: .5rem .25rem 3rem .25rem;  
+    border: solid .06rem darkgray;
+    box-shadow: -.5rem .5rem .375rem .125rem darkgray;
+    transition: background-color 1s .5s;
+  }
+
+  .projects:hover {
+    background-color: lightyellow;
+  }
+
+  @media (min-width: 1000px) {
+    .projects{
+        padding: 2rem 1rem 4rem 1rem;
+        margin: .5rem 0;
+    }
+
+    .projects-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        margin: 0 2rem 1rem 2rem;
+     }
+  }
+
+
+/*====== ABOUT PAGE =====*/
+
+.main-container {
+    max-width: 1000px;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+#about-image {
+    display: block;
+    max-width: 400px;
+    margin: 0 auto 1rem auto;
+}
+
+.about-subtitle {
+    background-color: white;
+    padding: .5rem .25rem 3rem .25rem;  
+    border: solid .06rem darkgray;
+    box-shadow: -.5rem .5rem .375rem .125rem darkgray;
+    font-size: var(--fs-s);
+    font-weight: 400;
+    margin: 1rem auto;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+
+.about-points {
+    max-width: 800px;
+    font-size: var(--fs-s);
+    padding: .25rem;
+    
+}
+
+.adventure {
+    color: white;
+    font-size: var(--fs-s);
+    background-color: var(--madder-lake);
+    padding: .5rem;
+    margin-bottom: 2rem;
+    border-radius: var(--br-soft);
+}
+
+.home-btn {
+    width: 150px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    font-size: var(--fs-s);
+    text-align: center;
+    background-color: gold;
+    padding: 1rem 2rem;
+    margin: 0 auto 2em auto;
+    border: none;   
+    border-radius: var(--br-soft);
+}
+
+.about-footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: .25fr .25fr;
+    gap: 1rem;
+}
+
+
+/* ====== UTILITY CLASSES ====== */
+
+.card {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border-radius: var(--br-soft);
+}
+
+.utl-padding {
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+}
+
+.active-btn {
+    transform: rotate(90deg);
+}
+
+.hidden-post {
+    display: none;
+}
+
+.hidden-btn {
+    display: none;
+}
+
+@media (max-width: 799px) {
+
+.hidden {
+    display: none;
+}
+
+}
+
+@media (min-width: 1200px) {
+    .about-section {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    .about-points {
+        margin-top: 1rem;
+    }
+
+    .about-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 2rem;
+    }
+}
+
+
+
+/*====== HEADER AND NAV MENU ======*/
+
+
+header {
+    padding: 1em 2em 0 2em;
+    
+}
+
+.header-container {
+    margin-bottom: 1em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    color: var(--madder-lake);
+    font-size: var(--fs-m);
+}
+
+.nav-btn {
+    background-color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-size: var(--fs-l);
+    transition: transform .5s ease-in;
+}
+
+.nav-list {
+    /* max-width: 320px; */
+    background-color: var(--dark-gray);
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .5em;
+    margin: 0 0 1.5em auto;
+    border-radius: 5px;
+    opacity: .85;
+ 
+}
+
+.nav-li a {
+    color: var(--white);
+    font-size: var(--fs-m);
+    margin: .5em 1em;
+}
+
+.nav-li a:hover {
+    color: var(--gold);
+}
+
+.nav-li a:focus {
+    outline: 2px solid gold;        
+    padding: .25em;
+}
+
+/* ======= MEDIA QUERIES FOR NAV MENU ======= */
+
+@media (min-width: 800px) {
+
+    .title {
+        font-size: var(--fs-title);
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        display: block;
+    }
+
+    .nav-list {
+        width: 100%;
+        font-size: var(--fs-l);
+        text-align: center;
+
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    
+    /* ==== UTILITY CLASS ====*/
+     
+    .utl-padding {
+        padding-left: 3.25em;
+        padding-right: 3.25em;
+    }
+}
+
