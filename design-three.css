@@ -35,6 +35,7 @@
 }
 
 body {
+    height: 100vh;
     font-family: 'League Spartan', sans-serif;
     background-image: url(https://photos.smugmug.com/Other/HOSTING/i-h92ZX3d/0/ee7d7ca7/X3/Copy%20of%20casseroleCodes%20Banner-X3.png);
     background-repeat: no-repeat;
@@ -146,6 +147,18 @@ a:hover {
     padding: 1rem .5rem;
     margin: 0 1rem;
     border-radius: var(--br-small);
+}
+
+.star-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.star-mobile {
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin: 2rem 0;
 }
 
 .star-title {
@@ -283,6 +296,10 @@ footer {
     }
 
     .headshot-mobile {
+        display: none;
+    }
+
+    .star-mobile {
         display: none;
     }
 
