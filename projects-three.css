@@ -25,6 +25,9 @@ p {
 
 p {
     font-size: var(--fs-m);
+    max-width: 400px;
+    padding: .5rem;
+    margin: 1rem auto;
 }
 
 .scrimba {
