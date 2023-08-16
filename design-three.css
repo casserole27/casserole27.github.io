@@ -117,7 +117,7 @@ nav li {
     font-weight: 700;
     font-size: var(--fs-s);
     text-align: center;
-    background-color: gold;
+    background-color: var(--sunglow);
     padding: 1rem 2rem;
     margin: 2rem 0;
     border: none;   
@@ -151,7 +151,7 @@ li a,
 
 button:focus,
 a:focus {
-    outline: 3px solid gold;
+    outline: 3px solid var(--sunglow);
 }
 
 a:hover {
@@ -194,7 +194,7 @@ a:hover {
 .intro-subtitle {
     font-size: var(--fs-m);
     text-align: center;
-    color: gold;
+    color: var(--sunglow);
 }
 
 .intro-subtitle {
@@ -240,7 +240,7 @@ footer {
     margin: 2rem 0;
 }
 
-/*====== ABOUT PAGE ======*/
+/*====== ABOUT  ======*/
 
 .headshot-forest {
     display: block;
@@ -269,7 +269,7 @@ footer {
     font-weight: 700;
     font-size: var(--fs-s);
     text-align: center;
-    background-color: gold;
+    background-color: var(--sunglow);
     padding: 1rem 2rem;
     border: none;   
     border-radius: var(--br-soft);
@@ -358,7 +358,7 @@ footer {
     }
     
     .links:hover {
-        background-color: gold;
+        background-color: var(--sunglow);
     }
 
     .projects-link:hover,
