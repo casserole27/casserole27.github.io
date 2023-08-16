@@ -104,6 +104,26 @@ nav li {
 
 }
 
+.index-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.index-link {
+    display: block;
+    width: 150px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: var(--fs-s);
+    text-align: center;
+    background-color: gold;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+    border: none;   
+    border-radius: var(--br-soft);
+}
+
 li a,
 .about-points li {
     font-family: inherit;
@@ -149,23 +169,18 @@ a:hover {
     border-radius: var(--br-small);
 }
 
-.star-container {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.star-mobile {
-    display: block;
-    width: 75px;
-    height: 75px;
-    margin: 2rem 0;
-}
-
 .star-title {
     display: none;
     width: 150px;
     height: 150px;
     margin: 0 auto;
+}
+
+.star-description {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: .5rem auto;
 }
 
 .casserolecodes-title {
@@ -186,15 +201,27 @@ a:hover {
     margin-bottom: 1rem;
 }
 
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
 .intro-description {
-    max-width: 800px;
+    max-width: 350px;
+    height: 150px;
     font-size: var(--fs-s);
     text-align: center;
     color: white;
     padding: .5rem;
-    margin: 2rem auto;
+    margin: 0 auto;
     backdrop-filter: brightness(40%);
+    border: 2px solid white;
     border-radius: 5px;
+    box-shadow: 5px 5px red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -289,6 +316,12 @@ footer {
         height: 150px;;
     }
 
+    .body {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
     nav li,
     button {
         width: 100%;
@@ -362,8 +395,8 @@ footer {
     }
 
     .intro-description {
-        max-width: 800px;
-        font-size: var(--fs-l);
+        max-width: 350px;
+        /* font-size: var(--fs-l); */
         margin: 0 auto;
     }
 }
