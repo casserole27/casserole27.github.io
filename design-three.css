@@ -119,20 +119,20 @@ nav li {
 
 .index-link {
     display: block;
-    width: 150px;
+    width: 125px;
     font-family: inherit;
     font-weight: 700;
     font-size: var(--fs-s);
     text-align: center;
     background-color: var(--sunglow);
-    padding: 1rem 2rem;
+    padding: 1rem;
     margin: .5rem 0;
     border: none;   
     border-radius: var(--br-soft);
 }
 
 .index-link:hover {
-    border: 3px solid red;
+    border: 5px solid red;
     border-radius: 1rem;
 }
 
@@ -258,7 +258,7 @@ a:hover {
 
 .headshot-mobile {
     display: block;
-    width: 150px;
+    width: 200px;
     margin: 2rem auto;
     border: var(--border);
     border-radius: 5px;
