@@ -122,3 +122,19 @@ p {
      }
   }
 
+  .capstone {
+    display: block;
+    max-width: 650px;
+    text-align: center;
+    margin: 0 auto 2rem auto;
+}
+
+.capstone a {
+    text-transform: uppercase;
+}
+
+.capstone-container {
+    display: flex;
+    flex-direction: column;
+}
+
