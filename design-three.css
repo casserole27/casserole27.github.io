@@ -4,7 +4,7 @@
 
     /*COLORS*/
     --charcoal: rgb(18, 39, 73);
-    --blue: #3230ce;
+    --blue: hsl(241, 62%, 50%);
     --red: #cc2936ff;
     --tangerine: #fc8c47ff;
     --sunglow: #ffce63ff;
@@ -221,7 +221,7 @@ a:hover {
 }
 
 .mobile-container {
-    background-color: hsla(241, 63%, 45%, 0.7);
+    background-color: hsl(241, 62%, 50%, 0.5);
     padding: 1rem;
     border-radius: 5px;
 }
