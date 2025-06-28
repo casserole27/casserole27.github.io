@@ -1,0 +1,67 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --true-black: #000;
+  --medium-gray: #585858;
+  --light-gray: #aaa;
+  --true-white: #fff;
+  --small: 1rem;
+  --medium: 2rem;
+  --font-lexend-zetta: 'Lexend Zetta', sans-serif;
+
+  --console-red: #8d0101;
+  --console-dark-red: #662727;
+  --console-blue: #006D8D;
+  --console-yellow: #ffe600;
+  --console-purple: #553771;
+  --console-indigo: #1D1547;
+  --console-green: #4D5760;
+  --console-btns: #79daf8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  
+}
+
+body {
+  color: var(--foreground);
+  background-color: #000;
+  font-family: var(--font-lexend-zetta);
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: var(--font-lexend-zetta);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
