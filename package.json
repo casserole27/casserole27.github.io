@@ -1,5 +1,5 @@
 {
-  "name": "portfolio",
+  "homepage": "https://casserole27.github.io/",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "predeploy": "npm run build && npm run export",
-    "deploy": "gh-pages -d out"
+    "deploy": "npm run build && npm run export && touch ./out/.nojekyll && gh-pages -d out -t true"
   },
   "dependencies": {
     "@radix-ui/react-toggle-group": "^1.1.10",

@@ -148,7 +148,7 @@
   text-transform: uppercase;
 
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   padding-right: 0.25rem;
 }
