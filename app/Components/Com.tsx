@@ -35,6 +35,13 @@ const Com = ({ input }: { input: string }) => {
       <div className={`${styles.com} ${bgClass}`}>
         <p className={styles.comcode}>{subtitle}</p>
         <h1 className={styles.comtitle}>{title}</h1>
+        <a
+          href="mailto:casserolecodes@gmail.com"
+          className={styles.comtitle}
+          style={{ display: input === ControlTypes.LINKEDIN ? 'block' : 'none', fontWeight: '700' }}
+        >
+          email
+        </a>
       </div>
     </div>
   );

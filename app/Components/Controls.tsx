@@ -17,7 +17,7 @@ const Controls = ({ setInput }: { setInput: ( input: ControlTypesInput) => void}
       <button className={styles.controlbtn} aria-label="execute">exec</button>
       <button onClick={() => handleClick(ControlTypes.ABOUT_ME)} className={styles.controlbtn} aria-label="about me">ame</button>
       <button onClick={() => handleClick(ControlTypes.RESUME)} className={styles.controlbtn} aria-label="resume">res</button>
-      <button onClick={() => handleClick(ControlTypes.LINKEDIN)} className={styles.controlbtn} aria-label='linked in'>li</button>
+      <button onClick={() => handleClick(ControlTypes.LINKEDIN)} className={styles.controlbtn} aria-label='linked in'>ct</button>
       <button onClick={() => handleClick(ControlTypes.HOME)}className={styles.controlbtn} aria-label="clear">clr</button>
     </div>
   );

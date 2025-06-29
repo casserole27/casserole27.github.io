@@ -26,9 +26,9 @@
     margin-top: 0;
   }
   .main {
-    height: 1000px;
+    height: 68.75rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 450px 250px 300px;
+    grid-template-rows: 28.125rem 15.625rem   18.75rem;
     grid-column-gap: 0;
   }
 }
@@ -57,8 +57,8 @@
 
 .com {
   border-radius: var(--small);
-  width: 388px;
-  height: 388px;
+  width: 24.25rem;
+  height: 24.25rem;
   margin-top: var(--small);
   text-transform: uppercase;
 
@@ -93,8 +93,8 @@
     left: auto;
   }
   .com {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 18.75rem;
+    max-height: 18.75rem;
   }
   .comtitle {
     font-size: 1.5rem;
@@ -179,8 +179,8 @@
 }
 
 .highlight {
-  width: 150px;
-  height: 150px;
+  width: 9.375rem;
+  height: 9.375rem;
   background: linear-gradient(to top, #353535 10%, #000000 60%, #b9b9b9);
   border-radius: 50%;
   
@@ -192,8 +192,8 @@
 .haleye {
   background-color: #1b1b1b;
   border: 1px solid var(--medium-gray);
-  width: 52px;
-  height: 52px;
+  width: 3.25rem;
+  height: 3.25rem;
   border-radius: 50%;
 
   display: flex;
@@ -202,8 +202,8 @@
 }
 
 .haleyepupil {
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
   background-color: red;
   border-radius: 50%;
 
@@ -224,7 +224,7 @@
   max-width: 100%;
   border: 3px inset var(--light-gray);
   display: grid;
-  grid-template-columns: repeat(4, 80px);
+  grid-template-columns: repeat(4, 5rem);
   gap: .45rem;
   place-content: center;
 }
@@ -256,17 +256,18 @@
   font-size: 1rem;
   background-color: var(--console-btns);
   font-weight: 400;
-  height: 50px;
+  height: 3.125rem;
   border-radius: .5rem;
 
-   transition: box-shadow 1s ease-in;
+  transition: box-shadow 0.5s ease-in;
 }
 
 .controlbtn:hover,
 .controlbtn:focus {
   outline: none;
+  border: none;
   background: radial-gradient(rgb(252, 230, 230), #ace9fc 50%);
-  box-shadow: 0 0 10px 5px #fff;
+  box-shadow: 0 0 5px 2px #fff;
 }
 
 .controlbtn:nth-child(5),
@@ -276,7 +277,8 @@
 
 .controlbtn:nth-child(5):hover,
 .controlbtn:nth-child(5):focus,
-.controlbtn:nth-child(9):hover {
+.controlbtn:nth-child(9):hover,
+.controlbtn:nth-child(9):focus {
   background: var(--console-yellow);
   border: none;
 }
@@ -290,8 +292,7 @@
 
 @media (max-width: 350px) {
   .controlcontainer {
-
-    grid-template-columns: repeat(3, 80px);
+    grid-template-columns: repeat(3, 5rem);
   }
 }
 
