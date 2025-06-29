@@ -12,9 +12,9 @@ const Hal = () => {
       </div>
       <div className={styles.hal}>
         <div className={styles.highlight}>
-        <div className={styles.haleye}>
-          <div className={styles.haleyepupil}></div>
-        </div>
+          <div className={styles.haleye}>
+            <div className={styles.haleyepupil}></div>
+          </div>
         </div>
       </div>
     </div>

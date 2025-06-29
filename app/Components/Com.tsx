@@ -17,7 +17,9 @@ const Com = ({ input }: { input: string }) => {
   const title = ControlTypesDisplay[input as keyof typeof ControlTypes]
 
   let subtitle: string = '';
-   if (input === ControlTypes.GITHUB) {
+  if (input === ControlTypes.PORTFOLIO) {
+    subtitle = 'wip-100-004'
+  } else if (input === ControlTypes.GITHUB) {
     subtitle = '@casserole27'
   } else if (input === ControlTypes.LINKEDIN) {
     subtitle = 'in/clewisdev'
