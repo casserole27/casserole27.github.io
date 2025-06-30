@@ -292,6 +292,7 @@
   cursor: pointer;
   color: var(--console-red);
   border: none;
+  border-radius: .5rem;
   background-color: none;
   background-color: var(--console-yellow);
   box-shadow: 0 0 5px 2px #fff;
