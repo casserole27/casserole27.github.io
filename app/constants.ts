@@ -19,3 +19,20 @@ export const ControlTypesDisplay = {
   [ControlTypes.LINKEDIN]:  'linkedIn',
   [ControlTypes.HOME]:  'software engineer',
 }
+
+export const InternalRoutes = {
+  [ControlTypes.PORTFOLIO]:  'portfolio',
+  [ControlTypes.LEWISLABS]:  'lewislabs',
+  [ControlTypes.ABOUT_ME]:  'about-me',
+  [ControlTypes.HOME]:  '',
+} as const;
+
+export type InternalRoutesInput = keyof typeof InternalRoutes;
+
+export const ExternalLinks = {
+  [ControlTypes.RESUME]:  '/assets/clewis-software-engineering-resume.pdf',
+  [ControlTypes.GITHUB]:  'https://github.com/casserole27',
+  [ControlTypes.LINKEDIN]:  'https://www.linkedin.com/in/clewisdev/',
+}
+
+export type ExternalLinksInput = keyof typeof ExternalLinks;
