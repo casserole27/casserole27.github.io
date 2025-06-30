@@ -23,7 +23,7 @@ export const ControlTypesDisplay = {
 export const InternalRoutes = {
   [ControlTypes.PORTFOLIO]:  'portfolio',
   [ControlTypes.LEWISLABS]:  'lewislabs',
-  [ControlTypes.ABOUT_ME]:  'about-me',
+  [ControlTypes.ABOUT_ME]:  'about',
   [ControlTypes.HOME]:  '',
 } as const;
 

@@ -1,0 +1,126 @@
+.main-container {    
+    height: 100vh;
+    background-image: url(https://photos.smugmug.com/Other/HOSTING/i-h92ZX3d/0/ee7d7ca7/X3/Copy%20of%20casseroleCodes%20Banner-X3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: black;
+    padding: 1rem .5rem;
+    margin: 0 1rem;
+    border-radius: var(--br-small);
+}
+
+@media (min-width: 1000px) {
+  .main-container {
+    max-width: 1700px;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--sunglow);
+  text-align: center;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: .5rem;
+}
+
+.info {
+  display: block;
+  max-width: 1000px;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: .5rem;
+  margin: 0 auto 1rem auto;
+  border-radius: 5px;
+  backdrop-filter: brightness(40%);
+}
+
+.star-description {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto .5rem auto;
+}
+
+.headshot {
+  display: block;
+  max-width: 275px;
+  height: auto;
+  border: 3px solid white;
+}
+
+.about-section {
+  margin-top: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-points {
+  max-width: 800px;
+  background-color: #0f0e3b;
+  padding: 2rem;
+  list-style-type: none;
+}
+
+.about-points-list {
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding: .5rem;
+}
+
+.about-points-link {
+  display: block;
+  width: 100%;
+  color: red;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding: .5rem;
+}
+
+.btn {
+  display: block;
+  cursor: pointer;
+  background-color: #b80202;
+  width: 6rem;
+  padding: 1rem .5rem;
+  margin: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #963b3b;
+}
+
+.btn:active {
+  scale: 0.90;
+}
+
+@media (min-width: 1000px) {
+  .info {
+    font-size: 1.5rem;
+    padding: .5rem;
+    border-radius: 5px;
+  }
+
+  .page-title {
+    font-size: 3.5rem;
+    margin: 1rem auto;
+  }
+
+  .about-section {
+    flex-direction: row;
+  }
+
+}
