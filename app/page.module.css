@@ -1,4 +1,3 @@
-
 .page {
   width: 100%;
   height: 100%;
@@ -252,14 +251,14 @@
   font-family: var(--font-lexend-zetta);
   color: var(--true-black);
   cursor: pointer;
-  border: 5px solid var(--console-blue);
+  border: 5px inset var(--console-blue);
   font-size: 1rem;
   background-color: var(--console-btns);
   font-weight: 400;
   height: 3.125rem;
   border-radius: .5rem;
 
-  transition: box-shadow 0.5s ease-in;
+  transition: box-shadow 0.75s ease-in;
 }
 
 .controlbtn:hover,
@@ -268,6 +267,10 @@
   border: none;
   background: radial-gradient(rgb(252, 230, 230), #ace9fc 50%);
   box-shadow: 0 0 5px 2px #fff;
+}
+
+.controlbtn:active {
+  scale: .90;
 }
 
 .controlbtn:nth-child(5),
@@ -279,6 +282,24 @@
 .controlbtn:nth-child(5):focus,
 .controlbtn:nth-child(9):hover,
 .controlbtn:nth-child(9):focus {
+  background: var(--console-yellow);
+  border: none;
+}
+
+.navigate {
+  transition: box-shadow 0.75s ease-in;
+  
+  cursor: pointer;
+  color: var(--console-red);
+  border: none;
+  background-color: none;
+  background-color: var(--console-yellow);
+  box-shadow: 0 0 5px 2px #fff;
+}
+
+.navigate:hover,
+.navigate:focus,
+.navigate:active {
   background: var(--console-yellow);
   border: none;
 }
