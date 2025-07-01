@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build && touch ./out/.nojekyll && gh-pages -d out -t"
+    "deploy": "npm run build && touch ./out/.nojekyll && cp CNAME out/ && gh-pages -d out -t"
   },
   "dependencies": {
     "@radix-ui/react-toggle-group": "^1.1.10",
