@@ -33,6 +33,13 @@ export const ExternalLinks = {
   [ControlTypes.RESUME]:  '/assets/clewis-software-engineering-resume.pdf',
   [ControlTypes.GITHUB]:  'https://github.com/casserole27',
   [ControlTypes.LINKEDIN]:  'https://www.linkedin.com/in/clewisdev/',
-}
+} as const;
 
 export type ExternalLinksInput = keyof typeof ExternalLinks;
+
+export const ToggleValues = {
+  MANUAL: 'MANUAL',
+  CONTROL: 'CONTROL'
+} as const;
+
+export type ToggleValuesInput = 'MANUAL' | 'CONTROL';

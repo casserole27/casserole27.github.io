@@ -1,6 +1,7 @@
 
 import { ControlTypes, ControlTypesDisplay } from "../constants";
 import styles from "../page.module.css";
+import { JSX } from "react";
 
 const bgClassMap = {
   [ControlTypes.PORTFOLIO]: styles['portfolio'],
@@ -12,9 +13,28 @@ const bgClassMap = {
   [ControlTypes.HOME]: styles['home']
 }
 
-const Com = ({ input }: { input: string }) => {
-  const bgClass = bgClassMap[input as keyof typeof ControlTypes] || '';
-  const title = ControlTypesDisplay[input as keyof typeof ControlTypes]
+const Com = ({ input, toggleValue }: { input: string, toggleValue: 'manual' | 'control' }) => {
+  const control = toggleValue === 'control';
+  const bgClass = control ? `${styles.linkmap}` : bgClassMap[input as keyof typeof ControlTypes] || '';
+
+  let title: string | JSX.Element;
+  if (control) {
+    title = (
+      <>
+        <h2>site map</h2>
+        <li className={styles.sitemapitem}><a href="/portfolio" className={styles.sitelink} target="_blank">portfolio</a></li>
+        <li className={styles.sitemapitem}><a href="/lewislabs" className={styles.sitelink} target="_blank">lewislabs</a></li>
+        <li className={styles.sitemapitem}><a href="/about" className={styles.sitelink} target="_blank">about me</a></li>
+        <li className={styles.sitemapitem}><a href="/assets/clewis-software-engineering-resume.pdf" className={styles.sitelink} target="_blank">resume</a></li>
+        <li className={styles.sitemapitem}><a href="https://github.com/casserole27" className={styles.sitelink} target="_blank">github</a></li>
+        <li className={styles.sitemapitem}><a href="https://www.linkedin.com/in/clewisdev/" className={styles.sitelink} target="_blank">linkedin</a></li>
+        <li className={styles.sitemapitem}><a href="mailto:casserolecodes@gmail.com" className={styles.sitelink} target="_blank">email</a></li>
+      </>
+    );
+    } else {
+      title = ControlTypesDisplay[input as keyof typeof ControlTypes];
+    }
+
 
   let subtitle: string = '';
   if (input === ControlTypes.PORTFOLIO) {
@@ -33,8 +53,12 @@ const Com = ({ input }: { input: string }) => {
     <div className={styles.comcontainer}>
       <p className={styles.title}>cassie lewis</p>
       <div className={`${styles.com} ${bgClass}`}>
-        <p className={styles.comcode}>{subtitle}</p>
-        <h1 className={styles.comtitle}>{title}</h1>
+        {!control && <p className={styles.comcode}>{subtitle}</p>}
+        {control ? (
+          <ul className={styles.linklist}>{title}</ul>
+          ) : (
+          <h1 className={styles.comtitle}>{title}</h1>
+          )}
         <a
           href="mailto:casserolecodes@gmail.com"
           className={styles.comtitle}

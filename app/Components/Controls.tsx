@@ -6,7 +6,18 @@ import styles from "../page.module.css";
 import * as ToggleGroup from "@radix-ui/react-toggle-group";
 import { useRouter } from "next/navigation";
 
-const Controls = ({ setInput }: { setInput: (input: ControlTypesInput) => void}) => {
+type ToggleValue = 'manual' | 'control';
+interface ControlsProps {
+  setInput: (input: ControlTypesInput) => void;
+  toggleValue: ToggleValue;
+  setToggleValue: (val: ToggleValue) => void;
+}
+
+const Controls = ({ 
+  setInput, 
+  toggleValue,
+  setToggleValue
+}: ControlsProps) => {
   const router = useRouter();
   const [currentRoute, setCurrentRoute] = useState<InternalRoutesInput | ExternalLinksInput | null>(null)
   const [isActive, setIsActive] = useState<boolean>(false);
@@ -15,7 +26,7 @@ const Controls = ({ setInput }: { setInput: (input: ControlTypesInput) => void})
     setInput(type);
     setIsActive(true);
     setCurrentRoute(type);
-    if (type === ControlTypes.HOME) {
+    if (type === ControlTypes.HOME || toggleValue === 'control') {
       setIsActive(false);
     }
   };
@@ -30,23 +41,88 @@ const Controls = ({ setInput }: { setInput: (input: ControlTypesInput) => void})
     }
   }; 
 
+  const controlClass = `${toggleValue !== 'control' ? styles.controlbtn : ''}`;
+  const isDisabled = toggleValue === 'control';
+  let execClass: string = `${styles.controlbtn}`;
+  if (isActive) {
+    execClass=`${styles.navigate}`
+  } else if (toggleValue === 'control') {
+    execClass=`${styles.disabled}`;
+  } 
+  const manualBg = toggleValue === 'manual' ? '#777' : '';
+  const controlBg = toggleValue === 'control' ? '#777' : ''; 
+
+
   return (
     <div className={styles.controlcontainer}>
-      <ToggleGroup.Root type="single" className={styles.togglebtns}>
-        <ToggleGroup.Item value="manual" className={styles.togglebtn}>Manual</ToggleGroup.Item>
-        <ToggleGroup.Item value="control" className={styles.togglebtn}>Control</ToggleGroup.Item>
+      <ToggleGroup.Root 
+        type="single" 
+        className={styles.togglebtns}
+        value={toggleValue}
+        onValueChange={(val: 'manual' | 'control') => {
+          if (val) {
+            setToggleValue(val);
+          }
+        }}
+      >
+        <ToggleGroup.Item value='manual' className={styles.togglebtn} style={{ backgroundColor: manualBg }}>Manual</ToggleGroup.Item>
+        <ToggleGroup.Item value='control' className={styles.togglebtn} style={{ backgroundColor: controlBg }}>Control</ToggleGroup.Item>
       </ToggleGroup.Root>
       
-      <button onClick={() => handleClick(ControlTypes.PORTFOLIO)} className={styles.controlbtn} aria-label="portfolio">pf</button>
-      <button onClick={() => handleClick(ControlTypes.LEWISLABS)} className={styles.controlbtn} aria-label="lewislabs">lb</button>
-      <button onClick={() => handleClick(ControlTypes.GITHUB)} className={styles.controlbtn} aria-label="github" >gh</button>
+      <button 
+        onClick={() => handleClick(ControlTypes.PORTFOLIO)} 
+        className={controlClass} 
+        aria-label="portfolio" 
+        disabled={isDisabled}>
+          pf
+      </button>
+      <button 
+        onClick={() => handleClick(ControlTypes.LEWISLABS)} 
+        className={controlClass} 
+        aria-label="lewislabs"
+        disabled={isDisabled}>  
+          lb
+      </button>
+      <button 
+        onClick={() => handleClick(ControlTypes.GITHUB)} 
+        className={controlClass} 
+        aria-label="github" 
+        disabled={isDisabled}>
+          gh
+      </button>
 
-      <button onClick={() => handleNavigate()} className={`${isActive ? styles.navigate : styles.controlbtn}`} aria-label="execute">exec</button>
+      <button onClick={() => handleNavigate()} className={execClass} aria-label="execute" disabled={isDisabled}>exec</button>
       
-      <button onClick={() => handleClick(ControlTypes.ABOUT_ME)} className={styles.controlbtn} aria-label="about me">ame</button>
-      <button onClick={() => handleClick(ControlTypes.RESUME)} className={styles.controlbtn} aria-label="resume">res</button>
-      <button onClick={() => handleClick(ControlTypes.LINKEDIN)} className={styles.controlbtn} aria-label='linked in'>ct</button>
-      <button onClick={() => handleClick(ControlTypes.HOME)} className={styles.controlbtn} aria-label="clear">clr</button>
+      <button 
+        onClick={() => handleClick(ControlTypes.ABOUT_ME)} 
+        className={controlClass} 
+        aria-label="about me"
+        disabled={isDisabled}>
+          ame
+      </button>
+      <button 
+        onClick={() => handleClick(ControlTypes.RESUME)} 
+        className={controlClass} 
+        aria-label="resume"
+        disabled={isDisabled}>
+          res
+      </button>
+      <button 
+        onClick={() => handleClick(ControlTypes.LINKEDIN)} 
+        className={controlClass} 
+        aria-label='linked in'
+        disabled={isDisabled}>
+          ct
+      </button>
+      <button 
+        onClick={() => {
+          handleClick(ControlTypes.HOME)
+          setToggleValue('manual')
+        }} 
+        className={styles.controlbtn} 
+        aria-label="clear">
+          clr
+      </button>
     </div>
   );
 };

@@ -12,14 +12,22 @@ const lexend = Lexend_Zetta({ subsets: ['latin'], variable: '--font-lexend-zetta
 
 export default function Home() {
   const [input, setInput] = useState<ControlTypesInput>(ControlTypes.HOME);
-  
+  const [toggleValue, setToggleValue] = useState<'manual' | 'control'>('manual');
+
   return (
     <>
     <div className={`${lexend.className} ${styles.page}`}>
       <main className={styles.main}>
-        <Com input={input}/>
+        <Com 
+          input={input}
+          toggleValue={toggleValue}
+        />
         <Hal />
-        <Controls setInput={setInput} />
+        <Controls 
+          setInput={setInput} 
+          toggleValue={toggleValue}
+          setToggleValue={setToggleValue}
+        />
         <div className={styles.speaker}></div>
       </main>
     </div>

@@ -77,6 +77,25 @@
   margin-left: var(--medium);
 }
 
+.linklist {
+  list-style-type: none;
+  margin-left: var(--medium);
+}
+
+.sitemapitem {
+  margin: var(--small) 0;
+}
+
+.sitelink {
+  text-decoration: underline;
+}
+
+.sitelink:hover {
+  text-decoration: none;
+}
+
+
+
 @media (max-width: 800px) {
   .comcontainer {
     grid-column: 1 / -1;
@@ -120,7 +139,8 @@
   background-color: var(--console-green);
 }
 
-.about {
+.about,
+.linkmap {
   background-color: var(--console-blue);
 }
 
@@ -237,6 +257,7 @@
 }
 
 .togglebtn {
+  cursor: pointer;
   width: 40%;
   height: 2rem;
 }
@@ -329,3 +350,6 @@
 }
 
 
+.disabled {
+  height: 3.125rem;
+}
