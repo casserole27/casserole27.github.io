@@ -13,6 +13,7 @@ const lexend = Lexend_Zetta({ subsets: ['latin'], variable: '--font-lexend-zetta
 export default function Home() {
   const [input, setInput] = useState<ControlTypesInput>(ControlTypes.HOME);
   const [toggleValue, setToggleValue] = useState<'manual' | 'control'>('manual');
+  const isMain = Boolean(input === ControlTypes.HOME);
 
   return (
     <>
@@ -24,6 +25,7 @@ export default function Home() {
         />
         <Hal />
         <Controls 
+          isMain={isMain}
           setInput={setInput} 
           toggleValue={toggleValue}
           setToggleValue={setToggleValue}

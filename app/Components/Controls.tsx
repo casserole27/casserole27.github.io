@@ -8,26 +8,40 @@ import { useRouter } from "next/navigation";
 
 type ToggleValue = 'manual' | 'control';
 interface ControlsProps {
+  isMain: boolean;
   setInput: (input: ControlTypesInput) => void;
   toggleValue: ToggleValue;
   setToggleValue: (val: ToggleValue) => void;
 }
 
 const Controls = ({ 
+  isMain,
   setInput, 
   toggleValue,
   setToggleValue
 }: ControlsProps) => {
   const router = useRouter();
   const [currentRoute, setCurrentRoute] = useState<InternalRoutesInput | ExternalLinksInput | null>(null)
-  const [isActive, setIsActive] = useState<boolean>(false);
+  const [isActiveBtn, setIsActiveBtn] = useState<boolean>(false);
+
+  const handleToggleValueChange = (value: 'manual' | 'control') => {
+    setIsActiveBtn(false);
+    if (value) {
+      setToggleValue(value);
+    }
+    if (value === 'manual') {
+      setInput(ControlTypes.HOME)
+      setCurrentRoute(ControlTypes.HOME);
+    }
+  };
 
   const handleClick = (type: ControlTypesInput) => {
     setInput(type);
-    setIsActive(true);
     setCurrentRoute(type);
-    if (type === ControlTypes.HOME || toggleValue === 'control') {
-      setIsActive(false);
+    if (type === ControlTypes.HOME) {
+      setIsActiveBtn(false);
+    } else {
+      setIsActiveBtn(true);
     }
   };
 
@@ -42,16 +56,17 @@ const Controls = ({
   }; 
 
   const controlClass = `${toggleValue !== 'control' ? styles.controlbtn : ''}`;
-  const isDisabled = toggleValue === 'control';
-  let execClass: string = `${styles.controlbtn}`;
-  if (isActive) {
-    execClass=`${styles.navigate}`
-  } else if (toggleValue === 'control') {
-    execClass=`${styles.disabled}`;
-  } 
-  const manualBg = toggleValue === 'manual' ? '#777' : '';
-  const controlBg = toggleValue === 'control' ? '#777' : ''; 
+  const isDisabled = Boolean(toggleValue === 'control');
+  let execClass: string = !isMain ? `${styles.controlbtn}` : '';   
+  if (isDisabled) {
+    execClass = `${styles.disabled}`;
+  } else 
+  if (isActiveBtn) {
+    execClass = `${styles.navigate}`;
+  }
 
+  const manualBg = toggleValue === 'manual' ? 'var(--light-gray)' : '';
+  const controlBg = toggleValue === 'control' ? 'var(--light-gray)' : ''; 
 
   return (
     <div className={styles.controlcontainer}>
@@ -59,14 +74,22 @@ const Controls = ({
         type="single" 
         className={styles.togglebtns}
         value={toggleValue}
-        onValueChange={(val: 'manual' | 'control') => {
-          if (val) {
-            setToggleValue(val);
-          }
-        }}
+        onValueChange={handleToggleValueChange}
       >
-        <ToggleGroup.Item value='manual' className={styles.togglebtn} style={{ backgroundColor: manualBg }}>Manual</ToggleGroup.Item>
-        <ToggleGroup.Item value='control' className={styles.togglebtn} style={{ backgroundColor: controlBg }}>Control</ToggleGroup.Item>
+        <ToggleGroup.Item 
+          value='manual' 
+          className={styles.togglebtn} 
+          style={{ backgroundColor: manualBg }}
+          >
+            Manual
+          </ToggleGroup.Item>
+        <ToggleGroup.Item 
+          value='control' 
+          className={styles.togglebtn} 
+          style={{ backgroundColor: controlBg }}
+          >
+            Control
+          </ToggleGroup.Item>
       </ToggleGroup.Root>
       
       <button 
@@ -91,7 +114,13 @@ const Controls = ({
           gh
       </button>
 
-      <button onClick={() => handleNavigate()} className={execClass} aria-label="execute" disabled={isDisabled}>exec</button>
+      <button 
+        onClick={() => handleNavigate()} 
+        className={execClass} 
+        aria-label="execute" 
+        disabled={isDisabled || isMain}>
+          exec
+      </button>
       
       <button 
         onClick={() => handleClick(ControlTypes.ABOUT_ME)} 
@@ -112,7 +141,7 @@ const Controls = ({
         className={controlClass} 
         aria-label='linked in'
         disabled={isDisabled}>
-          ct
+          li
       </button>
       <button 
         onClick={() => {
