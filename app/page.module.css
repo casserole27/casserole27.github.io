@@ -48,10 +48,21 @@
 
 .title {
   position: absolute;
+  font-size: 1rem;
   font-weight: 900;
   text-transform: uppercase;
   top: 1.25rem;
   left: 1.5rem;
+}
+
+.titlelink {
+  text-decoration: underline;
+  text-decoration-thickness: 15%;
+}
+
+.titlelink:hover,
+.titlelink:focus {
+  text-decoration: none;
 }
 
 .com {
@@ -352,4 +363,5 @@
 
 .disabled {
   height: 3.125rem;
+  border-radius: .5rem;
 }

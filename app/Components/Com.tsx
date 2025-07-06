@@ -51,21 +51,19 @@ const Com = ({ input, toggleValue }: { input: string, toggleValue: 'manual' | 'c
   
   return (
     <div className={styles.comcontainer}>
-      <p className={styles.title}>cassie lewis</p>
+      <h1 className={styles.title}>
+        <a className={styles.titlelink} href="mailto:casserolecodes@gmail.com">
+          cassie lewis
+        </a>
+        {input !== ControlTypes.HOME ? ' | swe' : ''}
+      </h1>
       <div className={`${styles.com} ${bgClass}`}>
         {!control && <p className={styles.comcode}>{subtitle}</p>}
         {control ? (
           <ul className={styles.linklist}>{title}</ul>
           ) : (
-          <h1 className={styles.comtitle}>{title}</h1>
+          <h2 className={styles.comtitle}>{title}</h2>
           )}
-        <a
-          href="mailto:casserolecodes@gmail.com"
-          className={styles.comtitle}
-          style={{ display: input === ControlTypes.LINKEDIN ? 'block' : 'none', fontWeight: '700' }}
-        >
-          email
-        </a>
       </div>
     </div>
   );
