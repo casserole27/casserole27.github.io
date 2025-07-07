@@ -21,7 +21,7 @@ const About = () => {
         width={0} 
         height={0}
       />
-      <h2 className={styles.info}>🍃 I'm looking to make a positive impact through tech, whether in green or climate tech, open source, or accessibility. I am especially interested in the intersection of technology and sustainability, and I have two years of experience working in the greentech industry. </h2>
+      <h2 className={styles.info}>🍃 I am looking to make a positive impact through tech, whether in green or climate tech, open source, or accessibility. I am especially interested in the intersection of technology and sustainability, and I have two years of experience working in the greentech industry. </h2>
       <Image 
         src="assets/star.svg" 
         className={styles['star-description']} 
@@ -29,7 +29,7 @@ const About = () => {
         width={0} 
         height={0}
       />
-      <h2 className={styles.info}>I am driven by curiosity, creativity, and challenges. I love writing clean, functional code, collaboration, finding efficient solutions for data, and creating visually appealing and inclusive experiences.</h2>
+      <h2 className={styles.info}>Driven by curiosity, creativity, and challenges, I love writing clean, functional code, collaboration, finding efficient solutions for data, and creating visually appealing and inclusive experiences.</h2>
       <Image 
         src="assets/star.svg" 
         className={styles['star-description']} 
