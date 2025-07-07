@@ -22,6 +22,7 @@
 .stack {
     color: #555;
     font-weight: 600;
+    margin: .5rem 0;
   }
 
 .project-img {
@@ -32,12 +33,16 @@
     margin: 0 auto 1rem auto;
 }
 
+.btncontainer {
+  display: flex;
+  gap: .5rem;
+}
+
 .btn {
   display: block;
   cursor: pointer;
-  width: 6rem;
-  padding: 1rem .5rem;
-  margin: 1rem 2rem;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
   background-color: #b80202;
   border: none;
   border-radius: 10px;
@@ -52,33 +57,36 @@
 }
 
 @media (min-width: 1000px) {
-    .projects-link {
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
-    }    
+  .projects-link {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  } 
+  .btn {
+    margin: 1rem 0 1rem 2rem;
+  }   
 }
 
 @media (max-width: 450px) {
-    .project-img {
-        width: 250px;
-    }
+  .project-img {
+      width: 250px;
+  }
 }
 
 /*====== PROJECTS ======*/
 
 .projects {
-   position: relative;
-    background-color: white;
-    padding: .5rem .25rem 1rem .25rem;  
-    margin-bottom: 1rem;
-    border: solid .06rem darkgray;
-    transition: background-color 1s .5s;
-    list-style-type: none;
-  }
+  position: relative;
+  background-color: white;
+  padding: .5rem .25rem 1rem .25rem;  
+  margin-bottom: 1rem;
+  border: solid .06rem darkgray;
+  transition: background-color 1s .5s;
+  list-style-type: none;
+}
 
   @media (min-width: 1000px) {
     .projects{
-        padding: 2rem 1rem 4rem 1rem;
+        padding: 2rem 1rem 2rem 1rem;
         margin: .5rem 0;
     }
 
@@ -86,7 +94,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
-        margin: 0 2rem 1rem 2rem;
+        margin: 0 2rem .25rem 2rem;
      }
   }
 
