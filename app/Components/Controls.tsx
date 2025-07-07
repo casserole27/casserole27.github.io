@@ -65,8 +65,8 @@ const Controls = ({
     execClass = `${styles.navigate}`;
   }
 
-  const manualBg = toggleValue === 'manual' ? 'var(--light-gray)' : '';
-  const controlBg = toggleValue === 'control' ? 'var(--light-gray)' : ''; 
+  const manualBg = toggleValue === 'manual' ? 'var(--medium-gray)' : '';
+  const controlBg = toggleValue === 'control' ? 'var(--medium-gray)' : ''; 
 
   return (
     <div className={styles.controlcontainer}>
@@ -87,8 +87,9 @@ const Controls = ({
           value='control' 
           className={styles.togglebtn} 
           style={{ backgroundColor: controlBg }}
+          aria-label='site-map'
           >
-            Control
+            control
           </ToggleGroup.Item>
       </ToggleGroup.Root>
       
