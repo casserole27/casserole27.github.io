@@ -31,11 +31,21 @@
   display: block;
   max-width: 1000px;
   font-size: 1.25rem;
+  font-weight: 600;
   text-align: center;
   padding: .5rem;
   margin: 0 auto 1rem auto;
   border-radius: 5px;
   backdrop-filter: brightness(40%);
+}
+
+.info-list {
+  max-width: 40rem;
+}
+
+.skills {
+  max-width: 800px;
+  margin: 2rem auto;
 }
 
 .star-description {
@@ -94,7 +104,7 @@
   background-color: #b80202;
   width: 6rem;
   padding: 1rem .5rem;
-  margin: 1rem 2rem;
+  margin: 1rem 0;
   border: none;
   border-radius: 10px;
 }
@@ -123,4 +133,7 @@
     flex-direction: row;
   }
 
+  .btn {
+    margin: 2rem auto;
+  }  
 }

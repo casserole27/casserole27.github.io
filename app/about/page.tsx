@@ -21,7 +21,7 @@ const About = () => {
         width={0} 
         height={0}
       />
-      <h2 className={styles.info}>🍃 I am especially interested in the intersection of technology and sustainability, and I have two years of experience working in the greentech industry. 🍃</h2>
+      <h2 className={styles.info}>🍃 I'm looking to make a positive impact through tech, whether in green or climate tech, open source, or accessibility. I am especially interested in the intersection of technology and sustainability, and I have two years of experience working in the greentech industry. </h2>
       <Image 
         src="assets/star.svg" 
         className={styles['star-description']} 
@@ -29,7 +29,7 @@ const About = () => {
         width={0} 
         height={0}
       />
-      <h2 className={styles.info}>I am driven by curiosity, creativity, and challenges. I love writing clean, functional code, collaboration, finding efficient solutions for data, and creating visually appealing experiences.</h2>
+      <h2 className={styles.info}>I am driven by curiosity, creativity, and challenges. I love writing clean, functional code, collaboration, finding efficient solutions for data, and creating visually appealing and inclusive experiences.</h2>
       <Image 
         src="assets/star.svg" 
         className={styles['star-description']} 
@@ -37,6 +37,29 @@ const About = () => {
         width={0} 
         height={0}
       />
+      <ul className={`${styles.info} ${styles['info-list']}`}>Achievements:
+        <li className={styles.info}>Played a key role in launching a major UI update that measurably improved user experience and reduced support needs.</li>
+        <li className={styles.info}>Took initiative to grow into full-stack development, delivering impactful features that boosted revenue.</li>
+        <li className={styles.info}>Helped shape design strategy and led documentation efforts, making the codebase more maintainable and development more efficient.</li>
+      </ul>
+      <Image 
+        src="assets/star.svg" 
+        className={styles['star-description']} 
+        alt="" 
+        width={0} 
+        height={0}
+      />
+      <h2 className={`${styles.info} ${styles['info-skills']}`}>I prioritize learning both on an off the job to increase my technical skills.</h2>
+      <div className={styles.skills}>
+        <a href="https://skillicons.dev">
+          <Image
+          src='https://skillicons.dev/icons?i=react,js,typescript,nodejs,postgres,postman,jest,html,css,styledcomponents,vscode,git,github,figma,ps'
+          alt="technical skills: react,js,typescript,nodejs,postgres,postman,jest,html,css,styledcomponents,vscode,git,github,figma,ps"
+          width={800}
+          height={50}
+          />
+        </a>
+      </div>
       <section className={styles['about-section']}>
         <Image 
           src="https://photos.smugmug.com/Other/HOSTING/i-mD8DW7L/0/12fa8723/M/headshot-M.png" 
