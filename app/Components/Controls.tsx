@@ -128,7 +128,7 @@ const Controls = ({
         className={controlClass} 
         aria-label="about me"
         disabled={isDisabled}>
-          ame
+          abt
       </button>
       <button 
         onClick={() => handleClick(ControlTypes.RESUME)} 
