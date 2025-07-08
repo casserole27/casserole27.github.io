@@ -16,7 +16,6 @@ export default function Home() {
   const isMain = Boolean(input === ControlTypes.HOME);
 
   return (
-    <>
     <div className={`${lexend.className} ${styles.page}`}>
       <main className={styles.main}>
         <Com 
@@ -33,6 +32,5 @@ export default function Home() {
         <div className={styles.speaker}></div>
       </main>
     </div>
-    </>
   );
 };
