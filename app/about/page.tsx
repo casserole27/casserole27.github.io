@@ -21,7 +21,7 @@ const About = () => {
         width={0} 
         height={0}
       />
-      <h2 className={styles.info}>🍃 I am looking to make a positive impact through tech, whether in green or climate tech, open source, or accessibility. I am especially interested in the intersection of technology and sustainability, and I have two years of experience working in the greentech industry. </h2>
+      <h2 className={styles.info}>🍃 I am continuously looking for ways to make a positive impact through tech. I am especially interested in the intersection of technology and sustainability, and I have two years of experience working in the greentech industry. </h2>
       <Image 
         src="assets/star.svg" 
         className={styles['star-description']} 

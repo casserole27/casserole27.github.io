@@ -92,7 +92,14 @@ const Controls = ({
             control
           </ToggleGroup.Item>
       </ToggleGroup.Root>
-      
+
+      <button 
+        onClick={() => handleClick(ControlTypes.ABOUT_ME)} 
+        className={controlClass} 
+        aria-label="about me"
+        disabled={isDisabled}>
+          abt
+      </button>
       <button 
         onClick={() => handleClick(ControlTypes.PORTFOLIO)} 
         className={controlClass} 
@@ -107,13 +114,6 @@ const Controls = ({
         disabled={isDisabled}>  
           lb
       </button>
-      <button 
-        onClick={() => handleClick(ControlTypes.GITHUB)} 
-        className={controlClass} 
-        aria-label="github" 
-        disabled={isDisabled}>
-          gh
-      </button>
 
       <button 
         onClick={() => handleNavigate()} 
@@ -122,20 +122,20 @@ const Controls = ({
         disabled={isDisabled || isMain}>
           exec
       </button>
-      
-      <button 
-        onClick={() => handleClick(ControlTypes.ABOUT_ME)} 
-        className={controlClass} 
-        aria-label="about me"
-        disabled={isDisabled}>
-          abt
-      </button>
+
       <button 
         onClick={() => handleClick(ControlTypes.RESUME)} 
         className={controlClass} 
         aria-label="resume"
         disabled={isDisabled}>
           res
+      </button>
+      <button 
+        onClick={() => handleClick(ControlTypes.GITHUB)} 
+        className={controlClass} 
+        aria-label="github" 
+        disabled={isDisabled}>
+          gh
       </button>
       <button 
         onClick={() => handleClick(ControlTypes.LINKEDIN)} 
