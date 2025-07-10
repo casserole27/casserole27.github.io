@@ -4,23 +4,28 @@ import styles from './page.module.css'
 import Image from 'next/image';
 import { League_Spartan } from 'next/font/google';
 import { useRouter } from 'next/navigation';
-import { ControlTypes, InternalRoutes, InternalRoutesInput } from '../constants';
+import { ControlTypes, ExternalLinks, ExternalLinksInput, InternalRoutes, InternalRoutesInput } from '../constants';
 
 const leagueSpartan = League_Spartan({ subsets: ['latin'], variable: '--font-league-spartan' });
 
 const Portfolio = () => {
   const router = useRouter();
-  const handleClick = (currentRoute: InternalRoutesInput) => {
-    if (currentRoute === ControlTypes.LEWISLABS) {
-      router.push(`/${InternalRoutes[currentRoute]}`);
-    } else {
-      router.push('/')
+  const handleClick = (currentRoute: InternalRoutesInput | ExternalLinksInput) => {
+    if (!currentRoute) return;
+
+    if (currentRoute in InternalRoutes) {
+      router.push(currentRoute === ControlTypes.HOME ? '/' : `/${InternalRoutes[currentRoute as keyof typeof InternalRoutes]}`)
+    } else if (currentRoute in ExternalLinks) {
+      window.open(ExternalLinks[currentRoute as keyof typeof ExternalLinks], '_blank')
     }
   };
 
   return (
     <>
       <main className={`${styles['main-container']} ${leagueSpartan.className}`}>  
+        <h2 className={styles['page-title']}>Portfolio | Works in Progress</h2>
+        <p className={styles.info}>This page showcases current projects I&apos;m playing around with to build new things or solidify learning.</p>
+        <p className={styles.info}>For work-related experience, see <span><button onClick={() => handleClick(ControlTypes.RESUME)} className={styles.btn}>resume</button></span></p>
         <ul className={`${styles['projects-list']} ${leagueSpartan.className}`}>
           <li className={styles.projects}>
             <Image 

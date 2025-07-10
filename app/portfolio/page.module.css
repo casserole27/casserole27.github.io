@@ -4,6 +4,31 @@
     border-radius: var(--br-small);
 }
 
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: gold;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 auto;
+  border-radius: .5rem;
+}
+
+.info {
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .page-title {
+    font-size: 3.5rem;
+  }
+  
+  .info {
+    font-size: 1.5rem;
+  }
+}
+
 .projects-link {
     font-size: 1rem;
     display: block;
@@ -39,7 +64,6 @@
 }
 
 .btn {
-  display: block;
   cursor: pointer;
   padding: 1rem 2rem;
   margin: 1rem 0;
