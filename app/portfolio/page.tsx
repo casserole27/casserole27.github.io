@@ -27,20 +27,17 @@ const Portfolio = () => {
         <p className={styles.info}>This page showcases current projects I&apos;m playing around with to build new things or solidify learning.</p>
         <p className={styles.info}>For work-related experience, see <span><button onClick={() => handleClick(ControlTypes.RESUME)} className={styles.btn}>resume</button></span></p>
         <ul className={`${styles['projects-list']} ${leagueSpartan.className}`}>
-          <li className={styles.projects}>
+                    <li className={styles.projects}>
             <Image 
-              src="/assets/devportfolio/capstone-allweather.png" 
+              src="/assets/devportfolio/color-scheme-generator.png" 
               className={styles['project-img']} 
-              alt="invoice creator app" 
+              alt="color scheme generator app" 
               width={0} 
-              height={0} 
+              height={0}
             />
-            <a href="https://casserole27.github.io/invoice-creator/" target="_blank" className={styles['projects-link']}>In progress: AllWeather - how to go outside any time</a>
-            <a href="https://github.com/casserole27/allweather" target="_blank" className={styles['projects-link']}>Github</a>
-            <p className={styles.stack}>PROPOSED TECH STACK: React with TypeScript, UI/UX design, a11y, PostGresSQL, Express API</p>
-            <p className={styles.stack}>THE STORY : my kiddo attended an experimental private school focused on environmental education with an extensive daily required gear list for outdoor activities, especially during colder weather. 
-              Introducing AllWeather: encouraging families, children, or anyone to get outdoors based on daily forecasts. Provides curated gear lists or customized planning for specific activities.
-            </p>
+            <a href="https://casserole27.github.io/color-scheme-generator/" target="_blank" className={styles['projects-link']}>Color Scheme Generator</a>
+            <a href="https://github.com/casserole27/color-scheme-generator" target="_blank" className={styles['projects-link']}>Github</a>
+            <p className={styles.stack}>TECH STACK: HTML5, CSS, JavaScript, REST APIs, Responsive Design, Github, UX & accessibility</p>
           </li>
           <li className={styles.projects}>
             <Image 
@@ -55,18 +52,21 @@ const Portfolio = () => {
             <p className={styles.stack}>TECH STACK: HTML5, CSS, JavaScript, UX enhancements, Node.js PostGresSQL, Objection.js, Knex.js, Express API</p>
             <p className={styles.stack}>THE STORY : built for small business owners who need a quick, simple way to invoice via e-mail.</p>
           </li>
-          {/* <li className={styles.projects}>
+                    <li className={styles.projects}>
             <Image 
-              src="/assets/devportfolio/color-scheme-generator.png" 
+              src="/assets/devportfolio/capstone-allweather.png" 
               className={styles['project-img']} 
-              alt="color scheme generator app" 
+              alt="invoice creator app" 
               width={0} 
-              height={0}
+              height={0} 
             />
-            <a href="https://casserole27.github.io/color-scheme-generator/" target="_blank" className={styles['projects-link']}>Color Scheme Generator</a>
-            <a href="https://github.com/casserole27/color-scheme-generator" target="_blank" className={styles['projects-link']}>Github</a>
-            <p className={styles.stack}>TECH STACK: HTML5, CSS, JavaScript, REST APIs, Responsive Design, Github, UX & accessibility</p>
-          </li> */}
+            <a href="https://casserole27.github.io/invoice-creator/" target="_blank" className={styles['projects-link']}>In progress: AllWeather - how to go outside any time</a>
+            <a href="https://github.com/casserole27/allweather" target="_blank" className={styles['projects-link']}>Github</a>
+            <p className={styles.stack}>PROPOSED TECH STACK: React with TypeScript, UI/UX design, a11y, PostGresSQL, Express API</p>
+            <p className={styles.stack}>THE STORY : my kiddo attended an experimental private school focused on environmental education with an extensive daily required gear list for outdoor activities, especially during colder weather. 
+              Introducing AllWeather: encouraging families, children, or anyone to get outdoors based on daily forecasts. Provides curated gear lists or customized planning for specific activities.
+            </p>
+          </li>
         </ul>    
         <div className={styles.btncontainer}>   
           <button onClick={() => handleClick(ControlTypes.LEWISLABS)} className={styles.btn}>more cool stuff - lewislabs</button>
