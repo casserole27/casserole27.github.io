@@ -25,6 +25,7 @@ const Portfolio = () => {
       <main className={`${styles['main-container']} ${leagueSpartan.className}`}>  
         <h2 className={styles['page-title']}>Portfolio | Works in Progress</h2>
         <p className={styles.info}>Building new things. Amplifying curiosity. Solidifying learning.</p>
+        <p className={styles.info} style={{ color: 'gold' }}> This portfolio is built with Next.js / React, TypeScript, UI/UX, responsive design and a11y.</p>
         <p className={styles.info}>For work-related experience, see <span><button onClick={() => handleClick(ControlTypes.RESUME)} className={styles.btn}>resume</button></span></p>
         <ul className={`${styles['projects-list']} ${leagueSpartan.className}`}>
           <li className={styles.projects}>
@@ -37,9 +38,16 @@ const Portfolio = () => {
             />
             <a href="https://invoice-tracker-drab.vercel.app/" target="_blank" className={styles['projects-link']}>The Invoice Tracker - CRUD app conversion</a>
             <a href="https://github.com/casserole27/invoice-tracker" target="_blank" className={styles['projects-link']}>Github</a>
-            <p className={styles.stack}>TECH STACK: React, semantic HTML5, CSS, TypeScript, UI/UX & a11y, mobile-first responsive design, Node.js, RESTful APIs</p>
-            <p className={styles.stack}>THE STORY : a modern web application built for small business owners who need a quick, simple way to invoice via download or e-mail.</p>
-            <p className={styles.stack}>THE JOURNEY : this was originally a small vanilla JS bootcamp project. I use it to keep my development skills up to date by practicing and solidifying concepts. I create requirements and assign myself tasks to simulate a production environment.</p>
+            <p className={styles.stack}>TECH STACK: React, TypeScript, semantic HTML5, CSS, UI/UX & a11y, mobile-first responsive design, Node.js, RESTful APIs</p>
+            <p className={styles.stack}>THE TASK : a modern web application built for small business owners who need a quick, simple way to create, store, and share invoices.</p>
+            <p className={styles.stack}>THE JOURNEY : a vanillaJS bootcamp project that I’ve expanded to keep my skills current and production-ready.</p>
+            <ul style={{ marginLeft: '2rem' }}>
+              <li className={styles.stack}>Completed full React and TypeScript refactor resulting in increasing and solidifying concepts used in production, resulting in faster development time.</li>
+              <li className={styles.stack}>Set up an Express API with RESTful endpoints, resulting in a deeper understanding of the different HTTP requests and when to use them in production.</li>
+              <li className={styles.stack}>Utilized Claude Projects to organize the project, enhance coding efficiency and expand technical skills.</li>
+              <li className={styles.stack}>Revamped the UI for better functionality and UX, focusing on responsive design and accessibility to sharpen my frontend skills and contribute more effectively to real-world UI/UX strategies.</li>
+            </ul>
+            <p className={styles.stack}>I create requirements and assign myself tasks to simulate a production environment.</p>
             <a style={{ display: 'inline' }} href="https://github.com/casserole27/invoice-tracker/issues" target="_blank" className={styles['projects-link']}>Github issues</a>
           </li>
           <li className={styles.projects}>

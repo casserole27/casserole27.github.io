@@ -40,7 +40,7 @@ const About = () => {
       <ul className={`${styles.info} ${styles['info-list']}`}>Achievements:
         <li className={styles.info}>Played a key role in launching a major UI update that measurably improved user experience and reduced support needs.</li>
         <li className={styles.info}>Took initiative to grow into full-stack development, delivering impactful features that boosted revenue.</li>
-        <li className={styles.info}>Helped shape design strategy and led documentation efforts, making the codebase more maintainable and development more efficient.</li>
+        <li className={styles.info}>Helped shape design strategy, led initiatives to improve code, and led documentation efforts, making the codebase more maintainable and development more efficient.</li>
       </ul>
       <Image 
         src="assets/star.svg" 
