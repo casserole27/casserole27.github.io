@@ -24,10 +24,25 @@ const Portfolio = () => {
     <>
       <main className={`${styles['main-container']} ${leagueSpartan.className}`}>  
         <h2 className={styles['page-title']}>Portfolio | Works in Progress</h2>
-        <p className={styles.info}>This page showcases current projects I&apos;m playing around with to build new things or solidify learning.</p>
+        <p className={styles.info}>Building new things. Amplifying curiosity. Solidifying learning.</p>
         <p className={styles.info}>For work-related experience, see <span><button onClick={() => handleClick(ControlTypes.RESUME)} className={styles.btn}>resume</button></span></p>
         <ul className={`${styles['projects-list']} ${leagueSpartan.className}`}>
-                    <li className={styles.projects}>
+          <li className={styles.projects}>
+            <Image 
+              src="/assets/devportfolio/invoice-tracker.png" 
+              className={styles['project-img']} 
+              alt="invoice creator app" 
+              width={0} 
+              height={0} 
+            />
+            <a href="https://invoice-tracker-drab.vercel.app/" target="_blank" className={styles['projects-link']}>The Invoice Tracker - CRUD app conversion</a>
+            <a href="https://github.com/casserole27/invoice-tracker" target="_blank" className={styles['projects-link']}>Github</a>
+            <p className={styles.stack}>TECH STACK: React, semantic HTML5, CSS, TypeScript, UI/UX & a11y, mobile-first responsive design, Node.js, RESTful APIs</p>
+            <p className={styles.stack}>THE STORY : a modern web application built for small business owners who need a quick, simple way to invoice via download or e-mail.</p>
+            <p className={styles.stack}>THE JOURNEY : this was originally a small vanilla JS bootcamp project. I use it to keep my development skills up to date by practicing and solidifying concepts. I create requirements and assign myself tasks to simulate a production environment.</p>
+            <a style={{ display: 'inline' }} href="https://github.com/casserole27/invoice-tracker/issues" target="_blank" className={styles['projects-link']}>Github issues</a>
+          </li>
+          <li className={styles.projects}>
             <Image 
               src="/assets/devportfolio/color-scheme-generator.png" 
               className={styles['project-img']} 
@@ -37,21 +52,9 @@ const Portfolio = () => {
             />
             <a href="https://casserole27.github.io/color-scheme-generator/" target="_blank" className={styles['projects-link']}>Color Scheme Generator</a>
             <a href="https://github.com/casserole27/color-scheme-generator" target="_blank" className={styles['projects-link']}>Github</a>
-            <p className={styles.stack}>TECH STACK: HTML5, CSS, JavaScript, REST APIs, Responsive Design, Github, UX & accessibility</p>
+            <p className={styles.stack}>TECH STACK: HTML5, CSS, JavaScript, RESTful APIs, Responsive Design, Github, UX & a11y</p>
           </li>
-          <li className={styles.projects}>
-            <Image 
-              src="/assets/devportfolio/invoice-creator-crud.png" 
-              className={styles['project-img']} 
-              alt="invoice creator app" 
-              width={0} 
-              height={0} 
-            />
-            <a href="https://casserole27.github.io/invoice-creator/" target="_blank" className={styles['projects-link']}>In progress: Small business invoice creator - CRUD app conversion</a>
-            <a href="https://github.com/casserole27/invoice-creator" target="_blank" className={styles['projects-link']}>Github</a>
-            <p className={styles.stack}>TECH STACK: HTML5, CSS, JavaScript, UX enhancements, Node.js PostGresSQL, Objection.js, Knex.js, Express API</p>
-            <p className={styles.stack}>THE STORY : built for small business owners who need a quick, simple way to invoice via e-mail.</p>
-          </li>
+
                     <li className={styles.projects}>
             <Image 
               src="/assets/devportfolio/capstone-allweather.png" 
