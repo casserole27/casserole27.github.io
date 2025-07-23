@@ -4,12 +4,21 @@ import styles from "./page.module.css";
 import Image from "next/image"
 import { League_Spartan } from 'next/font/google';
 import { useRouter } from 'next/navigation';
+import { ControlTypes, ExternalLinks, ExternalLinksInput, InternalRoutes, InternalRoutesInput } from "../constants";
 
 const leagueSpartan = League_Spartan({ subsets: ['latin'], variable: '--font-league-spartan' });
 
 const About = () => {
-  const router = useRouter();
-  const handleClick = () => router.push('/');
+    const router = useRouter();
+    const handleClick = (currentRoute: InternalRoutesInput | ExternalLinksInput) => {
+      if (!currentRoute) return;
+  
+      if (currentRoute in InternalRoutes) {
+        router.push(currentRoute === ControlTypes.HOME ? '/' : `/${InternalRoutes[currentRoute as keyof typeof InternalRoutes]}`)
+      } else if (currentRoute in ExternalLinks) {
+        window.open(ExternalLinks[currentRoute as keyof typeof ExternalLinks], '_blank')
+      }
+    };
 
   return (
     <main className={`${styles['main-container']} ${leagueSpartan.className}`}>  
@@ -41,7 +50,11 @@ const About = () => {
         <li className={styles.info}>Played a key role in launching a major UI update that measurably improved user experience and reduced support needs.</li>
         <li className={styles.info}>Took initiative to grow into full-stack development, delivering impactful features that boosted revenue.</li>
         <li className={styles.info}>Helped shape design strategy, led initiatives to improve code, and led documentation efforts, making the codebase more maintainable and development more efficient.</li>
+        <div className={styles.moreinfocontainer}>
+          <p className={styles.moreinfo}>For more information, see</p> <button onClick={() => handleClick(ControlTypes.RESUME)} className={styles.btn}>resume</button> or <button onClick={() => handleClick(ControlTypes.LINKEDIN)} className={styles.btn}>linkedin</button>
+        </div>
       </ul>
+
       <Image 
         src="assets/star.svg" 
         className={styles['star-description']} 
