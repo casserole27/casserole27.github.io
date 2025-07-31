@@ -25,7 +25,7 @@ const LewisLabs = () => {
             height={0}
           />
           <a 
-            href="https://www.clewisdev.com/darth-vader-quote-generator/" target="_blank" className={styles['projects-link']}>Darth Vader Quote Generator CSS art</a> 
+            href="https://casserole27.github.io/darth-vader-quote-generator/" target="_blank" className={styles['projects-link']}>Darth Vader Quote Generator CSS art</a> 
           <a href="https://github.com/casserole27/darth-vader-quote-generator" target="_blank" className={styles['projects-link']}>Github</a>
         </li>
         <li className={styles.projects}>
@@ -36,7 +36,7 @@ const LewisLabs = () => {
             width={0}
             height={0}  
           />
-          <a href="https://www.clewisdev.com/hikefinder/" target="_blank" className={styles['projects-link']}>Hikefinder</a>
+          <a href="https://casserole27.github.io/hikefinder/" target="_blank" className={styles['projects-link']}>Hikefinder</a>
           <a href="https://github.com/casserole27/hikefinder" target="_blank" className={styles['projects-link']}>Github</a>
           <a href="https://www.loom.com/share/aa9f0aa0be88452aa90c339253cd4e0b?sid=193a39ff-b06c-4a58-a026-b7c4ba1c5733" target="_blank" className={styles['projects-link']}>Loom : Project Walk-Thru</a>
           <a href="https://www.loom.com/share/10fffbd06bd5470fbd8235be4e708d72?sid=8b766f1d-7288-455a-b4b3-e036b06299b2" target="_blank" className={styles['projects-link']}>Loom : Accessible Modal Walk-Thru</a>
@@ -49,7 +49,7 @@ const LewisLabs = () => {
             width={0}
             height={0}
           />
-          <a href="https://www.clewisdev.com/Projects/monday-mindset/monday.html" target="_blank" className={styles['projects-link']}>CSS Bento Box Grid</a> 
+          <a href="https://casserole27.github.io/Projects/monday-mindset/monday.html" target="_blank" className={styles['projects-link']}>CSS Bento Box Grid</a> 
           <a href="https://github.com/casserole27/Projects/tree/main/monday-mindset" target="_blank" className={styles['projects-link']}>Github</a>
         </li>                       
         <li className={styles.projects}>
@@ -60,7 +60,7 @@ const LewisLabs = () => {
             width={0}
             height={0}
           />
-          <a href="https://www.clewisdev.com/Projects/Light-dark-toggle/toggle.html" target="_blank" className={styles['projects-link']}>Light / Dark Mode Toggle</a> 
+          <a href="https://casserole27.github.io/Projects/Light-dark-toggle/toggle.html" target="_blank" className={styles['projects-link']}>Light / Dark Mode Toggle</a> 
           <a href="https://github.com/casserole27/Projects/tree/main/Light-dark-toggle" target="_blank" className={styles['projects-link']}>Github</a>
         </li>      
         <li className={styles.projects}>
@@ -71,7 +71,7 @@ const LewisLabs = () => {
               width={0}
               height={0}
             />
-            <a href="https://www.clewisdev.com/scoreboard-app/" target="_blank" className={styles['projects-link']}>Settlers of Catan Scorekeeper</a> 
+            <a href="https://casserole27.github.io/scoreboard-app/" target="_blank" className={styles['projects-link']}>Settlers of Catan Scorekeeper</a> 
             <a href="https://github.com/casserole27/scoreboard-app" target="_blank" className={styles['projects-link']}>Github</a>
         </li>                       
         <li className={styles.projects}>
@@ -82,7 +82,7 @@ const LewisLabs = () => {
             width={0}
             height={0}
           />
-          <a href="https://www.clewisdev.com/send-to-pager/" target="_blank" className={styles['projects-link']}>Send to Pager : CSS 3D UI</a> 
+          <a href="https://casserole27.github.io/send-to-pager/" target="_blank" className={styles['projects-link']}>Send to Pager : CSS 3D UI</a> 
           <a href="https://github.com/casserole27/send-to-pager" target="_blank" className={styles['projects-link']}>Github</a>
         </li>
     {/* <li className={styles.projects}>
