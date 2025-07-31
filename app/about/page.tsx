@@ -91,7 +91,7 @@ const About = () => {
             <li className={styles['about-points-list']}>Homesteader and Cooker of Delicious Things</li>
         </ul>
       </section>
-      <button onClick={handleClick} className={styles.btn}>home</button>
+      <button onClick={() => handleClick(ControlTypes.HOME)} className={styles.btn}>home</button>
     </main>
   );
 };
