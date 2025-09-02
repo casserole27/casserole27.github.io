@@ -66,10 +66,11 @@ const About = () => {
       <div className={styles.skills}>
         <a href="https://skillicons.dev">
           <Image
-          src='https://skillicons.dev/icons?i=react,js,typescript,nodejs,postgres,postman,jest,html,css,styledcomponents,vscode,git,github,figma,ps'
+          src='https://skillicons.dev/icons?i=react,js,typescript,nodejs,postgres,jest,html,css,sass,styledcomponents,git,github'
           alt="technical skills: react,js,typescript,nodejs,postgres,postman,jest,html,css,styledcomponents,vscode,git,github,figma,ps"
-          width={800}
-          height={50}
+          className={styles['skills-img']}
+          width={0}
+          height={0}
           />
         </a>
       </div>
