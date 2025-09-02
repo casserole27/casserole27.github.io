@@ -36,7 +36,7 @@
     font-size: 1rem;
     display: block;
     color: red;
-    padding: 0;
+    padding: 0 .5rem;
     margin-bottom: .5rem;
     font-weight: 600;
     text-decoration: underline;
@@ -51,6 +51,7 @@
     color: #555;
     font-weight: 600;
     line-height: 1.5;
+    padding: 0 .5rem;
     margin: .5rem 0;
   }
 
@@ -62,6 +63,16 @@
     margin: 0 auto 1rem auto;
     border: 3px solid #555;
     border-radius: 1rem;
+}
+
+.skills-img {
+  display: block;
+  width: 75%;
+  height: auto;
+  padding: .5rem;
+  margin: 0 auto 1rem auto;
+  border: 3px solid #555;
+  border-radius: 1rem;
 }
 
 .btncontainer {
@@ -94,11 +105,9 @@
   .btn {
     margin: 1rem 0 1rem 2rem;
   }   
-}
 
-@media (max-width: 450px) {
-  .project-img {
-      width: 250px;
+  .skills-img {
+    width: 50%;
   }
 }
 
@@ -112,10 +121,11 @@
   border: solid .06rem darkgray;
   transition: background-color 1s .5s;
   list-style-type: none;
+  border-radius: 1rem;
 }
 
   @media (min-width: 1000px) {
-    .projects{
+    .projects {
         padding: 2rem 1rem 2rem 1rem;
         margin: .5rem 0;
     }
@@ -123,6 +133,7 @@
     .projects-list {
         max-width: 1500px;
         margin: 2rem auto;
+        
 
         display: grid;
         grid-template-columns: 1fr 1fr;
